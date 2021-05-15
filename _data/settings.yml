@@ -141,29 +141,17 @@ advanced_settings:
   header_js: ""
   footer_js: ""
 
-features:
-- title: Recruit
-  url: recruit
-- title: Admit
-  url: admit
-- title: Teach
-  url: teach
-- title: Administer
-  url: administer
-- title: Aid
-  url: aid
-- title: Account
-  url: account
-- title: Advance
-  url: advance
-
-
 about:
- - {title: "Our Vision", page: index}
- - {title: "Web-based, Hosted", page: webbasedhosted}
- - {title: Support, page: support}
- - {title: Security, page: security}
- - {title: Implementation, page: implementation}
+- title: Vision
+  url: index
+- title: Web Based, Hosted
+  url: web-based-hosted
+- title: Support
+  url: support
+- title: Security
+  url: security
+- title: Implementation
+  url: implementation
 
 legal:
  - {title: "Terms of Service", page: terms}

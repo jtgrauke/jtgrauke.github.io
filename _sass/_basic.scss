@@ -967,28 +967,29 @@ a.features-card {
 		}
 	}
 
-	.features-menu {
-
-		position: sticky;
-		top: 3em;
-
-		ul {
-
-			li {
-				list-style: none;
-				font-family: $title-font;
-				font-weight: 600;
-				font-size: 2em;
-
-				&.active a {
-					color: $accent-color;
-				}
-			}
-		}
-	}
-
 	.features-section {
 		display: inline-block;
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sticky Menu
+
+.sticky-menu {
+	position: sticky;
+	top: 3em;
+
+	ul {
+
+		li {
+			list-style: none;
+			font-family: $title-font;
+			font-weight: 600;
+			font-size: 2em;
+
+			&.active a {
+				color: $accent-color;
+			}
+		}
 	}
 }
 
