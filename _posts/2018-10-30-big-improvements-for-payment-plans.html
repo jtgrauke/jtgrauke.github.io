@@ -1,0 +1,144 @@
+---
+title: "Big improvements for Payment Plans"
+date: 2018-12-05 11:58:09.000000000 +00:00
+author: brendan
+---
+
+
+
+
+
+<p>We&#8217;re soon to release a big update to payment plans. The improvements include new types of payment schedules, editable deadlines, a more flexible and reliable structure, new reporting tools, and a lot more. Here&#8217;s a look at what&#8217;s just &#8217;round the bend.</p>
+
+
+<h5>The big picture</h5>
+
+<p>First, why the update? We had several goals&mdash;and several problems we wanted to solve&mdash;with this release.</p>
+
+	<ul>
+		
+		<li>Payment plans required a bit too much babysitting from users to make sure the right charges got on the plan, not to mention getting the payment deadlines to handle unusual situations. Payment plans needed to be more of a <em>set it and forget it</em> deal, one that could roll with whatever punches you threw at it.</li>
+
+		<li>Payment plans didn&#8217;t work with recurring payments.</li>
+
+		<li>Information about student payment schedules was hard to come by, to put it mildly.</li>
+
+		<li>Payment plans didn&#8217;t behave the way one might expect them to&mdash;if you wanted a student to pay $400 a month until he was paid off, there wasn&#8217;t a way to make that happen in Populi.</li>
+
+	</ul>
+
+<p>The new payment plans address all of these areas. Here&#8217;s how they&#8217;ll work:</p>
+
+	<ol>
+		
+		<li>You set up a payment plan&mdash;see below for some of your new options.</li>
+
+		<li>You then apply it however you see fit:</li>
+
+			<ul>
+				
+				<li>Set it at the student level (on Profile &gt; Financial &gt; Dashboard), and it will automatically pick up all of the student&#8217;s plan-eligible invoices.</li>
+
+				<li>Set it on the term level (Profile &gt; Financial &gt; By Term), and it will only pick up the plan-eligible invoices for that term.</li>
+
+				<li>You can also apply it to individual invoices.</li>
+
+				<li>You can add it to students one-at-a-time, or to a group of students by using the Data Slicer.</li>
+
+			</ul>
+
+		<li>As soon as it&#8217;s applied, you&#8217;ll see the payment schedule on the student&#8217;s profile; you can find all payment schedules on the new Payment Deadlines report in Billing.</li>
+
+		<li>Time passes, and students pay. Along the way, you might need to adjust a deadline or an amount. Or you might need to add new invoices or remove one from the plan. Or you might need to recalculate the payments. All these actions are now super-simple to do, leaving you more time to work on your novel or refinish the teak decks on your yacht.</li>
+
+	</ol>
+
+
+<h5>New options</h5>
+
+<p>
+<img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog_old_new_payment_plans.png" width="550px;">
+</p>
+
+<p>The update includes a number of new options to help you create a payment plan that works for your school:</p>
+
+	<ul>
+		
+		<li><strong>Fees:</strong> Payment plan fees can be either flat-rate or a percentage of the charges on the plan. Late payment fees can be flat-rate or a percentage of the amount due, can be capped at a maximum amount, and be applied after a grace period.</li>
+
+		<li><strong>Rounding:</strong> If you wish, plans can automatically round regular payments to the nearest whole-dollar amount (any stray cents will be thrown in with the <em>Balance Due</em> amount).</li>
+
+		<li><strong>Online:</strong> If your school uses <a href="https://stripe.com">Stripe</a> and has enabled recurring payments, you can let students choose a payment plan when they&#8217;re on the <em>Pay Now</em> screen. They&#8217;ll then be charged according to the plan&#8217;s payment deadlines.</li>
+
+	</ul>
+<p>
+<img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog_payment_schedule_options.png" width="450px;">
+</p>
+
+<p>You get new, improved payment schedule options:</p>
+
+	<ul>
+		
+		<li><strong>Four types:</strong> You can base payment schedules on specific calendar dates, the number of days into the term, the number of days after the plan is applied, or regular recurring payments of a set amount.</li>
+
+		<li><strong>Calendar dates:</strong> The year selector lets you choose specific years for payment due dates, or you can select <em>Automatic</em> to let Populi figure it out.</li>
+
+		<li><strong>Recurring payments:</strong> Set up a specific amount to charge payers at whatever interval (every month, every four months, every year, etc.) you choose. Payments will be scheduled for every month in which the student has a balance. If you need to change a specific payment date or amount, you can do that as-needed (see below).</li>
+
+		<li>All of these schedules work with plans you make available for students to choose online.</li>
+
+		<li>The old <em>based-on-invoice-date</em> option is gone (but we don&#8217;t think anyone&#8217;s gonna miss it!).</li>
+
+	</ul>
+
+
+<h5>Flexible and accommodating</h5>
+
+<p>
+<img src="https://s3.amazonaws.com/blog-media.populi.co/blog_payment_plan_profile_dashboard_options.png" width="600px;">
+</p>
+
+<p>After adding a payment plan to a student, you&#8217;ll find lots of ways to customize the plan to deal with special circumstances:</p>
+
+	<ul>
+		
+		<li>You can move individual invoices on or off the payment plan as-needed. When you do, the plan will automatically recalculate the payment schedule.</li>
+
+		<li>Any time you need, you can edit the payment schedule: change deadline dates, amounts, add new payments, or even delete payments.</li>
+
+		<li>If you need to reset everything, just recalculate the payments to return the student to the plan&#8217;s basic payment schedule. Or you can remove the plan altogether.</li>
+
+	</ul>
+
+
+
+<h5>Reporting</h5>
+
+<p>We added a new report, updated an existing one, and suped-up the summary on Profile &gt; Financial &gt; Dashboard.</p>
+
+	<ul>
+		
+		<li>The new Billing &gt; Current &gt; Payment Deadlines report shows you every payment due date, including those generated by payment plans and those from individual invoice due dates.</li>
+
+		<li>The Recurring Payments report and the Data Slicer have a number of new columns and filter conditions to help you get at plan-related information.</li>
+
+		<li>Student financial summaries now include exhaustive detail on all the deadlines, unapplied payments, and unapplied credits affecting the student&#8217;s balance and <em>Pay Now</em> amounts.</li>
+
+	</ul>
+
+<p>
+<img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog_financial_dashboard_summary_student_pov.png" width="450px;">
+</p>
+
+
+<h5>What to expect</h5>
+
+<p>The new payment plans will be available to all of our customers soon. In addition to all the new features, your existing payment plans will continue to work as before. Get acquainted with the new features by having a look at the Populi Knowledge Base:</p>
+
+	<ul>
+		
+		<li><a href="https://support.populiweb.com/hc/en-us/articles/223795967">Setting up payment plans</a></li>
+
+		<li><a href="https://support.populiweb.com/hc/en-us/articles/360011398693">Using payment plans</a></li>
+
+	</ul>

@@ -1,47 +1,38 @@
 ---
 layout: default
 title: Blog
-description: Duet includes a simple blog with pagination.
 featured_image: /images/social.jpg
 ---
 
-<section class="intro">
-
-	<div class="wrap">
-
-		<h1>What we've been up to.</h1>
-		<p>Duet includes a simple blog with pagination.</p>
-
-	</div>
-
-</section>
 
 <section class="blog">
 
-	<div class="content-wrap blog-wrap">
+	<div class="wrap">
 
-		{% for post in paginator.posts %}
+		<div class="sm-span-12">
 
-		<article class="blog-post">
+			{% for post in paginator.posts %}
 
-			<a class="blog-post__link" href="{{ post.url | relative_url }}">
+			{% assign downauthor = post.author | downcase %}
+			{% assign author = site.data.settings.authors[downauthor] %}
 
-				<div class="blog-post__image">
-					<img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
+			<article class="post">
+				<h3 class="displayMedium"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h3>
+				<div class="byline clear">
+					{% if author %}
+						<div class="byline-pic {{ author.profile_image_class }}"></div>
+						<span>{{ author.first_name }} wrote this on {{ post.date | date: "%B %-d" }}{{ post.date | ordinal }}, {{ post.date | date: "%Y" }}</span>
+					{% endif %}
 				</div>
-
-				<div class="blog-post__content">
-					<div class="blog-post__info">
-						<h2 class="blog-post__title">{{ post.title }}</h2>
-						<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
-					</div>
+				<div class="entry clear">
+					{{ post.content }}
 				</div>
+			</article>
 
-			</a>
+			{% endfor %}
 
-		</article>
 
-		{% endfor %}
+		</div>
 
 	</div>
 
@@ -53,12 +44,17 @@ featured_image: /images/social.jpg
 
 	<div class="wrap">
 
-		{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path | relative_url }}" class="button button--light pagination__prev"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>Newer Posts</span></a>
-		{% endif %}
-		{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path | relative_url }}" class="button button--light pagination__next"><span>Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-		{% endif %}
+		<div class="sm-span-6">
+			{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path | relative_url }}" class="button button--light pagination__next">Older Posts</a>
+			{% endif %}
+		</div>
+
+		<div class="sm-span-6 sm-start-7">
+			{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path | relative_url }}" class="button button--light pagination__prev">Newer Posts</a>
+			{% endif %}
+		</div>
 
 	</div>
 

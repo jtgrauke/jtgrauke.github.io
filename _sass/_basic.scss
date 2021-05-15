@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $title-font;
 	color: $text-dark-color;
 	white-space: pre-line;
+	margin-bottom: 1.5rem;
 
 	&:first-child {
 		margin-top: 0;
@@ -46,10 +47,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, .displayXLarge {
 	font-family: $title-font;
+	color: $text-dark-color;
 	font-size: 56px;
 	font-weight: 600;
 	line-height: 0.94;
 	letter-spacing: -0.02em;
+	margin-bottom: 2rem;
 
 	@include mq(tabletp) {
 		font-size: 9vw;
@@ -62,6 +65,7 @@ h1, .displayXLarge {
 
 h2, .displayLarge {
 	font-family: $title-font;
+	color: $text-dark-color;
 	margin-top: 40px;
 	font-size: 44px;
 	font-weight: 600;
@@ -79,6 +83,7 @@ h2, .displayLarge {
 
 h3, .displayMedium {
 	font-family: $title-font;
+	color: $text-dark-color;
 	margin-top: 40px;
 	font-size: 32px;
 	font-weight: 600;
@@ -96,6 +101,7 @@ h3, .displayMedium {
 
 h4, .displaySmall {
 	font-family: $title-font;
+	color: $text-dark-color;
 	margin-top: 24px;
 	font-size: 24px;
 	font-weight: 600;
@@ -113,6 +119,7 @@ h4, .displaySmall {
 
 h5, .heading {
 	font-family: $body-font;
+	color: $text-dark-color;
 	margin-top: 24px;
 	font-size: 24px;
 	font-weight: 400;
@@ -146,7 +153,7 @@ h6, .subHeading {
 }
 
 p, ul, ol {
-	margin: 24px 0 0;
+	margin: 0 0 24px 0;
 	max-width: 32em;
 	font-size: 14px;
 	font-weight: 400;
@@ -267,8 +274,8 @@ a {
 	border: 2px solid $accent-color;
 	background: $accent-color;
 	color: $text-dark-color;
-	font-weight: $button-weight;
-	letter-spacing: $button-spacing;
+	font-weight: 600;
+	letter-spacing: -0.01em;
 	cursor: pointer;
 	border-radius: 40px;
 

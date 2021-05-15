@@ -1,0 +1,38 @@
+---
+title: 'Life lessons: the steer'
+date: 2013-04-15 12:42:14.000000000 +00:00
+categories:
+- Bloggable
+- Company culture
+- Thoughts
+tags:
+- beef
+- bugs
+- software
+- the Palouse
+
+---
+<p>Our company's culture and understanding of itself isn't just determined by what we do within office walls. Sometimes something outside the office proves a perfect metaphor for something within the company or our industry.</p>
+<p>For instance, Toby Robinson just bought a yearling Angus steer to put on his three acres of grass just outside of town. One morning, he dropped a note on our group chat:</p>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/04/4-12-13-cow-loose.png"><img class="alignnone  wp-image-2430" alt="4-12-13 cow loose" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/04/4-12-13-cow-loose.png" width="510" height="136" /></a></p>
+<p>By 10:10 AM, Isaac, Brendan, and Mark had joined Toby, fanning out into the hayfields and tree farms surrounding Toby's place in search of the steer. A mud swath surrounded the adjoining hayfield, some 80 acres of steep Palouse hillside green with the new growth of Spring. Surely the steer had traversed this swath, leaving hoofprints, and had paused somewhere in the rolling green to snack on the tender young grass. Populi is a company of experienced hunters and animal husbandmen; we'd track down this errant animal in no time.</p>
+<p>But after circumnavigating hundreds of acres that morning, we found nothing save for a fresh splatter of dung in a field. This 600-pound, sternum-height Angus steer had disappeared without a trace. No hoofprints in the mud. No lowing off in the trees. No torn turf where he'd paused for a bite to eat. Nothing. We reconvened at Toby's house and shook our heads; our hapless QA guy called Animal Control and called  his neighbors to advise them of the loose black steer. Our best guess was that he'd beelined south, back in the direction of the ranch from which Toby had bought him a few days before.</p>
+<p>That evening we all received a text from Mark Ackerman:</p>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/04/4-12-13found.jpg"><img class="alignnone  wp-image-2431" style="margin-left: 155px; margin-right: 155px;" alt="4-12-13found" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/04/4-12-13found.jpg" width="200" height="300" /></a></p>
+<p>Mark lives on the ridge up above Toby. Speaking with a neighbor after work he mentioned the steer and asked if she'd seen anything.</p>
+<p>"No," she said, "but someone called me earlier to ask if <em>I'd</em> lost a calf..."</p>
+<p>The steer had wandered south and then west, traveling up and down the Palouse slopes and the fingers of the forested ridge before wandering onto a small farm some four miles away. Our entire search in the hayfields was focused in the wrong area; our notions of him beelining south were belied by his true course: due west. In short order the steer was returned to Toby's pasture, and all was right on the farm.</p>
+<p>This episode really reminded us of some of the bugs we've had to fix.</p>
+<p>Most bugs are easy to find. "These credits aren't adding up correctly." "Oh, sorry about that, there was a bug in the calculation. Fixed it!" Others, however, ain't. Permitting me to <a href="http://populi.co/blog/2012/03/killing-bugs/">quote myself</a>, here's what's involved sometimes:</p>
+<blockquote><p>One of our programmers—usually <a href="http://populi.co/blog/2011/08/get-to-know-us-heres-patrick-swanson/">Patrick</a>—simply reads through the code, line-by-line, to find what’s wrong. A few things to keep in mind about this job:</p>
+<ul>
+<li>Computers and software are very literal; they require extremely precise instructions in order to work.</li>
+<li>Bugs take several forms. The code might have a syntax problem, or is missing a statement, or has a slash where it should have a bracket (among a zillion other things).</li>
+<li>Indeed, bugs are usually miniscule, but a tiny error is all it takes to transform a precise instruction into nonsense.***</li>
+<li>Every part of Populi talks to other parts of Populi. And even those functions that aren’t directly connected are linked together like that <a href="http://en.wikipedia.org/wiki/Six_degrees_of_kevin_bacon">Six Degrees of Kevin Bacon</a>**** game from the late ’90′s. A bug in one place can affect a dozen other functions that rely on the broken function to do their own jobs.</li>
+<li>Populi has about 361,000 lines of code.</li>
+</ul>
+<p>Of course, knowing the nature of the problem narrows the needle-in-a-haystack odds in the bug hunt. For instance, if someone’s having trouble in Admissions, we know not to look at the Library codebase. Of course, given Populi’s intra-connectivity, sometimes we do need to look afield for the bug; a problem with Student Billing might trace back to an error in course enrollment, for example.</p></blockquote>
+<p>It's those last ones—those bugs in course enrollment that cause unexpected things to happen in Student Billing—that make us feel like we're tracking a <a href="http://www.kevinmcnealphotography.com/Stock-Images/Palouse/i-tmxGJNm/0/M/PalouseStock_1%20%285%29-M.jpg">steer through the Palouse hills</a>. And sometimes it takes a chance mention from another user reporting a weird thing on, say, a transcript for us to figure out that the Billing bug actually stems from Academics.</p>
+<p>Sometimes we think the bug is off to the south somewhere, when in fact it's due west.</p>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/04/4-12-13-calf.jpg"><img class="alignnone  wp-image-2433" alt="4-12-13 calf" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/04/4-12-13-calf.jpg" width="510" height="510" /></a></p>

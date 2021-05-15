@@ -1,0 +1,42 @@
+---
+title: File storage and streaming media
+date: 2011-08-18 16:21:34.000000000 +00:00
+categories:
+- Feature Spotlights
+- New Release
+- Videos
+tags:
+- pricing
+
+---
+<p>Back when we released our <a href="http://populi.co/blog/2011/06/our-new-financial-aid-features/">update</a> to Populi Financial Aid, we also changed how Populi handles files. It's been a low-key update thus far, but our new files setup opens up a ton of new possibilities for our customers—including hosting and streaming video right from Lessons and Tests in your Populi courses. We're also updating our <a href="http://www.populi.co/pricing">pricing plans</a>: each one will include a generous chunk of free file storage with the option to add more as you need it.</p>
+<h5>The old way and the new way</h5>
+<p>Files include everything from your personal document storage to the syllabi you upload to courses to your profile pictures. Previously, your files lived on our own servers, but this proved too limiting:</p>
+<ul>
+<li>We had to limit the size and quantity of files our customers could upload.</li>
+<li>You could only upload or download files. If you wanted to stream, say, an MP3 or video, you just couldn't—even if it were small enough to upload in the first place!</li>
+<li>We didn't have the resources to make our files setup accommodate where we want to take Populi.</li>
+</ul>
+<p>The kind of file hosting we've been wanting for Populi is two things: A) surprisingly complicated and B) not one of our <a href="http://populi.co/blog/2011/06/our-own-approach-to-outsourcing-software-or-sticking-to-what-youre-good-at/">core competencies</a>. It's surprisingly complicated, for instance, to enable media streaming that plays on enough devices—PCs, Macs, iPads, Android phones, etc.— to make it at all useful. If you want to do anything more than store and serve files, you're getting into outlandish territory for a college software company—our specialties are software and support.</p>
+<p>So we took up with <a href="http://aws.amazon.com/">Amazon Web Services's</a> S3 cloud storage. AWS gives us access to Amazon's cavernous servers, economies of scale, global reach, and some excellent tools we didn't want to spend years developing ourselves (more on that in a minute). We also reconfigured our backups to make use of <a href="http://www.rackspace.com/cloud/">Rackspace's cloud hosting services</a>. Amazon and Rackspace are two of the top cloud service providers, with better than 99.99% uptime and reliability. When it comes to files in Populi, we're more than happy to hitch up to those wagons.</p>
+<p>So now, when you look up a student, Populi makes a few calls to Amazon and retrieves their profile picture, files stored in their Activity Feed, documents attached to their application's custom fields, and so on. When you upload a document to a course, it lodges on Amazon's servers and a backup copy takes up residence at Rackspace. It's a great, reliable setup that capitalizes on the expertise, tools, and infrastructure of two of the industry's best cloud storage services.</p>
+<p>But that's all on the back end, and from what our customers can tell after two months, nothing much has changed at all...</p>
+<h5>Here's what's coming soon: Bigger file uploads and media streaming</h5>
+<p>Alongside our <a href="http://populi.co/blog/2011/07/coming-soon-new-stuff-for-course-instances/">upcoming refresh of course instances</a>, we're going to unlock even more of what our new files setup can do for our customers. Gone is our old 32 MB limit—we're upping it to 2 GB*. Effectively, this now makes Populi a viable option for hosting video and audio files, which can be pretty gigantic.</p>
+<p>But what's more, we're also taking advantage of Amazon's <a href="http://aws.amazon.com/cloudfront/">CloudFront</a> Content Delivery Network, which will enable embedded media streaming right from your Populi courses. Here's how it works: When you upload a video lecture, it goes to Amazon's S3 cloud servers (and gets backed up to Rackspace). It's next encoded with different resolutions, bit rates, and formats, optimizing them for the wide variety of devices your students might use to watch it—including iPads, iPhones, Macs, and PCs. Meanwhile, Amazon will put its numerous U.S. and overseas data centers to work. When one of your students streams the lecture, Amazon will cache it at their nearest data center, thereby increasing its speed and availability. In other words, if you have foreign students in Japan watching a lecture you uploaded in North Carolina, Amazon's worldwide reach optimizes everything on the back end to make it play smoothly and quickly.</p>
+<h5>Price</h5>
+<p>We'll be including a certain amount of file storage free with every Pricing Plan. Small comes with 10GB, Medium gets 50GB, and Large features 100GB. Additional gigabytes will cost $2.50 per month. Our <a href="http://populi.co/pricing/">Pricing</a> page and <a href="http://populi.co/legal/terms/#pricing">Terms of Service</a> have the details.</p>
+<p>Here's what you get for that $2.50:</p>
+<ul>
+<li>Bigger file uploads</li>
+<li>Multiple format encoding for video files</li>
+<li>Storage and backups on Amazon and Rackspaces's world-class cloud offerings</li>
+<li>Optimized streaming and bandwidth baked in</li>
+<li>It's all integrated with Populi—there's no setup required to start using it!</li>
+</ul>
+<p>That $2.50 will be charged on a <em>pro-rata</em> basis—that is, you'll only pay for what you use above your Plan's built-in storage. So, if you upload a 50 Mb file in the last week of a given month, that'd only cost about three cents. Account Admins can monitor how much file storage they're using at any time, and your storage charge, if any, will be itemized on your monthly invoice.</p>
+<p><strong>To our current customers</strong>, based on your current file storage, no one will need to pay more—everyone is well below their Plan's file storage allocation.</p>
+<h5>The long and the short of it</h5>
+<p>No one else offers anything like this, especially not for this price**—media hosting and streaming automatically integrated with your Online Learning software (which, in turn, is integrated with your SIS and Billing software). We think this is a great addition to Populi and a huge step forward for what's available for small schools who want to get serious about online learning.</p>
+<blockquote><p>* 1 gigabyte equals 1 billion bytes.</p>
+<p>**We looked, we asked around, we did research... and <a href="http://populi.co/blog/2011/07/nonsense-free-pricing/">just like our SIS competitors</a>, the other companies out there A) won't cough up their pricing and B) require some IT elbow grease to make it work for your school. This assertion is based chiefly on anecdotes from customers who've considered some of these other systems.</p></blockquote>

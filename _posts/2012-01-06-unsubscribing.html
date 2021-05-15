@@ -1,0 +1,27 @@
+---
+title: Letting people unsubscribe is good for your mailings
+date: 2012-01-06 15:04:46.000000000 +00:00
+categories:
+- Bloggable
+
+---
+<p>In our <a href="http://populi.co/blog/2011/12/new-release-back-end-stuff-and-a-new-look-in-tables/">last release</a>, we improved how Populi prevents you from sending email to people who don't want it.</p>
+<p>Formerly, we had a "No Mailings" system tag, which indicated that the recipient had clicked the "Unsubscribe" link in a Populi email. The "unsubscribe" link only appeared for people without a Populi user account, and once clicked, that person would no longer get any email sent via Populi—at any of their addresses.</p>
+<p>We replaced that with a finer-grained "No Mailings" setting for individual email addresses. If someone has both a school address and a personal email address, you can, for example, set their personal address to "No Mailings". Or, if someone is included in a Mailing List, they have various "unsubscribe" options—they can unsubscribe from just that mailing list <em>or</em> from all Populi email. And, these options appear for all your email recipients, whether or not they have user accounts. Whatever the case, the new "No Mailings" setting gives your recipients greater control over what they receive from you. And that's an <em>improvement</em> because letting people unsubscribe from your mailings is actually good for you.</p>
+<p>We hear that rustling in the audience. "Huh? How is that good for me?"</p>
+<p>A few things are in play here. The first is a legal matter: the CAN-SPAM Act of 2003, a law that establishes rules that all commercial email must live by (unless you enjoy $16,000 fines). Many parts pertain to Populi email; here's an excerpt from the <a href="http://business.ftc.gov/documents/bus61-can-spam-act-compliance-guide-business">compliance guide</a> that helped guide the "No Mailings" upgrade:</p>
+<blockquote><p>Tell recipients how to opt out of receiving future email from you. Your message must include a clear and conspicuous explanation of how the recipient can opt out of getting email from you in the future. Craft the notice in a way that’s easy for an ordinary person to recognize, read, and understand... Give a return email address or another easy Internet-based way to allow people to communicate their choice to you. You may create a menu to allow a recipient to opt out of certain types of messages, but you must include the option to stop all commercial messages from you. Make sure your spam filter doesn’t block these opt-out requests.</p>
+<p>If the message contains only commercial content, its primary purpose is commercial and it must comply with the requirements of CAM-SPAM. If it contains only transactional or relationship content, its primary purpose is transactional or relationship. In that case, it may not contain false or misleading routing information, but is otherwise exempt from most provisions of the CAN-SPAM Act.</p></blockquote>
+<p>The first paragraph is helpful. The second paragraph muddies the waters with that word, "most", and the varying ways the law has been applied since its passage has made us a little cagey. In the wake of CAN-SPAM, the best-practice is to play it safe and give the recipients more ways to opt-out of the emails you send them... or, more accurately, to give our customers more way to let their recipients opt-out.</p>
+<p>The second big thing in play is this: there are two ways a recipient can opt-out—by clicking your unsubscribe link or... <em>by marking your email as SPAM</em>. Getting marked as spam presents manifold problems:</p>
+<ul>
+<li>All of your future emails will go to the recipients' spam folders and will miss their inboxes entirely</li>
+<li>You will not know whether your emails are hitting their inboxes or their spam folders—if you're marked as spam, you receive no notification whatsoever</li>
+<li>Their email service will become very suspicious about any email sent from your domain to anyone using that service—not just the person who marked you as spam</li>
+<li>If you're marked as spam often enough, Populi gets blacklisted—affecting not just your emails, but also emails from other Populi customers</li>
+</ul>
+<p>To put it concretely, every time someone marks a Populi email as spam, that reduces your chances of getting into a new prospect's inbox.</p>
+<p>Our previous setup, unfortunately, allowed for considerable abuse of Populi email; a few irresponsible senders sent out a lot of unwanted mailings, and our old protocol didn't give their recipients adequate recourse to opt-out. Consequently, a lot of Populi mail was being marked as spam, and it was getting harder and harder to deliver even legitimate, responsibly-sent messages. The last batch of email improvements, we trust, will comprise a fine counterattack against these problems.</p>
+<p>So, in summary:</p>
+<p><strong>The old way:</strong> potential CAN-SPAM violations for you, email deliverability headaches for us, annoyed recipients, and uncertainty about whether your mailings made it to the inbox.</p>
+<p><strong>The new way:</strong> CAN-SPAM compliance, increased email "trustworthiness", better unsubscribe options for recipients, and a "No Mailings" setting that lets you know where you stand.</p>

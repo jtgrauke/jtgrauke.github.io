@@ -1,0 +1,27 @@
+---
+title: An update to Library and some other things
+date: 2011-07-06 09:17:55.000000000 +00:00
+categories:
+- Bloggable
+- New Release
+
+---
+<p>We loosed our latest release the evening of July 5th. It's a minor update with a number of tweaks and improvements to Library, ISIRs, and the Populi API.</p>
+<h5>Library</h5>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/07/Logsdon.png"><img class="size-full wp-image-2145 alignright" style="border: 1px solid black;" title="Logsdon" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/07/Logsdon.png" alt="" width="145" height="160" /></a><br />
+Now you can add images to resources as well as delete resources or individual copies. Also included: automatic barcode generation for resource copies. This feature finds the next available barcode number and adds it to the copy—so it works around your existing resource copies without you needing to double-check (you can also disable the barcode generator).</p>
+<p>To enhance Populi Library's cataloging abilities, we also built in a <strong>Z39.50</strong> search. Now when you add a resource, Populi Library fetches an image from Amazon.com and other resource data from a number of public Z39.50 servers. You can specify which servers you want it to search, add new ones, and even change the order Populi will search through.</p>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/07/Waive-Fee.png"><img class="alignleft size-full wp-image-2147" style="border: 1px solid black;" title="Waive Fee" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/07/Waive-Fee.png" alt="" width="510" height="104" /></a>We also gave you the ability to waive a Library fine!</p>
+<h5>API</h5>
+<p>Our biggest update ever to the Populi API really beefs it up. Now you can:</p>
+<ul>
+<li>Add new people and check for duplicates</li>
+<li>Add and remove roles, tags, contact info, and custom info fields for anyone in the system</li>
+<li>Add and retrieve Prospect information</li>
+<li>Retrieve information about recently updated people</li>
+<li>Request and download backup copies of your Populi data</li>
+</ul>
+<p>With the new API functions, you'll be able to add people, sync your Populi people with an external directory service, and send your Populi backups to external web applications to save and encrypt however you like. It also paves the way for us to do some other interesting things down the road...</p>
+<h5>Miscellany</h5>
+<p>We added CPS transaction numbers to ISIRs. This information lets the Populi ISIRs importer keep your data in better order. For instance, they prevent you from importing older data. We also organized the display of ISIRs data in various places by the CPS transaction number. This accompanies a number of other, more behind-the-scenes ISIRs improvements.</p>
+<p>Additionally, this update is accompanied by some interface niggles and a number of bug fixes, tweaks, arcane performance changes, and so on.</p>

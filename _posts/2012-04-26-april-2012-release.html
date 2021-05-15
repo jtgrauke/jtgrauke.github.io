@@ -1,0 +1,34 @@
+---
+title: A grab-bag release
+date: 2012-04-26 01:55:42.000000000 +00:00
+categories:
+- Bloggable
+- New Release
+tags:
+- Admissions
+- API
+- Bookstore
+- financial
+- likes
+- New Release
+
+---
+<p>The Populi team put in a late night last night pushing out a grab-bag of features that'll smooth out some common workflows and make all kinds of data simpler to get at. This post also includes some features that we trickled out over the past few weeks.</p>
+<h5>Facilities</h5>
+<p>We moved Facilities from the Account bar to its own tab. Accessible to anyone with the Staff role, Facilities contains Locations and Resources. We also moved the Room Vacancies report from Billing to Locations.<br />
+<a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-22-12-Facilities-Tab.png"><img class="alignnone  wp-image-2309" title="4-22-12 Facilities Tab" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-22-12-Facilities-Tab.png" alt="" width="510" height="96" /></a></p>
+<p>Additionally—in fulfillment of a rather popular feature request—we made it a lot easier to find out who's in what dorm room. Our previous solution wasn't really a solution... if you wanted to know, you'd have to guess or stumble upon it while looking at student profiles. Now, whenever you're looking at a Room page, you'll see the current occupants listed. When looking at a Building page, you can select a date and then export a list of who is/was in that building's rooms as of that date. The export looks for the Academic Terms in session as of the date and then finds who's listed in which room for that Term. This is handy for looking up past occupants and checking who's situated where for upcoming terms.</p>
+<h5>Financial</h5>
+<p>Financial has a new report and an upgrade to an existing feature...<br />
+<a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-22-12-Unapplied-PC.png"><img class="alignnone  wp-image-2310" title="4-22-12 Unapplied P:C" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-22-12-Unapplied-PC.png" alt="" width="510" height="212" /></a></p>
+<p>The Unapplied Payments/Credits report shows, as its name indicates, all of your unapplied payments and credits along with all the relevant details. We've had a few requests for this, and we're really happy to get this one out the door to y'all.</p>
+<p>The History tab in Student &gt; Financial now includes voided transactions. What's more, there's also an Export button which lets you create a spreadsheet of the information in the tab.</p>
+<h5>Academics</h5>
+<p>The new <em>Course units by student</em> setting in Academics lets faculty manually adjust the credits/hours for individual students on the course roster. This is really handy for non-traditional programs that award differing numbers of earned units to students in the same course—previously, you would have to create a separate course section for each student and change the units at the course level.</p>
+<p>In Data Slicer, you can now see what Degree a Specialization falls under whenever you include the Specialization field in a query or report.</p>
+<h5>Here and there</h5>
+<p>We rolled out "Likes"—now, if you see something you like on someone's Profile or Course Bulletin Board, Populi News, or course discussions, you can click the heart to let everyone know that you dig it.<br />
+<a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-22-12-Likes.png"><img class="alignnone size-full wp-image-2311" style="margin-left: 37px; margin-right: 37px;" title="4-22-12 Likes" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-22-12-Likes.png" alt="" width="435" height="333" /></a></p>
+<p>In Bookstore, you can now sell invisible items in Point of Sale. Effectively, this allows you to add things like fees, deposits, etc. as "items" in your Bookstore; being invisible, regular online shoppers won't be able to find them—but you can still sell them to students at your cash register.</p>
+<p>We exposed more Admissions data via the API.</p>
+<p>As is typical of our releases, we've also been fixing bugs, tweaking the interface, and optimizing scripts and servers on the back-end.</p>

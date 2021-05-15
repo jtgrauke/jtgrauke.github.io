@@ -1,0 +1,43 @@
+---
+title: Programmatic Partial-Credit Put-In-Order Grading
+date: 2014-09-25 08:57:00.000000000 +00:00
+categories:
+- Bloggable
+- Feature Spotlights
+- New Release
+tags:
+- academics
+- courses
+- New Release
+- online learning
+- put in order
+- software
+author: adam
+---
+<p>Back in Autumn, 2009 we introduced online tests with several question types. Certain types—multiple choice for example—are simple for a computer program to grade. You just tell it what the correct answer is, and if the student marks that answer, they get the credit. Other question types, however, aren’t so simple: put-in-order, for example. Different instructors have different methods and rationales for how to assign credit for a partially correct put-in-order question, so replicating how a human would grade one is no mean feat. Or so we’ve learned over the last five years.</p>
+<p>Our first method was simple: we'd evaluate each item in turn, and if it was before or after the item that it was supposed to be before or after then it would be counted as correct.</p>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_11.gif"><img class="aligncenter wp-image-2699" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_11.gif" alt="" width="150" height="130" /></a></p>
+<p>This did a pretty good job approximating how an instructor might give partial credit by focusing on the order of items as opposed to their placement. This method stayed in place until we discovered its principal flaw. Though highly unlikely, it was possible for an incorrect response to receive 100% credit provided each item was next to at least one correct neighbor.</p>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_21.gif"><img class="aligncenter wp-image-2700" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_21.gif" alt="" width="150" height="131" /></a></p>
+<p>When an instructor brought this to our attention last Winter (over four years since we added online tests!) we quickly revised our methodology to focus on <em>placement</em>. This seemed like a simple, reasonable method: imagine a teaching assistant lining up an answer key next to the student’s response and marking incorrect any item that didn’t match the key.</p>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_31.gif"><img class="aligncenter wp-image-2701" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_31.gif" alt="" width="150" height="130" /></a></p>
+<p>In reality, though, this sometimes proved much harsher than an actual professor would be, especially if the question had a larger number of options.</p>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_41.gif"><img class="aligncenter wp-image-2702" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_41.gif" alt="" width="161" height="245" /></a></p>
+<p>In fact, not long after the update an instructor showed us a rather harshly-graded 25-item put-in-order question; Populi counted 13 options as correct when the instructor would have counted 24. In light of this, we sought out another approach. The best programmatic method for giving partial credit on put-in-order questions would need to take into account more than simple placement in order to better replicate how a human teacher would grade and avoid being overly harsh or generous. After testing every method we could think of, here’s what we came up with.</p>
+<p>The new method aims to give as much credit as is reasonable (as most instructors would) by focusing on what we’re calling <em>chains—</em>that is, two or more correctly-ordered items in a row. First, we locate the longest chain. Then, we use it to figure out whether or not other chains before it or after it are in order. Anything not in a chain is incorrect.</p>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_5.gif"><img class="aligncenter wp-image-2703" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_5.gif" alt="order_5" width="161" height="245" /></a></p>
+<p>This method worked well overall, but there were a couple wrinkles to iron out. One was that the first and last items in the list are at a disadvantage when it comes to chaining: each has only one neighbor to chain with, and so are less likely to be counted as correct. This was solved by treating the top and bottom boundaries of the list as non-credit positions. In other words, if the first or last item is in the correct position it always counts as being in a chain, and receives credit.</p>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_61.gif"><img class="aligncenter wp-image-2707" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_61.gif" alt="" width="161" height="262" /></a></p>
+<p>The other wrinkle: a response could have more than one longest chain. Depending on which chain you started with it was possible to come up with a different number of points. Here, starting with the first chain leads to a lower score:</p>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_7.gif"><img class="aligncenter wp-image-2705" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_7.gif" alt="order_7" width="161" height="246" /></a></p>
+<p>We solved this by grading the question multiple times, as it were. We look at each chain, and then look at the position of each chain in the answer. We then see which chain to use as a starting point to grant the most credit.</p>
+<ul>
+<li>Above, starting with <em>eight-nine-ten</em>  would cause Populi to mark the other two chains wrong (because <em>one-two-three</em> and <em>four-five-six</em> don't come after <em>eight-nine-ten</em>). This would result in a score of 30% of the possible points.</li>
+<li>Below, starting with <em>one-two-three</em> lets us then say that <em>four-five-six</em> is correct (because it comes after <em>one-two-three</em>). This lets us mark two chains correct, giving the student more credit for the question (60%)—and thus, is preferable to the other option. Starting with <em>four-five-six</em> results in this same score.</li>
+</ul>
+<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_8.gif"><img class="aligncenter wp-image-2706" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_8.gif" alt="order_8" width="161" height="246" /></a></p>
+<p>There's also a very, very remote possibility that the most credit would be awarded by starting with the <em>second-longest</em> chain. So we also try grading using every longest chain <em>and </em>every chain with one fewer item than the longest chain, just in case.</p>
+<p>We’re happy to announce this as the new (and hopefully final) method for assigning partial credit to put-in-order questions.</p>
+<p>Now, <em>partial credit</em> is, after all, just an <em>option</em> on a <em>feature</em>. But the time we spent working it out and building it is worth it. Professors rely on Populi to save them time with the mundane things (like test-grading), but some of the mundane things are hard to nail. It's actually quite a challenge to replicate a teacher's intuition with rigid, literal software code.</p>
+<p>As a bonus, we now show which items were marked incorrect in the test history view so students and teachers can see how the partial-credit grade was derived.</p>
+<blockquote><p><strong>Editor's Note:</strong> As you suspected, Yes—the title of this article <em>can</em> be sung to the tune of <a href="https://www.youtube.com/watch?v=tRFHXMQP-QU"><em>Supercalifragilisticexpialidocious</em></a> from Mary Poppins.</p></blockquote>

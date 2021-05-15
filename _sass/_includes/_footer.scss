@@ -81,7 +81,6 @@
 		width: 50%;
 		float: left;
 
-		
 	}
 }
 
@@ -122,8 +121,6 @@
 		}
 	}
 
-	
-
 	input[type=submit],
 	.age { 
 		position:absolute; 
@@ -157,6 +154,7 @@
 
 	p {
 		margin-bottom: 1em;
+		max-width: 100%;
 	}
 
 	.socials-item {
@@ -170,8 +168,6 @@
 		}
 
 	}
-
-	
 
 }
 

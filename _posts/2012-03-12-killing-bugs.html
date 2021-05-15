@@ -1,0 +1,45 @@
+---
+title: Killing bugs
+date: 2012-03-12 12:37:09.000000000 +00:00
+categories:
+- Bloggable
+- Company culture
+tags:
+- Brendan
+- bugs
+- customer support
+- development
+- Isaac
+- Patrick
+- Quality Assurance
+- Toby
+
+---
+<p>Every field bears thorns and thistles. A good farmer makes sure that they don't proliferate and ruin the crop. For that matter, every profession has its own thistles, its own bunch of ankle-biting thorns lurking in the wheat and the corn. For us here at Populi, those are software bugs, errors in the code we've written that cause functional problems for our users. So an important part of our job here is finding them and killing them.</p>
+<p style="text-align: center;"><a href="http://upload.wikimedia.org/wikipedia/commons/8/8a/H96566k.jpg"><img class="aligncenter" alt="" src="http://upload.wikimedia.org/wikipedia/commons/8/8a/H96566k.jpg" width="510" height="402" /></a></p>
+<p>Software bugs get their name from the days of computing yore* when a <a href="http://en.wikipedia.org/wiki/File:UNIVAC-1103-BRL61-0905.jpg">modest computer</a> filled a room with hardware—lockers, tubes, relays, <a href="http://archive.computerhistory.org/resources/still-image/eckert/portrait_of_John_Mauchly.c1950s.102657887.lg.jpg">engineers</a>, switches—that moved information from Point A to Point B. "Bugs" in the system were just that: little creatures that got in the works and prevented the physical passage of electrical impulses from one locker or tube to another, thereby preventing the computer from working properly. Troubleshooting those problems had to be, I dunno, just a <em>ton</em> of fun.</p>
+<p>Having built Populi without using lockers, tubes, and the like, our extermination system is much less arduous. We start with software testing, or, as it's called in the biz, "Quality Assurance". When our developers deploy code in our local development environment, it's kicked over to our QA crew—<a href="http://populi.co/blog/2010/11/get-to-know-us-heres-toby-robinson/">Toby</a> and (more informally) <a href="http://populi.co/blog/2011/10/get-to-know-us-heres-brendan-odonnell/">Brendan</a> and <a href="http://populi.co/blog/2010/10/get-to-know-us-heres-isaac-grauke/">Isaac</a>. These three run the new feature or function through its paces to determine a few things:</p>
+<ul>
+<li>Does it work as intended?</li>
+<li>Does it even work in the first place?</li>
+<li>Does it break anything else?</li>
+</ul>
+<p>We ask other questions during the QA process,** but these three are key. If the QA guys find that the code or feature fails on one of these points, they send it back to the developer who authored it and tell them where to spray for pests. The respective teams repeat this process until the code or feature works. Only then do we release it.</p>
+<p>Once we release, our users subject our code to a different kind of testing—that of everyday use in a live environment with all of its attendant surprises and unexpected side-roads. And if something's not working, they let us know.</p>
+<p>The first thing we do in our bug hunt is verify whether there's a bug at all. Sometimes the user's workflow has gotten something out of order. Sometimes another user has changed or deleted something the first user was looking for. And sometimes we discover that everything's working fine, but we don't currently accommodate a particular "edge case" that the user needs Populi to handle. If it's the first problem a little garden-variety training is in order; if the second, we update the feature to handle the "edge case".</p>
+<p>But if the user's problem turns out to be neither of the above, it's time to start digging through the code to see what grubs and creepy-crawlies we discover.</p>
+<p>The digging is the part that's most like the old days of checking each switch, tube, and locker for moths. One of our programmers—usually <a href="http://populi.co/blog/2011/08/get-to-know-us-heres-patrick-swanson/">Patrick</a>—simply reads through the code, line-by-line, to find what's wrong. A few things to keep in mind about this job:</p>
+<ul>
+<li>Computers and software are very literal; they require extremely precise instructions in order to work.</li>
+<li>Bugs take several forms. The code might have a syntax problem, or is missing a statement, or has a slash where it should have a bracket (among a zillion other things).</li>
+<li>Indeed, bugs are usually miniscule, but a tiny error is all it takes to transform a precise instruction into nonsense.***</li>
+<li>Every part of Populi talks to other parts of Populi. And even those functions that aren't directly connected are linked together like that <a href="http://en.wikipedia.org/wiki/Six_degrees_of_kevin_bacon">Six Degrees of Kevin Bacon</a>**** game from the late '90's. A bug in one place can affect a dozen other functions that rely on the broken function to do their own jobs.</li>
+<li>Populi has about 361,000 lines of code.</li>
+</ul>
+<p>Of course, knowing the nature of the problem narrows the needle-in-a-haystack odds in the bug hunt. For instance, if someone's having trouble in Admissions, we know not to look at the Library codebase. Of course, given Populi's intra-connectivity, sometimes we do need to look afield for the bug; a problem with Student Billing might trace back to an error in course enrollment, for example.</p>
+<p>Whatever the case, a review of the code turns up one or more culprits, at which point we take the next steps—polishing the code, running it through our QA battery, and then finally releasing it to our live servers.<a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/03/3-11-12-Bugs.png"><img class="aligncenter  wp-image-2286" title="3-11-12 Bugs" alt="via http://ibc.lynxeds.com/photo/bearded-tachuri-polystictus-pectoralis/pampa-tiny-eating-female-giving-moth-one-their-three-ch" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/03/3-11-12-Bugs.png" width="510" height="285" /></a></p>
+<p>Fixing bugs can be very time-consuming, but we're laser-focused on it. We know that the only thing worse than us having to find a bug is having a bug prevent you from getting your work done. For us, bug-killing isn't an abstract matter of "we'll-get-to-that-someday" software development. It's a matter of active, responsive, "get-it-done-yesterday" customer support.</p>
+<blockquote><p>*Yeah, I know, this is over-simplified.</p>
+<p>**Especially the question: does it work in Internet Explorer? That browser is a real turkey sometimes.</p>
+<p>***We recently found an error that consisted of one wrong character. Easiest fix ever!</p>
+<p>****Isaac Grauke once met Kevin Bacon; therefore, there is only one degree of separation between any given Populi feature and the man himself.</p></blockquote>

@@ -1,0 +1,44 @@
+---
+title: 'Feature Spotlight: Video encoding'
+date: 2011-12-14 16:38:56.000000000 +00:00
+categories:
+- Feature Spotlights
+
+---
+<p>So, you've made a video recording of a lecture and you’re ready to show it to your students…</p>
+<p><strong>How do you make that happen?</strong></p>
+<p>First, you need to give it some place to live—a central location where it will be stored (and not lost!) and where your students can access it.</p>
+<p>In other words, you need some kind of secure, internet-connected file server with a user interface you and your students can understand. You also need someone to make sure it runs, remains safeguarded from hackers, and has some way of backing up the important work you've stored on it.</p>
+<p>So, you somehow get your video file on a server. Now your students want to watch it, but some have laptops, others have iPhones, and one of them even bought something called a <a href="http://www.pcworld.com/article/245577/motorola_unveils_droid_xyboard_tablets.html">Motorola XyBoard</a>.</p>
+<p><strong>How will you make sure your video will play on all of those different devices?</strong></p>
+<p>You have to convert your video to multiple formats so that any device—iPads, mobile phones, PCs, etc.—can read it. Next, you have to create several different versions of each format with differing degrees of quality to account for the variations in data speed among those devices. This process is called encoding: it creates multiple formats and versions of your video to make sure that just about any internet-connected device can play it back.</p>
+<p>So, you've managed to encode your lecture. Now your students with high-speed internet can watch a high-quality version of it, and students watching over a slower cell network can watch a compressed version that won't stall out for minutes at a time. Whatever device they have, whatever connection speed it’s running—your students can watch it.</p>
+<p><strong>That lecture is over an hour long. What if your students watched the first half yesterday and today they want to pick up in the middle?</strong></p>
+<p>You have two options: students can download the entire video and sit through the first half while they wait for the second half. Or, you can stream it to them—which lets them jump around within the video and watch what they need to watch. To stream the video, your device needs a way to tell the server “start playing at the 35-minute mark”. What’s more, because different devices stream video in different ways, your server needs to know what kind of device it's talking to.</p>
+<p>So, you’ve set up a way for your server to talk to devices, know what kind of devices they are, send them the right files, and let them pick up where they left off—now your students can resume the lecture where they stopped watching yesterday.</p>
+<p><strong>What if you’re on the East Coast and you have distance students watching your video while sipping Kona coffee in a café in Hilo, Hawaii? And what if the server connection to the café’s wifi is slow as molasses?</strong></p>
+<p>Despite how little it seems physical matters affect the internet, if your video server is 6,500 miles away from your student, that will cause lags that result in delivery of a lower-quality video. If you want to your students to access the highest-quality video possible, you need a Content Delivery Network (CDN). A CDN maintains “edge” locations in multiple areas around the world. When a far-off somebody watches one of your videos, the CDN copies that particular file to the nearest edge location, allowing for a much swifter data transfer. And that lets your faraway distance students get a much quicker stream than if they were streaming it from your server.</p>
+<p>So, you connect your file server setup to a CDN, ensuring the best connection between your students and your lecture. But what if... well, enough of that for now.</p>
+<p>And that's how you make it happen. Your lecture is stored and backed-up, is encoded and optimized for streaming to multiple kinds of devices, and has the fleetness of a CDN to get it to your students regardless of their location. And all you needed...</p>
+<ul>
+<li>...<a href="http://www.dell.com/us/business/p/servers">was</a> <a href="http://mediatemple.net/webhosting/ve/pricing.php">a</a> <a href="http://aws.amazon.com/s3/pricing/">file</a> <a href="http://www.rackspace.com/cloud/cloud_hosting_products/servers/pricing/">server</a></li>
+<li><a href="http://zencoder.com/pricing/">worthwhile</a> <a href="http://www.encoding.com/pricing/prepaidPlans">encoding</a> <a href="http://www.pandastream.com/pricing_and_signup">software</a></li>
+<li>a way to intelligently stream your videos</li>
+<li>a <a href="http://www.netdna.com/pricing/">CDN</a> <a href="http://aws.amazon.com/cloudfront/pricing/">to</a> <a href="http://www.edgecast.com/">help</a> <a href="http://www.maxcdn.com/pricing/">get</a> that lecture to everyone who wants to watch it</li>
+<li>oh, and <a href="https://docs.google.com/spreadsheet/pub?hl=en&amp;hl=en&amp;key=0Ao_EpCI49v5GdGJqZzdTVGJDQlhVdXFQN0pzdUh1Y1E&amp;output=html">IT staff</a> to make the whole thing run like a top</li>
+</ul>
+<p>Get your calculator.</p>
+<p><strong>You can also make it happen using Populi's built-in file storage and media streaming. </strong></p>
+<p><strong></strong>It handles everything mentioned above—and then some. With it, all you need to do is record your lecture, upload it, and start using it. We do everything else:</p>
+<ul>
+<li>Store your original file in the Amazon Cloud and back it up to the Rackspace Cloud</li>
+<li>Convert it to multiple formats so different devices can play it</li>
+<li>Make multiple copies in each format, each compressed to a different quality</li>
+<li>Configure everything for streaming so your students can skip around within the video</li>
+<li>Send all files through Amazon's <a href="http://aws.amazon.com/cloudfront/">CloudFront</a> CDN</li>
+<li>Create an embed code so you can easily add it to your courses</li>
+</ul>
+<p>Populi makes your audio and video files far more useful and accessible to your school for a fraction of the effort and—given the complexity of a home-grown setup—a fraction of the cost. Every pricing plan includes an allotment of file storage, and extra storage is available for <del>$2.50</del>** $1 per GB per month. And since we've done all the hard, behind-the-scenes stuff***, there's no setup on your end whatosever—you can just start using it.</p>
+<blockquote><p>* Flash-enabled devices, for instance, use a protocol (a formally-defined language that lets computers talk to each other) called RMTP to tell the server, “start here.” iOS devices—iPhones, iPads, etc.—require that the video be split into dozens or hundreds of chunks; they then request the video start playing with the correct chunk (the one containing the 35-minute mark).</p>
+<p>** Price per GB was changed as of July, 30 2012. <a href="http://populi.co/blog/2012/07/were-dropping-the-price-on-file-storage/">Read more</a>.</p>
+<p>*** We even designed our own encoding software.</p></blockquote>

@@ -5,90 +5,62 @@
 // - - - - - - - - - - - - - - - - - -
 
 .blog {
-	padding: 0 $grid-spacing/2;
-}
+	padding: 0;
 
-.blog-wrap {
-	
-}
+	article {
+		max-width: 640px;
+		margin: 0 auto 80px;
+		padding-bottom: 80px;
+		border-bottom: 1px solid $text-light-color;
+		
 
-.blog-post {
-	position: relative;
-	padding: $grid-spacing/2;
-	float: left;
-	width: 50%;
-}
-
-.blog-post__link {
-	position: relative;
-	display: block;
-
-	@include mq(tabletl) {
-
-		&:hover {
-
-			.blog-post__content {
-				opacity: 1;
-				visibility: visible;
-			}
+		p {
+			max-width: 100%;
 		}
 	}
+
+	&.single article {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
 }
 
-.blog-post__image {
-	width: 100%;
+figure {
+    margin-bottom: 1.5em;
 }
 
-.blog-post__content {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+.byline {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba($overlay-background-color, $overlay-opacity);
+    align-items: center;
+    margin: 16px auto;
 
-	opacity: 0;
-	visibility: hidden;
-	@include transition(all 0.2s ease-in-out);
+	.byline-pic { 
+		background-repeat: no-repeat; 
+	   width: 32px;
+	   height: 32px;
+	   margin-right: 16px;
+	   background-size: cover;
+	   border-radius: 24px;
+   }
 }
 
-.blog-post__info {
-	text-align: center;
-}
+.isaac      { background-image:url(/images/authors/isaac.jpg); }
+.james      { background-image:url(/images/authors/james.jpg); }
+.adam       { background-image:url(/images/authors/adam.jpg); }
+.mark       { background-image:url(/images/authors/mark.jpg); }
+.nick       { background-image:url(/images/authors/nick.jpg); }
+.joseph     { background-image:url(/images/authors/joseph.jpg); }
+.brendan    { background-image:url(/images/authors/brendan.jpg); }
+.toby       { background-image:url(/images/authors/toby.jpg); }
+.christian  { background-image:url(/images/authors/christian.jpg); }
+.pat        { background-image:url(/images/authors/pat.jpg); }
+.joel       { background-image:url(/images/authors/joel.jpg); }
+.josh       { background-image:url(/images/authors/josh.jpg); }
+.josiah     { background-image:url(/images/authors/josiah.jpg); }
+.matt       { background-image:url(/images/authors/matt.jpg); }
+.jordan     { background-image:url(/images/authors/jordan.jpg); }
+.caleb      { background-image:url(/images/authors/caleb.jpg); }
 
-.blog-post__title {
-	color: $overlay-text-color;
-	font-size: $grid-item-title-small;
-	font-weight: $grid-item-title-weight;
-	letter-spacing: $grid-item-title-spacing;
-
-	@include mq(tabletp) {
-		font-size: $grid-item-title-medium;
-	}
-
-	@include mq(laptop) {
-		font-size: $grid-item-title-large;
-	}
-}
-
-.blog-post__subtitle {
-	margin-top: 5px;
-	color: rgba($overlay-text-color, 0.7);
-	font-size: $grid-item-subtitle-small;
-	font-weight: $grid-item-subtitle-weight;
-	letter-spacing: $grid-item-subtitle-spacing;
-
-	@include mq(tabletp) {
-		font-size: $grid-item-subtitle-medium;
-	}
-
-	@include mq(laptop) {
-		font-size: $grid-item-subtitle-large;
-	}
-}
 
 .pagination {
 
@@ -100,5 +72,5 @@
 }
 
 .pagination__next {
-	float: left;
+	float: right;
 }

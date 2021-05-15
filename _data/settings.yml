@@ -16,6 +16,8 @@ menu_settings:
       url: '/for-everyone'
     - title: 'Customers'
       url: '/customers'
+    - title: 'Pricing'
+      url: '/pricing'
     - title: 'Get a Demo'
       url: '/get-a-demo'
       button: true
@@ -33,6 +35,56 @@ contact_settings:
   confirmation_url: '/thanks'
   email_subject: 'Contact form submission'
   send_button_text: 'Send Message'
+
+authors: 
+  brendan: 
+    display_name: Brendan
+    email: brendan@populi.co
+    first_name: Brendan
+    last_name: O'Donnell
+    profile_image_class: brendan
+  adam: 
+    display_name: Adam
+    email: adam@populi.co
+    first_name: Adam
+    last_name: Sentz
+    profile_image_class: adam
+  isaac:
+    display_name: Isaac
+    email: isaac@populiweb.com    
+    first_name: Isaac
+    last_name: Grauke
+    profile_image_class: isaac
+  mark:
+    display_name: Mark
+    email: mark@populi.co
+    first_name: Mark
+    last_name: Ackerman
+    profile_image_class: mark
+  james:
+    display_name: James
+    email: james@populi.co    
+    first_name: James
+    last_name: Hill
+    profile_image_class: james
+  josh:
+    display_name: Josh
+    email: josh@populi.co    
+    first_name: Josh
+    last_name: Stevenson
+    profile_image_class: josh
+  matt:
+    display_name: Matt
+    email: matt@populi.co
+    first_name: Matt
+    last_name: Jepsen
+    profile_image_class: matt
+  patrick:
+    display_name: Patrick
+    email: patrick@populiweb.com    
+    first_name: Patrick
+    last_name: Swanson
+    profile_image_class: patrick
 
 social_settings:
   facebook_url: 'https://www.facebook.com/populico'
@@ -76,94 +128,11 @@ color_settings:
   error_color: '#D64541'
 
 font_settings:
-  font_embed: '<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">'
+  font_embed: '<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">'
   title_font: '"Messina Serif", serif'
   body_font: '"DM Sans", sans-serif'
   regular_weight: 400
   bold_weight: 600
-  site_title:
-    small_size: 24
-    medium_size: 32
-    large_size: 40
-    weight: 600
-    letter_spacing: -0.02
-  menu:
-    small_size: 32
-    medium_size: 16
-    large_size: 18
-    weight: 400
-    letter_spacing: 0
-  grid_item_title:
-    small_size: 22
-    medium_size: 30
-    large_size: 35
-    weight: 700
-    letter_spacing: -0.02
-  grid_item_subtitle:
-    small_size: 15
-    medium_size: 17
-    large_size: 19
-    weight: 400
-    letter_spacing: 0
-  h1:
-    small_size: 56
-    medium_size: 80
-    large_size: 104
-    weight: 600
-    letter_spacing: -0.02
-    line_height: 0.94
-  h2:
-    small_size: 22
-    medium_size: 30
-    large_size: 35
-    weight: 700
-    letter_spacing: -0.02
-    line_height: 1.2
-  h3:
-    small_size: 22
-    medium_size: 25
-    large_size: 30
-    weight: 600
-    letter_spacing: -0.02
-    line_height: 1.3
-  h4:
-    small_size: 17
-    medium_size: 22
-    large_size: 22
-    weight: 700
-    letter_spacing: 0
-    line_height: 1.6
-  h5:
-    small_size: 17
-    medium_size: 20
-    large_size: 20
-    weight: 700
-    letter_spacing: 0
-    line_height: 1.6
-  h6:
-    small_size: 17
-    medium_size: 20
-    large_size: 20
-    weight: 700
-    letter_spacing: 0
-    line_height: 1.6
-  p:
-    small_size: 15
-    medium_size: 17
-    large_size: 19
-    weight: 400
-    letter_spacing: 0
-    line_height: 1.6
-  blockquote:
-    small_size: 25
-    medium_size: 35
-    large_size: 45
-    weight: 300
-    letter_spacing: -0.02
-    line_height: 1.6
-  buttons:
-    weight: 600
-    letter_spacing: 0
 
 advanced_settings:
   ajax_loading: true

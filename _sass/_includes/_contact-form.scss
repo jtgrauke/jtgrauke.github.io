@@ -58,17 +58,8 @@
 
 .contact-form__label {
 	display: block;
-	font-size: $p-small;
 	font-weight: $bold-weight;
 	color: $text-medium-color;
-
-	@include mq(tabletp) {
-		font-size: $p-medium;
-	}
-
-	@include mq(laptop) {
-		font-size: $p-large;
-	}
 }
 
 .contact-form__input,
@@ -79,18 +70,11 @@
 	border-radius: 2px;
 	padding: 10px 12px;
 	background: $background-color;
-	font-size: $p-small;
-	line-height: 1.4;
 	color: $text-dark-color;
 	@include transition(all 0.15s ease-in-out);
 
 	@include mq(tabletp) {
 		padding: 15px 18px;
-		font-size: $p-medium;
-	}
-
-	@include mq(laptop) {
-		font-size: $p-large;
 	}
 
 	&:focus {
