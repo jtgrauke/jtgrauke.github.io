@@ -148,8 +148,8 @@ color_settings:
   error_color: '#D64541'
 
 font_settings:
-  font_embed: '<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">'
-  title_font: '"Messina Serif", serif'
+  font_embed: '<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">'
+  title_font: '"Messina Serif", "DM Serif Text", serif'
   body_font: '"DM Sans", sans-serif'
   regular_weight: 400
   bold_weight: 600
