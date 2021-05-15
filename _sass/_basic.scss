@@ -121,17 +121,17 @@ h5, .heading {
 	font-family: $body-font;
 	color: $text-dark-color;
 	margin-top: 24px;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 400;
 	line-height: 1.35;
 	letter-spacing: -0.01em;
 
 	@include mq(tabletp) {
-		font-size: 28px;
+		font-size: 22px;
 	}
 
 	@include mq(laptop) {
-		font-size: 32px;
+		font-size: 24px;
 	}
 }
 
@@ -160,7 +160,8 @@ p, ul, ol {
 	line-height: 1.612;
 	letter-spacing: 0;
 
-	&.paragraphLarge {
+	&.paragraphLarge,
+	&.lead {
 		font-size: 1.25em;
 	}
 
@@ -190,10 +191,11 @@ p, ul, ol {
 }
 
 ul, ol {
-	list-style-position: inside;
+	list-style-position: outside;
+	padding-left: 16px;
 
 	&.checklist {
-
+		padding-left: 0;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -452,6 +454,19 @@ section {
 	@include mq(laptop) {
 		padding-top: 4em;
 		padding-bottom: 4em;
+	}
+}
+
+.page-sidebar {
+	padding-top: 0 !important;
+
+	.wrap {
+		border-top: 1px solid $text-light-color;
+		padding-top: 6em;
+
+		p {
+			max-width: 40em;
+		}
 	}
 }
 
@@ -950,6 +965,15 @@ a.features-card {
 
 .features {
 
+	.sticky-menu ul {
+	
+		li {
+			font-family: $title-font;
+			font-weight: 600;
+			font-size: 2em; 
+		}
+	}
+
 	.features-section {
 		padding-top: 6em;
 		margin-bottom: 4em;
@@ -963,6 +987,18 @@ a.features-card {
 			img {
 				float: left;
 				margin-right: 24px;
+			}
+		}
+
+		.heading {
+			font-size: 24px;
+
+			@include mq(tabletp) {
+				font-size: 28px;
+			}
+
+			@include mq(laptop) {
+				font-size: 32px;
 			}
 		}
 	}
@@ -979,12 +1015,15 @@ a.features-card {
 	top: 3em;
 
 	ul {
+		padding-left: 0;
 
 		li {
+			width: 100%;
+			font-size: 1em;
+			font-weight: 400;
+			margin: 0 0 8px;
+			letter-spacing: -0.02em;
 			list-style: none;
-			font-family: $title-font;
-			font-weight: 600;
-			font-size: 2em;
 
 			&.active a {
 				color: $accent-color;

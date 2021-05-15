@@ -21,6 +21,26 @@ menu_settings:
     - title: 'Get a Demo'
       url: '/get-a-demo'
       button: true
+  about_menu_items:
+    - title: Our Vision
+      url: '/about/'
+    - title: Web Based, Hosted
+      url: '/about/web-based-hosted'
+    - title: Support
+      url: '/about/support'
+    - title: Security
+      url: '/about/security'
+    - title: Implementation
+      url: '/about/implementation'
+  legal_menu_items:
+    - title: Terms
+      url: '/legal/terms'
+    - title: Acceptible Use Policy
+      url: '/legal/aup'
+    - title: Privacy Policy
+      url: '/legal/privacy'
+    - title: Copyright
+      url: '/legal/copyright'
 
 footer_settings:
   logo_image: /images/populi-mark.svg
@@ -140,21 +160,3 @@ advanced_settings:
   custom_styles: ""
   header_js: ""
   footer_js: ""
-
-about:
-- title: Vision
-  url: index
-- title: Web Based, Hosted
-  url: web-based-hosted
-- title: Support
-  url: support
-- title: Security
-  url: security
-- title: Implementation
-  url: implementation
-
-legal:
- - {title: "Terms of Service", page: terms}
- - {title: "Acceptable Use Policy", page: aup}
- - {title: "Privacy Policy", page: privacy}
- - {title: "Copyright Policy", page: copyright}

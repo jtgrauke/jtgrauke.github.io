@@ -1,0 +1,9 @@
+<nav class="sticky-menu">
+    <ul>
+        {% for item in site.data.settings.menu_settings.legal_menu_items %}
+        <li class="menu-list-item">
+            <a href="{{ item.url | relative_url }}" class="menu-list-item-link">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
