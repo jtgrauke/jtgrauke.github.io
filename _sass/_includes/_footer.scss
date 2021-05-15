@@ -1,0 +1,201 @@
+// - - - - - - - - - - - - - - - - - -
+
+// Footer
+
+// - - - - - - - - - - - - - - - - - -
+
+
+.footer {
+	@include transition(all 0.4s ease-in-out 0.8s);
+	padding: 5em 0 3em;
+	background: $text-dark-color;
+	color: $background-color;
+
+	& h1, h2, h3, h4, h5, h6, .button:hover, p, p strong, a {
+		color: $background-color;
+	}
+
+	.button {
+		color: $text-dark-color;
+	}
+
+	p {
+		color: $text-light-color;
+	}
+
+	hr {
+		margin: 8em 0;
+		border-bottom: 1px solid $text-light-color;
+	}
+
+	@include mq(tabletp) {
+		padding: 60px 0;
+	}
+
+	@include mq(tabletl) {
+		padding: 80px 0;
+	}
+
+	@include mq(laptop) {
+		padding: 120px 0;
+	}
+}
+
+.footer-cta .sm-start-7 {
+	
+	@include mq(tabletl) {
+
+		text-align: center;
+
+		.button {
+			margin-top: 4em;
+		}
+
+	}
+	
+}
+
+.footer-menu {
+	border-top: 1px solid $text-medium-color;
+	margin-top: 6em;
+	padding-top: 6em;
+	padding-bottom: 2em;
+
+	.footer-logo {
+		margin-bottom: 5em
+	}
+
+	ul {
+		list-style: none;
+
+		li {
+			margin-bottom: 1em;
+
+			a:hover {
+				color: $accent-color;
+			}
+		}
+	}
+
+	.footer-menu-1 {
+		width: 50%;
+		float: left;
+
+		
+	}
+}
+
+.footer-newsletter {
+
+	margin-top: 80px;
+
+	@include mq(tabletl) {
+		text-align: center;
+		margin-top: 0;
+	}
+
+	.newsletter_input {
+		border: 1px solid $text-medium-color;
+		border-radius: 32px;
+		padding: 12px 2px 14px 18px;
+		display: inline;
+
+		input[type=email] {
+			background: transparent;
+			border: 0;
+			outline: 0;
+			color: $background-color;
+			width: calc(100% - 140px);
+    		max-width: 280px;
+		}
+
+		.button { 
+			background: transparent;
+			border-color: transparent;
+			color: $background-color;
+
+			&:hover {
+				background: $accent-color;
+				border-color: $accent-color;
+				color: $text-dark-color;
+			}
+		}
+	}
+
+	
+
+	input[type=submit],
+	.age { 
+		position:absolute; 
+		left:-9999em; 
+		visibility:hidden; 
+	}
+
+	.newsletter_signup_confirm, 
+	.newsletter_signup_error { 
+		display:none; 
+	}
+	
+
+}
+
+.footer-logo {
+	display: block;
+	width: $footer-logo-width;
+}
+
+.footer-text {
+	color: $text-light-color;
+}
+
+.footer-social {
+	margin-top: 6em;
+
+	@include mq(tabletl) {
+		text-align: center;
+	}
+
+	p {
+		margin-bottom: 1em;
+	}
+
+	.socials-item {
+
+		a {
+			color: $accent-color;
+		}
+	
+		&:hover a {
+			color: $text-dark-color;
+		}
+
+	}
+
+	
+
+}
+
+.footer-copyright {
+	display: block;
+	margin-top: 6em;
+	font-size: 12px;
+	color: $text-light-color;
+
+	a {
+		margin-left: 12px;
+		color: $text-light-color;
+		font-weight: $regular-weight;
+	}
+
+	span {
+		margin-top: 12px;
+		display: inline-block;
+	}
+
+	@include mq(tabletp) {
+
+		span {
+			margin-top: 0;
+		}
+	}
+}

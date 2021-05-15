@@ -1,0 +1,81 @@
+<footer class="footer">
+
+	<div class="wrap footer-cta">
+
+		<div class="sm-span-6">
+			<h3 class="displayMedium">Get started with Populi</h3>
+			<p class="paragraphLarge">Your Populi account manager can answer questions, show you a demo or set you up with a Populi trial account. We can help you figure out if Populi is right for you.</p>
+		</div>
+		<div class="sm-span-6 sm-start-7">
+			<p><a href="/get-a-demo" class="button button-large">Get a Demo</a></p>
+		</div>
+
+	</div>
+
+	<div class="wrap footer-menu">
+
+		<div class="sm-span-6">
+			<a href="{{ site.baseurl }}/" class="footer-logo">
+				<img src="{{ site.data.settings.footer_settings.logo_image | relative_url }}" class="footer__logo__img">
+			</a>
+
+			<div class="footer-menu-1">
+				<ul>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">For Everyone</a></li>
+					<li><a href="#">Customers</a></li>
+					<li><a href="#">Pricing</a></li>
+					<li><a href="#">Get a Demo</a></li>
+				</ul>
+			</div>
+			<div class="footer-menu-2">
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Knowledge Base</a></li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Webinars</a></li>
+				</ul>
+			</div>
+			
+		</div>
+
+		<div class="sm-span-6 sm-start-7">
+			<div class="footer-newsletter">
+				<form action="/signup/newsletter.php" onsubmit="return false" id="newsletter_form" autocomplete="off">
+					<h6>Get the Populi Newsletter</h6>
+					<div class="newsletter_input">
+						<input class="newsletter_email" type="email" name="email" placeholder="Enter your email address here" /><a class="button" id="newsletterSignupButton" onclick="newsletterSignup(); return false;">Subscribe</a>
+						<input type="submit" onclick="newsletterSignup(); return false;" />
+						{% include anti_spam.html %}
+					</div>
+				</form> 
+				<p class="newsletter_signup_confirm">
+					Thanks for signing up! Check your inbox for a confirmation email.
+				</p>
+				<p class="newsletter_signup_error">
+					There was a problem adding you to the list. Please try again later.
+				</p>
+			</div>
+
+			<div class="footer-social">
+				<p><strong>Connect with Us</strong></p>
+
+				{% include socials.html %}
+			</div>
+		</div>
+		
+
+	</div>
+
+	<div class="footer-copyright wrap">
+		<div class="sm-span-12">
+			<span>© {{ 'now' | date: "%Y" }} {{ site.data.settings.basic_settings.site_title }}</span>
+			<a href="/terms">Terms of Service</a>
+			<a href="/terms">Acceptable Use Policy</a>
+			<a href="/terms">Privacy Policy</a> 
+			<a href="/terms">Copyright Policy</a>
+		</div>
+	</div>
+
+</footer>
