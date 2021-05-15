@@ -1021,14 +1021,18 @@ a.features-card {
 
 	ul {
 		padding-left: 0;
+		margin-bottom: 80px;
 
 		li {
 			width: 100%;
-			font-size: 1em;
 			font-weight: 400;
 			margin: 0 0 8px;
 			letter-spacing: -0.02em;
 			list-style: none;
+
+			.menu-list-item-link {
+				font-size: 1em;
+			}
 
 			&.active a {
 				color: $accent-color;
