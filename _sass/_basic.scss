@@ -965,9 +965,14 @@ a.features-card {
 
 .features {
 
-	.sticky-menu ul {
+	.sticky-menu {
+		display: none;
+		
+		@include mq(tabletp) {
+			display: block;
+		}
 	
-		li {
+		ul li {
 			font-family: $title-font;
 			font-weight: 600;
 			font-size: 2em; 
