@@ -31,7 +31,7 @@
 
 @font-face {
 	font-family:'Messina Serif';
-	src: url('/fonts/MessinaSerifWeb-SemiBoldItalic.woff2' format('woff2'),
+	src: url('/fonts/MessinaSerifWeb-SemiBoldItalic.woff2') format('woff2'),
 		 url('/fonts/MessinaSerifWeb-SemiBoldItalic.woff') format('woff');
 	font-weight: 600;
 	font-style: italic;
@@ -1068,8 +1068,25 @@ a.features-card {
 				font-size: 1em;
 			}
 
-			&.active a {
-				color: $accent-color;
+			a {
+				&:hover {
+					font-weight: 600;
+					color: $text-dark-color;
+				}
+
+				&.active {
+					font-weight: 600;
+
+					&:before {
+						content: "→";
+						color: $accent-color;
+						margin-right: 16px; 
+						font-weight: 400 !important;
+						position: absolute;
+						left: -32px;
+
+					}
+				}
 			}
 		}
 	}
