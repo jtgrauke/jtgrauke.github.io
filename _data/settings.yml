@@ -33,13 +33,13 @@ menu_settings:
     - title: Implementation
       url: '/about/implementation'
   legal_menu_items:
-    - title: Terms
+    - title: Terms of Service
       url: '/legal/terms'
     - title: Acceptible Use Policy
       url: '/legal/aup'
     - title: Privacy Policy
       url: '/legal/privacy'
-    - title: Copyright
+    - title: Copyright Policy
       url: '/legal/copyright'
 
 footer_settings:

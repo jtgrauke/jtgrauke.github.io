@@ -31,11 +31,9 @@
 .header-logo {
 	display: block;
 	width: $logo-width;
-	max-width: 80%;
 
 	@include mq(tabletp) {
 		float: left;
-		max-width: 50%;
 	}
 }
 
@@ -104,27 +102,31 @@
 	}
 }
 
-.menu--open .menu-toggle-icon {
+.menu--open {
+	overflow: hidden;
+ 
+	.menu-toggle-icon {
 
-	span:before, span:after {
-		background: $text-dark-color !important;
-	}
+		span:before, span:after {
+			background: $text-dark-color !important;
+		}
+			
+		span {
+			background-color: transparent !important;
+		}
 		
-	span {
-		background-color: transparent !important;
-	}
-	
-	span:before,
-	span:after {
-		top: 0;
-	}
-	
-	span:before {
-		@include rotate(45);
-	}
+		span:before,
+		span:after {
+			top: 0;
+		}
+		
+		span:before {
+			@include rotate(45);
+		}
 
-	span:after {
-		@include rotate(-45);
+		span:after {
+			@include rotate(-45);
+		}
 	}
 }
 
@@ -136,11 +138,9 @@
 	bottom: 0;
 	left: 0;
 	background: $background-color;
-	overflow: auto;
-
+	overflow: hidden;
 	visibility: hidden;
 	opacity: 0;
-	@include transition(all 0.2s ease-in-out);
 
 	@include mq(tabletl) {
 		position: relative;
@@ -160,11 +160,11 @@
 .menu-list {
 	list-style: none;
 	margin: 0 auto;
-	padding: 30px;
+	padding: 32px;
+	max-width: 100%;
 
 	@include mq(tabletp) {
-		padding: 40px 0 0;
-		max-width: 70%;
+		padding: 40px 40px 0;
 	}
 
 	@include mq(tabletl) {
@@ -175,8 +175,11 @@
 }
 
 .menu-list-item {
+	font-family: $title-font;
+	transition: none;
 
 	@include mq(tabletl) {
+		font-family: $body-font;
 		display: inline-block;
 		margin-left: 20px;
 

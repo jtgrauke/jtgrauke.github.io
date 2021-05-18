@@ -179,14 +179,27 @@
 	color: $text-light-color;
 
 	a {
-		margin-left: 12px;
+		margin: 12px 0 0 0;
 		color: $text-light-color;
 		font-weight: $regular-weight;
+		width: 100%;
+		display: block;
+
+		@include mq(tabletl) {
+			margin: 0 12px 0 0;
+			display: inline-block;
+			width: auto;
+			float: left;
+		}
 	}
 
 	span {
 		margin-top: 12px;
 		display: inline-block;
+
+		@include mq(tabletl) {
+			float: right;
+		}
 	}
 
 	@include mq(tabletp) {
