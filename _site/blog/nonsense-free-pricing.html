@@ -258,7 +258,7 @@ How much for additional licenses?</li>
 			</div>
 
 			<div class="footer-social">
-				<p><strong>Connect with Us</strong></p>
+				<p><strong>Connect with us</strong></p>
 
 				<ul class="socials">
 	
@@ -418,7 +418,7 @@ How much for additional licenses?</li>
 
 				var refElement = $(currLink.attr("href"));
 
-				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() < scrollPos) {
+				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
 					$('.sticky-menu ul li a').removeClass("active");
 					currLink.addClass("active");
 				}

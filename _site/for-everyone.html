@@ -128,18 +128,21 @@
 
 		<div class="page__content" data-page-title="For Everyone – Populi">
 
-			<section class="text-center">
+			<section>
 
 	<div class="wrap">
-
-		<div class="sm-span-12 pb5">
+		<div class="sm-span-12 md-span-6 mb4">
             <p class="caption mb4">For Everyone</p>
-			<h2 class="DisplayLarge">Populi brings everyone 
-                on campus closer</h2>
+            <h2 class="DisplayLarge">Bring everyone on campus closer</h2>
+            <p class="paragraphLarge">Access for everyone—staff, faculty, and students. From students just getting started with your online courses to board members checking in for a donations update, Populi gives everyone what they need—wherever they are, whatever device.</p>
+			<p><a href="/get-a-demo" class="button button-large">Get a Demo</a></p>
 		</div>
-
+		<div class="sm-span-12 md-span-6 md-start-7">
+			<img src="/images/illustrations/collaborate.svg" alt="Populi For Everyone" />
+		</div>
+		
 	</div>
-
+	
 </section>
 
 <section class="bg-light">
@@ -367,7 +370,7 @@
 			</div>
 
 			<div class="footer-social">
-				<p><strong>Connect with Us</strong></p>
+				<p><strong>Connect with us</strong></p>
 
 				<ul class="socials">
 	
@@ -527,7 +530,7 @@
 
 				var refElement = $(currLink.attr("href"));
 
-				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() < scrollPos) {
+				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
 					$('.sticky-menu ul li a').removeClass("active");
 					currLink.addClass("active");
 				}

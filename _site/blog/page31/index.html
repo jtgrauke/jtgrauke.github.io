@@ -405,7 +405,7 @@ The Unpaid Invoices export now includes a column with Pending Aid for each invoi
 			</div>
 
 			<div class="footer-social">
-				<p><strong>Connect with Us</strong></p>
+				<p><strong>Connect with us</strong></p>
 
 				<ul class="socials">
 	
@@ -565,7 +565,7 @@ The Unpaid Invoices export now includes a column with Pending Aid for each invoi
 
 				var refElement = $(currLink.attr("href"));
 
-				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() < scrollPos) {
+				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
 					$('.sticky-menu ul li a').removeClass("active");
 					currLink.addClass("active");
 				}
