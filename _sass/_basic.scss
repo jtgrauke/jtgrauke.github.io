@@ -89,7 +89,7 @@ h1, .displayXLarge {
 	margin-bottom: 2rem;
 
 	@include mq(tabletp) {
-		font-size: 9vw;
+		font-size: 7vw;
 	}
 
 	@include mq(laptop) {
@@ -302,7 +302,7 @@ a {
 }
 
 .button {
-	margin-top: 24px;
+	margin-top: 16px;
 	display: inline-block;
 	padding: 9px 10px 10px;
 	font-size: 16px;

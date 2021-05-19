@@ -5,7 +5,6 @@
 // - - - - - - - - - - - - - - - - - -
 
 
-
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header
 
 .header {
@@ -17,15 +16,6 @@
 		padding-bottom: 44px;
 	}
 
-	@include mq(tabletl) {
-		padding-top: 48px;
-		padding-bottom: 48px;
-	}
-
-	@include mq(laptop) {
-		padding-top: 52px;
-		padding-bottom: 52px;
-	}
 }
 
 .header-logo {
