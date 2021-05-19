@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Your data is yours</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Your data is yours. We really mean it.</p>
+		<h3 class="displayMedium">Your data is yours</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Your data is yours. We really mean it.</p>
 <p>Let's say you want to stop using Populi and you need your data imported into another system. Populi lets you download your core data once every 24 hours from Account &gt; Backups. The backup file includes:</p>
 <ul>
 <li>Academics—everything from transcripts to transfer credits, from course lessons to the course catalog</li>
@@ -206,11 +204,9 @@
 
 
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -399,8 +395,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

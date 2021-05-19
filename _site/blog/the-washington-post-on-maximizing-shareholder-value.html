@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">The Washington Post on "Maximizing Shareholder Value"</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Steven Pearlstein writing for the Washington Post in "<a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2013/09/09/how-the-cult-of-shareholder-value-wrecked-american-business/">How the cult of shareholder value wrecked American business</a>":</p>
+		<h3 class="displayMedium">The Washington Post on "Maximizing Shareholder Value"</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Steven Pearlstein writing for the Washington Post in "<a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2013/09/09/how-the-cult-of-shareholder-value-wrecked-american-business/">How the cult of shareholder value wrecked American business</a>":</p>
 <blockquote><p>In the recent history of management ideas, few have had a more profound — or pernicious — effect than the one that says corporations should be run in a manner that “maximizes shareholder value.”</p>
 <p>Indeed, you could argue that much of what Americans perceive to be wrong with the economy these days — the slow growth and rising inequality; the recurring scandals; the wild swings from boom to bust; the inadequate investment in R&amp;D, worker training and public goods — has its roots in this ideology.</p>
 <p>The funny thing is that this supposed imperative to “maximize” a company’s share price has no foundation in history or in law.</p></blockquote>
@@ -157,11 +155,9 @@
 <p>The software startup industry is deeply afflicted by this mindset: the shareholders whose value most startups are designed to maximize are known as venture capitalists.</p>
 <p>As we've said before, <a href="http://populi.co/blog/2013/06/a-helicopter-carrying-a-dinosaur/">we have no interest</a> in maximizing shareholder value. We're in it to make life better for our customers, families, and employees.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -350,8 +346,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

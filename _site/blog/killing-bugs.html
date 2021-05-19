@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Killing bugs</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Every field bears thorns and thistles. A good farmer makes sure that they don't proliferate and ruin the crop. For that matter, every profession has its own thistles, its own bunch of ankle-biting thorns lurking in the wheat and the corn. For us here at Populi, those are software bugs, errors in the code we've written that cause functional problems for our users. So an important part of our job here is finding them and killing them.</p>
+		<h3 class="displayMedium">Killing bugs</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Every field bears thorns and thistles. A good farmer makes sure that they don't proliferate and ruin the crop. For that matter, every profession has its own thistles, its own bunch of ankle-biting thorns lurking in the wheat and the corn. For us here at Populi, those are software bugs, errors in the code we've written that cause functional problems for our users. So an important part of our job here is finding them and killing them.</p>
 <p style="text-align: center;"><a href="http://upload.wikimedia.org/wikipedia/commons/8/8a/H96566k.jpg"><img class="aligncenter" alt="" src="http://upload.wikimedia.org/wikipedia/commons/8/8a/H96566k.jpg" width="510" height="402" /></a></p>
 <p>Software bugs get their name from the days of computing yore* when a <a href="http://en.wikipedia.org/wiki/File:UNIVAC-1103-BRL61-0905.jpg">modest computer</a> filled a room with hardware—lockers, tubes, relays, <a href="http://archive.computerhistory.org/resources/still-image/eckert/portrait_of_John_Mauchly.c1950s.102657887.lg.jpg">engineers</a>, switches—that moved information from Point A to Point B. "Bugs" in the system were just that: little creatures that got in the works and prevented the physical passage of electrical impulses from one locker or tube to another, thereby preventing the computer from working properly. Troubleshooting those problems had to be, I dunno, just a <em>ton</em> of fun.</p>
 <p>Having built Populi without using lockers, tubes, and the like, our extermination system is much less arduous. We start with software testing, or, as it's called in the biz, "Quality Assurance". When our developers deploy code in our local development environment, it's kicked over to our QA crew—<a href="http://populi.co/blog/2010/11/get-to-know-us-heres-toby-robinson/">Toby</a> and (more informally) <a href="http://populi.co/blog/2011/10/get-to-know-us-heres-brendan-odonnell/">Brendan</a> and <a href="http://populi.co/blog/2010/10/get-to-know-us-heres-isaac-grauke/">Isaac</a>. These three run the new feature or function through its paces to determine a few things:</p>
@@ -171,11 +169,9 @@
 <p>***We recently found an error that consisted of one wrong character. Easiest fix ever!</p>
 <p>****Isaac Grauke once met Kevin Bacon; therefore, there is only one degree of separation between any given Populi feature and the man himself.</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -364,8 +360,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

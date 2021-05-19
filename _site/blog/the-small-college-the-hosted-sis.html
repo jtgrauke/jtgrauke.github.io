@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">The Small College & The Hosted SIS</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on July 29th, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p><strong>How Visible School got more for its students, more for its staff, and more for its buck by going with Populi</strong></p>
+		<h3 class="displayMedium">The Small College & The Hosted SIS</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on July 29th, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p><strong>How Visible School got more for its students, more for its staff, and more for its buck by going with Populi</strong></p>
 <p><strong>Shane Flynn had his hands full.</strong> As the IT Director for <a href="http://visibleschool.com/home/">Visible School</a>, a music and worship arts college with just under 100 students located in Memphis, Tennessee, his duties were aptly summed up in the oft-uttered phrase, <strong>“If it has wires, give it to Shane.”</strong> Computers, servers, internet connections, the college website—even the copy machine—all fell under Flynn’s purview. But in addition to managing the college’s hardware and recording technology needs—a considerable workload at a music college—he had to oversee multiple home-grown student information systems.</p>
 <p><strong>“It was like a huge anvil sitting on my shoulders,”</strong> said Flynn. <!--more-->“We tried to build a fully-functional SIS three times, but it didn’t work out. The developers encountered all kinds of unforeseen challenges, <strong>so we were stuck entering the information into spreadsheets—by hand.”</strong></p>
 <p>Visible School was founded in 2000 by Ken Steorts, a founding member of the popular rock band Skillet. Visible is designed from the ground up to prepare creative young Christian men and women for skilled, relational ministry through the development and exploration of their musical talents. Like many small colleges, Visible is intent on developing its community and students, and focuses its resources accordingly.<strong> The budget for expensive information software, therefore, wasn’t to be had.</strong> “Any SIS software that we could have installed off-the-shelf would have been in the <strong>high five, or usually six figures,”</strong> said Flynn.</p>
@@ -156,11 +154,9 @@
 <p>As Visible continued using Populi, Flynn found that other burdens were being lifted from the college. “I’ll be honest. I wasn’t excited about the hosted solution at first. I was worried about security and not having control of the database.” But conversations with Populi staff about their <strong>devotion to security</strong> reassured him. “We didn’t have a good way to back up our data. But <strong>the Populi team was really helpful,</strong> answering questions and explaining how the database was securely stored.” With Populi keeping and backing up Visible’s data on secure servers around the country, <strong>that was one less thing for Flynn to worry about</strong>. And, he was able to put some infrastructure to better use. “We have a server that was intended for the SIS. But Populi handles all that, so now we can use it to serve our students in other ways.” Flynn set up the server to store student music assignments. “They have to write a song a week and edit it on GarageBand. They’re massive files, 1.5 GB apiece.”</p>
 <p>With Populi handling Visible’s information needs—securely, over the web, off-site, and inexpensively—<strong>Flynn is glad that the college chose a web-based system</strong> that’s available to everyone. “For one, that’s what this generation of students is used to,” he said. And, his job is a lot easier. <strong>“It’s been a huge weight off my shoulders.</strong> I don’t need to install updates or test new releases on the server. <strong>I’ve been so happy that we went this route.”</strong></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -349,8 +345,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

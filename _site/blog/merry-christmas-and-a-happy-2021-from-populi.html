@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Merry Christmas and a Happy 2021 From Populi!</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic adam"></div>
-					<span>Adam wrote this on December 21st, 2020</span>
-				
-			</div>
-			<div class="entry clear">
-				<p style="text-align: center;">
+		<h3 class="displayMedium">Merry Christmas and a Happy 2021 From Populi!</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic adam"></div>
+				<span>Adam wrote this on December 21st, 2020</span>
+			
+		</div>
+		<div class="entry clear">
+			<p style="text-align: center;">
 	<img src="https://s3.amazonaws.com/blog-media.populi.co/populi_christmas_logo_white_2020.jpg" alt="Merry Christmas From Populi" style="width:80%; " />	
 </p>
 	
@@ -163,11 +161,9 @@
 </p>
 
 <iframe width="608" height="342" src="https://www.youtube-nocookie.com/embed/tuU6og4HLFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -356,8 +352,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

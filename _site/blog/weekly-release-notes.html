@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Weekly release notes</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<h5>A story about breaking a habit</h5>
+		<h3 class="displayMedium">Weekly release notes</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<h5>A story about breaking a habit</h5>
 <p>We recently began publishing weekly release notes in our <a href="https://support.populiweb.com/forums/47537-Release-notes">Knowledge Base</a>. Each week we post a list of Features &amp; Improvements and Bugfixes that have gone live on our customers' sites. The list will capture everything we release, from the big to the small, from the really cool to the kinda mundane, from the hotshot new feature to the fix for that dumb ol' bug.</p>
 <p>We haven't been very consistent with release notes over the past year. If you checked the dates, you'd be forgiven if you thought we hadn't done anything to Populi between March 2012 and April 2013. Of course, that's not the case. We've been very busy (and we remain so). But we've let detailed release notes fall by the wayside.</p>
 <p>That happened because we changed how we develop and release new stuff. We used to save up a pile of things and dump them out onto Populi's servers during the wee hours of the night, all at once. This lent itself well to big blog posts and release announcements in the Knowledge Base. But now we develop, test, and release features and fixes individually*—it's a much better system that lets us be more agile and responsive in our development and support. But, it doesn't lend itself to the big announcement too well—after all, who wants a million posts about individual bugfixes?</p>
@@ -153,11 +151,9 @@
 <p>And as it happens, the solution was incredibly simple: stop thinking in the old ruts.</p>
 <blockquote><p>* Do you like technical explanations? Here's what we <a href="http://en.wikipedia.org/wiki/Subversion_(software)">used to do</a>, and here's <a href="http://en.wikipedia.org/wiki/Git_(software)">what we do now</a>...</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -346,8 +342,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

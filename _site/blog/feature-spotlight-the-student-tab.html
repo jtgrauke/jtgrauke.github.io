@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Feature Spotlight: The Student tab</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Populi makes your student information more useful. One of the ways it does that is by making it easier to <em>find</em> in the first place. Imagine having to look in three or four places to get what you need for a transcript —and the inevitability of something getting lost, mistaken, or forgotten. Many of our customers used to operate this way, and more than a few of you currently reading this recognize this scenario. Course histories are stored here... Grades are there... GPA's are calculated from this column and that column... It all gets pasted into this template... and so on.<br />
+		<h3 class="displayMedium">Feature Spotlight: The Student tab</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Populi makes your student information more useful. One of the ways it does that is by making it easier to <em>find</em> in the first place. Imagine having to look in three or four places to get what you need for a transcript —and the inevitability of something getting lost, mistaken, or forgotten. Many of our customers used to operate this way, and more than a few of you currently reading this recognize this scenario. Course histories are stored here... Grades are there... GPA's are calculated from this column and that column... It all gets pasted into this template... and so on.<br />
 <a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/11/11-29-11-Student-Tab.png"><img style="border: 1px solid black;" title="11-29-11 Student Tab" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/11/11-29-11-Student-Tab.png" alt="" width="510" height="113" /></a></p>
 <p>But in Populi, all of this information lives in one place: the Student tab on the Profile. Your students' entire Academic histories are right there, from the big picture—the Transcript and Degree Audit—to the details: courses, degrees, programs, honors, and discipline. Want to see more specifics? Drill down into any of this information just by clicking.</p>
 <h5>The big picture: Transcript and Degree Audit</h5>
@@ -170,11 +168,9 @@ If a course appears in more than one course group, it's automatically applied wh
 <p>The Student tab puts all your student information in one place, gives you the tools to drill down into it, and  lets you easily update it whenever necessary. No matter who you are, this is where you'll come to get that info—provided your user roles will let you! Academic Admins and Registrars get to see and modify everything. A student's Advisor can see it all and modify course enrollment, programs, and degrees. And, of course, the student can view his records right from his own profile. Everyone else? Since student data is so sensitive and confidential, no one else gets to see it—the Student tab is totally hidden and inaccessible to them.</p>
 <p>The Student tab is one of the best examples of what Populi does: it gives you one place to manage and find just about any bit of information about anyone in your school—especially your students.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -363,8 +359,14 @@ If a course appears in more than one course group, it's automatically applied wh
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

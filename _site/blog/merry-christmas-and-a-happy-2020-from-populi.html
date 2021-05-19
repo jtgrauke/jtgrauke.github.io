@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Merry Christmas and a Happy 2020 From Populi!</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic adam"></div>
-					<span>Adam wrote this on December 17th, 2019</span>
-				
-			</div>
-			<div class="entry clear">
-				<p style="text-align: center;">
+		<h3 class="displayMedium">Merry Christmas and a Happy 2020 From Populi!</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic adam"></div>
+				<span>Adam wrote this on December 17th, 2019</span>
+			
+		</div>
+		<div class="entry clear">
+			<p style="text-align: center;">
 <img src="https://s3.amazonaws.com/blog-media.populi.co/sign_tree_2019.jpg" alt="Merry Christmas From Populi" style="width:100%; border-radius: 6px;" />	
 </p>
 	
@@ -169,11 +167,9 @@
 	P.S. Here on the cusp of the <em>next</em> decade, it bears mentioning that a handful of you have been with us since before the start of <em>this</em> one (and a fair few more for very nearly that long). Thank you for taking a chance on us. We hope that we&#8217;ve served you well over the past years, and that we&#8217;ll continue to do so for many more. It&#8217;s not hyperbole to say that we wouldn&#8217;t be here today if it weren&#8217;t for y&#8217;all. So, thank you, thank you, thank you.
 </p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -362,8 +358,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

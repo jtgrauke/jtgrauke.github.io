@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New courses and bigger, better files are here!</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>As September eclipsed August, the Populi crew stayed up into the wee hours pushing our new course and files features out into the wild. We've <a href="http://populi.co/blog/2011/08/big-files-better-assignments-new-question-types/">previewed</a> our new features in a few <a href="http://populi.co/blog/2011/08/a-video-preview-of-our-upcoming-improvements-to-courses/">recent</a> blog posts; here's a more complete description of what's new in Populi this morning...</p>
+		<h3 class="displayMedium">New courses and bigger, better files are here!</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>As September eclipsed August, the Populi crew stayed up into the wee hours pushing our new course and files features out into the wild. We've <a href="http://populi.co/blog/2011/08/big-files-better-assignments-new-question-types/">previewed</a> our new features in a few <a href="http://populi.co/blog/2011/08/a-video-preview-of-our-upcoming-improvements-to-courses/">recent</a> blog posts; here's a more complete description of what's new in Populi this morning...</p>
 <h5>Courses</h5>
 <p>We moved course instances over to our new tabbed layout, improving the look and organization of Populi courses.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/08/Nav.png"><img class="alignleft size-full wp-image-2173" title="Nav" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/08/Nav.png" alt="" width="510" height="22" /></a></p>
@@ -165,11 +163,9 @@
 <p>ISIR importer now orders imported ISIRS based on Processed Date.</p>
 <p>Plus the usual plethora of minor visual tweaks, bugfixes, and performance optimizations.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -358,8 +354,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

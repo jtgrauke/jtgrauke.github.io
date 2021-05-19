@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Radical Education Plans</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>President Barack Obama <a href="http://www.washingtonpost.com/politics/obama-to-propose-college-ranking-system-that-could-increase-affordability/2013/08/22/73e674c0-0b17-11e3-b87c-476db8ac34cd_story.html?hpid=z1">recently shared</a> his "ambitious new agenda to combat rising college costs and make college affordable for American families". <a href="http://swampland.time.com/2013/08/22/obama-looks-to-shrink-college-tuition-bills/">The agenda</a> is meant to make higher ed institutions more accountable for their performance and help keep the reins on soaring tuition costs. Its centerpiece is a proposed new rating system for colleges and universities to which Federal financial aid would be directly tied. The agenda touches on other matters, including several encouragements towards "innovation": blended learning approaches, three-year degree tracks, MOOCs and other learning technology, and so on.</p>
+		<h3 class="displayMedium">Radical Education Plans</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>President Barack Obama <a href="http://www.washingtonpost.com/politics/obama-to-propose-college-ranking-system-that-could-increase-affordability/2013/08/22/73e674c0-0b17-11e3-b87c-476db8ac34cd_story.html?hpid=z1">recently shared</a> his "ambitious new agenda to combat rising college costs and make college affordable for American families". <a href="http://swampland.time.com/2013/08/22/obama-looks-to-shrink-college-tuition-bills/">The agenda</a> is meant to make higher ed institutions more accountable for their performance and help keep the reins on soaring tuition costs. Its centerpiece is a proposed new rating system for colleges and universities to which Federal financial aid would be directly tied. The agenda touches on other matters, including several encouragements towards "innovation": blended learning approaches, three-year degree tracks, MOOCs and other learning technology, and so on.</p>
 
 <figure>
 	<img alt="President Barack Obama measuring something in Buffalo, NY." src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/08/628x471.jpg" width="510" />
@@ -202,11 +200,9 @@
 <p><a href="http://techcrunch.com/2013/08/22/why-obamas-radical-education-plan-could-finally-disrupt-higher-education/">This guy looks forward to lots of professors being laid off</a> because they've been replaced by MOOCs. I'm not sure his predictions will come to pass, but their contours aren't unreasonable.</p>
 <p>Matt Yglesias, called out by Mr. Burke as a technocrat, <a href="http://www.slate.com/articles/business/moneybox/2013/08/obama_college_cost_speech_the_white_house_wants_to_measure_outcomes_not.html">loves the agenda</a> and hopes its modest implementation will bring good and meaningful changes to higher education.</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -395,8 +391,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

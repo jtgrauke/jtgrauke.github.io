@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New help and profile drop-downs</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We just released a small but handy update to the personal and help links in Populi. Here's an eleven-second video:</p>
+		<h3 class="displayMedium">New help and profile drop-downs</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We just released a small but handy update to the personal and help links in Populi. Here's an eleven-second video:</p>
 <p><iframe name="quickcast" src="http://quick.as/embed/konbtobbl" scrolling="no" frameborder="0" width="426" height="291" allowfullscreen></iframe></p>
 <p>Your name now has a drop-down that lets you go to your profile, view and update your personal account settings, and log out of Populi.</p>
 <p>The orange Help button now lets you link directly to different, helpful tasks in our Knowledge Base:</p>
@@ -155,11 +153,9 @@
 </ul>
 <p>Small things can prove pretty helpful sometimes. We hope you like the new drop-downs!</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -348,8 +344,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

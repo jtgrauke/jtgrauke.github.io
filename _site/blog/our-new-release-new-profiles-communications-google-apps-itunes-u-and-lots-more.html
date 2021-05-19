@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Our new release: New Profiles, Communications, Google Apps, iTunes U, and lots more...</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on June 11th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>We stayed up late last night to push out what's probably the biggest one-time update we've ever released. We've been previewing this release for a few weeks—check out our posts on the <a href="http://www.populiweb.com/blog/2010/05/the-new-profile-a-preview/"><strong>Profile</strong></a>, <a href="http://www.populiweb.com/blog/2010/06/coming-soon-communications/"><strong>Communications</strong></a>, and the <a href="http://www.populiweb.com/blog/2010/06/new-features-the-activity-feed-and-the-bulletin-board/"><strong>Activity Feed</strong></a>—but there was a lot more stuff we didn't mention ahead of time...</p>
+		<h3 class="displayMedium">Our new release: New Profiles, Communications, Google Apps, iTunes U, and lots more...</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on June 11th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>We stayed up late last night to push out what's probably the biggest one-time update we've ever released. We've been previewing this release for a few weeks—check out our posts on the <a href="http://www.populiweb.com/blog/2010/05/the-new-profile-a-preview/"><strong>Profile</strong></a>, <a href="http://www.populiweb.com/blog/2010/06/coming-soon-communications/"><strong>Communications</strong></a>, and the <a href="http://www.populiweb.com/blog/2010/06/new-features-the-activity-feed-and-the-bulletin-board/"><strong>Activity Feed</strong></a>—but there was a lot more stuff we didn't mention ahead of time...</p>
 <p>...like <strong>Google Apps integration</strong>. If your school uses Google Apps, Populi's brand-new Single Sign-on capability will let you log right into your school's Google Mail and Calendar accounts right from Populi.</p>
 <p>And <strong>iTunes U integration</strong>. Link to your college's iTunes U site from Populi, and even link your courses directly to their own content.</p>
 <p>Besides Google Apps integration, we released <strong>a few updates to Email</strong>. Giving someone an email address when you add them as a user is now optional, and new visibility settings let you plug emails   right into the Activity Feed (or keep them private).</p>
@@ -173,11 +171,9 @@
 <p><strong>Print Queue:</strong> A filter-able list of all pending print jobs,  plus reprint options for past jobs, and envelope and mailing-label  printing.</p>
 <p><strong>Page Layouts:</strong> Customize your Printed Letters with your own  Page Layouts. They work with Open Documents (which work with MS Word and  Open Office), so you can make your Populi-produced printed materials  look however you want them to.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -366,8 +362,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Enhanced Library search</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<h5>Plus other things we've let loose in the past several weeks...</h5>
+		<h3 class="displayMedium">Enhanced Library search</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<h5>Plus other things we've let loose in the past several weeks...</h5>
 <p>We just released a pretty smart update to Library that includes much-improved search capabilities. The new search...</p>
 <ul>
 <li>Includes a number of new operators that let you get more specific with your search</li>
@@ -174,11 +172,9 @@
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/03/3-14-13-new-growl.png"><img class="alignnone size-full wp-image-2420" style="margin-left: 120px; margin-right: 120px;" alt="3-14-13 new growl" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/03/3-14-13-new-growl.png" width="269" height="120" /></a></p>
 <p>All this, together with numerous bugfixes, performance tweaks, and minor interface items.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -367,8 +363,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -293,8 +293,8 @@ blockquote {
 a {
 	text-decoration: none;
 	color: $text-dark-color;
-	font-weight: 500;
-	@include transition(all 0.15s ease-in-out);
+	font-weight: 600;
+	@include transition(color 0.15s ease-in-out, background 0.15s ease-in-out);
 
 	&:hover {
 		color: $accent-color;
@@ -1070,7 +1070,6 @@ a.features-card {
 
 			a {
 				&:hover {
-					font-weight: 600;
 					color: $text-dark-color;
 				}
 
@@ -1114,12 +1113,13 @@ a.features-card {
 	  
 }
 
-	  /* Force new columns */
-	  .flex-masonry::before,
-	  .flex-masonry::after {
-		content: "";
-		flex-basis: 100%;
-		width: 0;
-		order: 2;
-	}
 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Flexbox Masonry
+
+.plain_language {
+	padding: 24px 32px 16px;
+	background: $background-alt-color;
+	border-radius: 0 8px 8px 0;
+	border-left: 8px solid $accent-color;
+	margin-bottom: 24px;
+}

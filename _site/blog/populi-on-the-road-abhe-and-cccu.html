@@ -133,26 +133,22 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Populi on the road: ABHE and CCCU</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on February 24th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Nick Holloway and Joseph Schoolland are at the <a href="http://www.abhe.org/"><strong>Association for Biblical Higher Education's</strong></a><strong> </strong>63rd Annual Meeting in <strong>Orlando, Florida</strong>. If you're there, too, drop by Booth 705 in the Exhibitor's Hall. Say hello, grab some fliers (including <a href="http://www.populiweb.com/blog/wp-content/uploads/2010/02/Populi-Accreditation.pdf"><strong>this bit</strong></a> on Accreditation), and maybe drop off a business card for a shot at <strong>an iTunes gift card.</strong></p>
+		<h3 class="displayMedium">Populi on the road: ABHE and CCCU</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on February 24th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Nick Holloway and Joseph Schoolland are at the <a href="http://www.abhe.org/"><strong>Association for Biblical Higher Education's</strong></a><strong> </strong>63rd Annual Meeting in <strong>Orlando, Florida</strong>. If you're there, too, drop by Booth 705 in the Exhibitor's Hall. Say hello, grab some fliers (including <a href="http://www.populiweb.com/blog/wp-content/uploads/2010/02/Populi-Accreditation.pdf"><strong>this bit</strong></a> on Accreditation), and maybe drop off a business card for a shot at <strong>an iTunes gift card.</strong></p>
 <p>After that, they'll be tooling around in the Southeastern U.S., visiting friends and colleges, and finally making their way back to <strong>Atlanta, Georgia</strong> for the <strong><a href="http://www.cccu.org/">Council for Christian Colleges and Universities</a></strong>' International Forum on Christian Higher Education. The International Forum meets every four years; this one's called <a href="http://www.cccu.org/forum/overview"><strong>Critical Breakthroughs</strong></a>. You'll find Nick and Joseph (and some more iTunes cards) in the Exhibitor's Hall <strong>in Booth 200</strong>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -341,8 +337,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

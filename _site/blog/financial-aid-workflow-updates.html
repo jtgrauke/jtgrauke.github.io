@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Financial aid workflow updates</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog%20financial%20aid%20settings%20general.png" style="width:630px;" /></p>
+		<h3 class="displayMedium">Financial aid workflow updates</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog%20financial%20aid%20settings%20general.png" style="width:630px;" /></p>
 <p>Our new financial release gives Financial Aid its own General Settings section and introduces some new, more flexible workflows. Here's a look:</p>
 <h5>Refunds</h5>
 <p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog%20Refund%20credit%20balance%20SB%20all.png" style="width:380px;" /></p>
@@ -157,11 +155,9 @@
 <p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog%20disburse%20or%20draw.png" style="width:334px;" /></p>
 <p>The <em>Disbursement batch workflow</em> setting lets you specify which comes first: disbursing aid to students or drawing down the funds from the aid source. If your school is required to disburse-then-draw-down for Federal aid awards, you can now set up your batch workflow to follow the same steps in the same order you do.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -350,8 +346,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

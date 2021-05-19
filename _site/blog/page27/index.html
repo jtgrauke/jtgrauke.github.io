@@ -130,22 +130,18 @@
 
 			<section class="blog">
 
-	<div class="wrap">
+	
 
-		<div class="sm-span-12">
+	
+	
 
+	<article class="post">
+		<h3 class="displayMedium"><a href="/blog/new-release-back-end-stuff-and-a-new-look-in-tables" rel="bookmark" title="New release: Back-end stuff and a new look in tables">New release: Back-end stuff and a new look in tables</a></h3>
+		<div class="byline clear">
 			
-
-			
-			
-
-			<article class="post">
-				<h3 class="displayMedium"><a href="/blog/new-release-back-end-stuff-and-a-new-look-in-tables" rel="bookmark" title="New release: Back-end stuff and a new look in tables">New release: Back-end stuff and a new look in tables</a></h3>
-				<div class="byline clear">
-					
-				</div>
-				<div class="entry clear">
-					<p>In yet <a href="http://populi.co/blog/2011/11/new-release-improved-academics-navigation-and-more/">another</a> <a href="http://populi.co/blog/2011/10/what-weve-been-working-on-lately/">low-key</a> release, the development crew stayed up late the night of December 6th to push out a few updates.</p>
+		</div>
+		<div class="entry clear">
+			<p>In yet <a href="http://populi.co/blog/2011/11/new-release-improved-academics-navigation-and-more/">another</a> <a href="http://populi.co/blog/2011/10/what-weve-been-working-on-lately/">low-key</a> release, the development crew stayed up late the night of December 6th to push out a few updates.</p>
 <p>The centerpiece of the release was a further round of improvements to email. We've been releasing incremental updates to email over the past several months, but we realized there were some fundamentals that we really needed to address. So, the first order of business was to improve our email infrastructure—by outsourcing it. We now have a setup with a terrific cloud-based email delivery platform that unburdens us of all kinds of headaches and allows for much greater scalability in the future (indeed, we really had outgrown our old setup). We now employ <a href="http://en.wikipedia.org/wiki/DomainKeys_Identified_Mail">DKIM email-signing</a>, which–skipping an incredibly-technical explanation—improves the "trustworthiness" of Populi emails to better keep them out of recipients' spam folders. Finally, we did away with the No Mailings system tag, replacing it with a "No Mailings" option in Contact Info. You can mark individual email addresses with "No Mailings"; additionally, when emailing a Mailing List, your recipients will have the option of unsubscribing from all mailings or from mailings to that particular list.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Contact-Info.png"><img class="alignleft size-full wp-image-2228" style="margin-left: 6px; margin-right: 6px; border-width: 1px; border-color: black; border-style: solid;" title="12-7-11 Contact Info" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Contact-Info.png" alt="" width="497" height="117" /></a></p>
 <p>Related to email, we rewrote the Populi job manager (in proper computerese, that would be spelled "jobmanager"). The job manager is a background timing script that periodically checks for tasks that Populi needs to complete at a certain time. For instance, if you email a one-time list in Communications at 10 AM, that creates a task. When job manager strolls by on his usual rounds, he finds your email task and makes sure Populi gets the job done—at 10 AM. Our old job manager was itself dependent on another application that organized the tasks; if that application crashed at 9:59, job manager would stroll by at 10 and think, "Hm, nothing to do," and move on. Consequently, emails were getting lost and were sending without attachments—among some other issues. The new job manager no longer relies on that secondary application. Instead, tasks remain to be found by job manager until they are completed, which better insures that they actually get done.</p>
@@ -153,21 +149,21 @@
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Students-Table.png"><img class="alignleft size-full wp-image-2229" style="border-width: 1px; border-color: black; border-style: solid;" title="12-7-11 Students Table" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Students-Table.png" alt="" width="510" height="107" /></a></p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Recent-Transactions.png"><img class="alignleft size-full wp-image-2230" style="border-width: 1px; border-color: black; border-style: solid;" title="12-7-11 Recent Transactions" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Recent-Transactions.png" alt="" width="510" height="155" /></a></p>
 
-				</div>
-			</article>
+		</div>
+	</article>
 
-			
+	
 
-			
-			
+	
+	
 
-			<article class="post">
-				<h3 class="displayMedium"><a href="/blog/feature-spotlight-the-student-tab" rel="bookmark" title="Feature Spotlight: The Student tab">Feature Spotlight: The Student tab</a></h3>
-				<div class="byline clear">
-					
-				</div>
-				<div class="entry clear">
-					<p>Populi makes your student information more useful. One of the ways it does that is by making it easier to <em>find</em> in the first place. Imagine having to look in three or four places to get what you need for a transcript —and the inevitability of something getting lost, mistaken, or forgotten. Many of our customers used to operate this way, and more than a few of you currently reading this recognize this scenario. Course histories are stored here... Grades are there... GPA's are calculated from this column and that column... It all gets pasted into this template... and so on.<br />
+	<article class="post">
+		<h3 class="displayMedium"><a href="/blog/feature-spotlight-the-student-tab" rel="bookmark" title="Feature Spotlight: The Student tab">Feature Spotlight: The Student tab</a></h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Populi makes your student information more useful. One of the ways it does that is by making it easier to <em>find</em> in the first place. Imagine having to look in three or four places to get what you need for a transcript —and the inevitability of something getting lost, mistaken, or forgotten. Many of our customers used to operate this way, and more than a few of you currently reading this recognize this scenario. Course histories are stored here... Grades are there... GPA's are calculated from this column and that column... It all gets pasted into this template... and so on.<br />
 <a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/11/11-29-11-Student-Tab.png"><img style="border: 1px solid black;" title="11-29-11 Student Tab" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/11/11-29-11-Student-Tab.png" alt="" width="510" height="113" /></a></p>
 <p>But in Populi, all of this information lives in one place: the Student tab on the Profile. Your students' entire Academic histories are right there, from the big picture—the Transcript and Degree Audit—to the details: courses, degrees, programs, honors, and discipline. Want to see more specifics? Drill down into any of this information just by clicking.</p>
 <h5>The big picture: Transcript and Degree Audit</h5>
@@ -195,21 +191,21 @@ If a course appears in more than one course group, it's automatically applied wh
 <p>The Student tab puts all your student information in one place, gives you the tools to drill down into it, and  lets you easily update it whenever necessary. No matter who you are, this is where you'll come to get that info—provided your user roles will let you! Academic Admins and Registrars get to see and modify everything. A student's Advisor can see it all and modify course enrollment, programs, and degrees. And, of course, the student can view his records right from his own profile. Everyone else? Since student data is so sensitive and confidential, no one else gets to see it—the Student tab is totally hidden and inaccessible to them.</p>
 <p>The Student tab is one of the best examples of what Populi does: it gives you one place to manage and find just about any bit of information about anyone in your school—especially your students.</p>
 
-				</div>
-			</article>
+		</div>
+	</article>
 
-			
+	
 
-			
-			
+	
+	
 
-			<article class="post">
-				<h3 class="displayMedium"><a href="/blog/what-populi-doesnt-replace" rel="bookmark" title="What Populi doesn't replace">What Populi doesn't replace</a></h3>
-				<div class="byline clear">
-					
-				</div>
-				<div class="entry clear">
-					<p>Somewhere in some book some place is a line that goes something like, "Education consists of a wise and caring teacher, a humble and curious student, and a log for the both of them to sit on."*</p>
+	<article class="post">
+		<h3 class="displayMedium"><a href="/blog/what-populi-doesnt-replace" rel="bookmark" title="What Populi doesn't replace">What Populi doesn't replace</a></h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Somewhere in some book some place is a line that goes something like, "Education consists of a wise and caring teacher, a humble and curious student, and a log for the both of them to sit on."*</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/11/4610197.jpg"><img class="alignleft size-full wp-image-2210" title="" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/11/4610197.jpg" alt="" width="500" height="281" /></a></p>
 <p>It's a bit mawkish, but there's still something to it. In education, you need someone willing to share their understanding. You need someone who wants what's being shared. And you need something to hold them up, to free them from other labors so one may give and the other receive.</p>
 <p>In this phrase's economy, Populi is the log—rather, it's just <em>part</em> of the log.** And whatever their marketing language might claim, every other software vendor out there also sells nothing more than log parts. If a company promises to unlock unlimited possibilities to unshackle teachers and students and take education beyond any place it's ever gone before—or some similar bloviation—well, there's a pithy barnyard phrase for that.</p>
@@ -218,21 +214,21 @@ If a course appears in more than one course group, it's automatically applied wh
 <blockquote><p>* At this writer's <a href="http://www.marlboro.edu/">first college</a>, phrases like this were as common as blue in the sky.</p>
 <p>** Other log parts include: buildings, staff, administration, budgets, infrastructure, donors, and so on—all of these exist to free up teachers to teach and students to learn.</p></blockquote>
 
-				</div>
-			</article>
+		</div>
+	</article>
 
-			
+	
 
-			
-			
+	
+	
 
-			<article class="post">
-				<h3 class="displayMedium"><a href="/blog/new-release-improved-academics-navigation-and-more" rel="bookmark" title="New release: Improved Academics navigation and more">New release: Improved Academics navigation and more</a></h3>
-				<div class="byline clear">
-					
-				</div>
-				<div class="entry clear">
-					<p>The Populi development team just released the latest in a series of low-key updates to the system. Like other recent updates, this one improves Populi's back-end performance and gives some spit-and-polish to the appearance and interface. Here are the big things we let out of the gate last night...</p>
+	<article class="post">
+		<h3 class="displayMedium"><a href="/blog/new-release-improved-academics-navigation-and-more" rel="bookmark" title="New release: Improved Academics navigation and more">New release: Improved Academics navigation and more</a></h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>The Populi development team just released the latest in a series of low-key updates to the system. Like other recent updates, this one improves Populi's back-end performance and gives some spit-and-polish to the appearance and interface. Here are the big things we let out of the gate last night...</p>
 <h5>Improved navigation in Academics</h5>
 <p>You've <a href="http://populi.co/blog/2011/11/some-upcoming-changes-to-academics-and-custom-info/">seen the video</a>; now you can log in and dig the new and improved navigation in Academics.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/11/11-9-11-Academics-Nav.png"><img class="alignleft size-full wp-image-2209" title="11-9-11 Academics Nav" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/11/11-9-11-Academics-Nav.png" alt="" width="510" height="101" /></a></p>
@@ -246,54 +242,49 @@ If a course appears in more than one course group, it's automatically applied wh
 <p>For our Canadian customers, Financial Aid now features a built-in, automatic T4A report which lets you export a spreadsheet, PDF copies for your students, or an XML file for the Canada Revenue Agency.</p>
 <p>We also included the usual round of bugfixes, server updates, and other little items to help keep Populi running right.</p>
 
-				</div>
-			</article>
+		</div>
+	</article>
 
-			
+	
 
-			
-			
+	
+	
 
-			<article class="post">
-				<h3 class="displayMedium"><a href="/blog/some-upcoming-changes-to-academics-and-custom-info" rel="bookmark" title="Some upcoming changes to Academics and Custom Info">Some upcoming changes to Academics and Custom Info</a></h3>
-				<div class="byline clear">
-					
-				</div>
-				<div class="entry clear">
-					<p>Our next release will update Academics to our new tabbed navigation layout:</p>
+	<article class="post">
+		<h3 class="displayMedium"><a href="/blog/some-upcoming-changes-to-academics-and-custom-info" rel="bookmark" title="Some upcoming changes to Academics and Custom Info">Some upcoming changes to Academics and Custom Info</a></h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Our next release will update Academics to our new tabbed navigation layout:</p>
 <p><iframe src="http://player.vimeo.com/video/31496580?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="510" height="319" frameborder="0" webkitallowfullscreen allowfullscreen></iframe></p>
 <p>We're also changing a few things with Custom Info fields. You'll soon find Custom Fields divided among the appropriate sections of Populi. Student Fields will be found in Academics, Prospect and Application Fields will soon dwell in Admissions, and Person Fields will remain in Admin:</p>
 <p><iframe src="http://player.vimeo.com/video/31519199?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="510" height="319" frameborder="0" webkitallowfullscreen allowfullscreen></iframe></p>
 <p>We have a few other low-key items we're working on, but we've found that even the small stuff can make a big difference in our customers' days. We're looking forward to making Populi even better.</p>
 
-				</div>
-			</article>
+		</div>
+	</article>
 
-			
+	
 
-			
-			
+	
+	
 
-			<article class="post">
-				<h3 class="displayMedium"><a href="/blog/what-weve-been-working-on-lately" rel="bookmark" title="What we've been working on lately">What we've been working on lately</a></h3>
-				<div class="byline clear">
-					
-				</div>
-				<div class="entry clear">
-					<p>Last night we released some behind-the-scenes updates to Populi. We enabled some caching (which should speed up page load times), switched over file streaming to SSL (more secure!), and updated a number of server settings and other items, none of which can be described in readable English. Thus, the servers.</p>
+	<article class="post">
+		<h3 class="displayMedium"><a href="/blog/what-weve-been-working-on-lately" rel="bookmark" title="What we've been working on lately">What we've been working on lately</a></h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Last night we released some behind-the-scenes updates to Populi. We enabled some caching (which should speed up page load times), switched over file streaming to SSL (more secure!), and updated a number of server settings and other items, none of which can be described in readable English. Thus, the servers.</p>
 <p>We also updated the back-end of online testing and email. Email has been around since we first loosed Populi back in 2007; online testing is just north of <a href="http://populi.co/blog/2009/09/new-populi-release-enhanced-course-cloning-by-degree-transcripts-speed-increases-and/">two years old</a> this month. Since their initial release, we've added numerous new interface features that glide atop a fundamentally unchanged back-end. We've also added thousands and thousands of new users, who have introduced needs, situations, and pressures we didn't originally envision. So, last night's release optimized, streamlined, and stabilized the foundations of tests and email, which will enable these crucial functions to simply work better and more reliably. You won't notice anything new in the interface—all the work we've been doing is strictly under-the-hood.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/10/Edit-points.png"><img class="alignright" style="border-width: 1px; border-color: black; border-style: solid;" title="Edit points" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/10/Edit-points.png" alt="" width="179" height="63" /></a>Well, there's one new thing in tests: now you can re-grade questions. Just go to a student's test history, find the question you want to regrade, and click Edit points. Once you save your changes, the student's test score will automatically update.</p>
 <p>This release is part of our ongoing current project: taking a break from developing brand-new features, we're dotting i's and crossing t's to improve the entire Populi experience for all of our users.</p>
 
-				</div>
-			</article>
-
-			
-
-
 		</div>
+	</article>
 
-	</div>
+	
 
 </section>
 
@@ -506,8 +497,14 @@ If a course appears in more than one course group, it's automatically applied wh
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

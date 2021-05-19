@@ -133,27 +133,23 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">National League for Nursing Education Summit 2009</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on September 22nd, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Isaac Grauke, our CEO, and Janet Sellars, our Business Development rep, are en route to Philadelphia, PA for the <strong><a href="http://www.nln.org/summit/index.htm">National League for Nursing Education Summit 2009</a></strong>. They'll be in <strong>Booth 217 </strong>in the exhibitor space, and when they're not showing off Populi (and our new <a href="http://www.populiweb.com/tour/courses"><strong>online learning features</strong></a>), Isaac was hoping to tuck into a cheesesteak or three. Our CEO digs those peppers and onions.</p>
+		<h3 class="displayMedium">National League for Nursing Education Summit 2009</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on September 22nd, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Isaac Grauke, our CEO, and Janet Sellars, our Business Development rep, are en route to Philadelphia, PA for the <strong><a href="http://www.nln.org/summit/index.htm">National League for Nursing Education Summit 2009</a></strong>. They'll be in <strong>Booth 217 </strong>in the exhibitor space, and when they're not showing off Populi (and our new <a href="http://www.populiweb.com/tour/courses"><strong>online learning features</strong></a>), Isaac was hoping to tuck into a cheesesteak or three. Our CEO digs those peppers and onions.</p>
 <p>The Summit covers, as you might imagine, issues in nursing education, an enterprise in which are engaged institutions like community colleges, hospitals, and medical schools, as well as a considerable number of  <strong>smaller, dedicated nursing colleges. </strong>Distance education, accreditation, and national competency standards are among the interlocking issues nursing educators have to contend with nowadays.</p>
 <p>And we'd be remiss if we didn't mention that Populi, being a <strong>Student Information System and Learner Management System in one</strong>, is a great fit for nursing colleges. Online learning delivers your courses to all your students, near and far, while  numerous information and reporting tools improve any school's institutional effectiveness. If you're at the Summit, come meet Isaac and Janet at Booth 217 (and if not, have a look around <strong><a href="http://www.populiweb.com">here</a></strong> and see if you'd like a <strong><a href="http://www.populiweb.com/signup/">demo</a></strong>).</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -342,8 +338,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

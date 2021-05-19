@@ -133,27 +133,23 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New Populi Release: Multiple Tabs, To-do's, Admissions Enhancements</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on August 4th, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>The Populi Development team is pleased to announce that the new release went live last night. Now you can use Populi in <strong>multiple browser tabs</strong>--a tremendous leap forward for day-to-day usability. Additionally, users now have built-in <strong>To-Do lists</strong>--assign tasks to yourself or others, complete with due dates.</p>
+		<h3 class="displayMedium">New Populi Release: Multiple Tabs, To-do's, Admissions Enhancements</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on August 4th, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>The Populi Development team is pleased to announce that the new release went live last night. Now you can use Populi in <strong>multiple browser tabs</strong>--a tremendous leap forward for day-to-day usability. Additionally, users now have built-in <strong>To-Do lists</strong>--assign tasks to yourself or others, complete with due dates.</p>
 <p>In Admissions, new enhancements  include <!--more--> the <strong>Timeline View</strong> for Applications, which retrieves applications, applicants, and components based on your own custom timeframe, application status, and degree--it's somewhat like a mini-Data Slicer for Admissions. You can then email or export the prospects that return from your query.  Also in Admissions, we've added <strong>Counselors</strong>--assign particular prospects to individual members of your Admissions group. Counselors can then focus on those prospects via the <strong>My Prospects</strong> view of their Profile. You can match Prospects and Counselors via the prospective info fields in the Prospect's Admissions view, or in the Admissions Staff's My Prospects view.</p>
 <p>Numerous enhancements and patches accompanied the big-ticket items on this release; users can read a thorough list of the new release features in the online help system (just look for the newest post in the "Release Notes" forum). As always, please feel free to contact us with your questions and comments.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -342,8 +338,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

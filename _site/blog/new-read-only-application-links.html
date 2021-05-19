@@ -133,26 +133,22 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New read-only application links</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on May 20th, 2014</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>If you haven't already found them, go check out the new read-only application links! They let you share applications with reviewers&mdash;without having to print them out.</p>
+		<h3 class="displayMedium">New read-only application links</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on May 20th, 2014</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>If you haven't already found them, go check out the new read-only application links! They let you share applications with reviewers&mdash;without having to print them out.</p>
 <p><iframe src="//player.vimeo.com/video/94688603?byline=0&amp;portrait=0" width="615" height="346" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -341,8 +337,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

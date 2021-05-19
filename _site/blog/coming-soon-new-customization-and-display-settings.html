@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Coming soon: new customization and display settings</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic adam"></div>
-					<span>Adam wrote this on November 7th, 2013</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>We'll soon be releasing a couple new tabs in Account Settings.</p>
+		<h3 class="displayMedium">Coming soon: new customization and display settings</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic adam"></div>
+				<span>Adam wrote this on November 7th, 2013</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>We'll soon be releasing a couple new tabs in Account Settings.</p>
 <p>The Customizations tab gathers together a number of high-level settings from throughout Populi in one location, including:</p>
 <ul>
 <li>Control whether all users can upload their own ID photos</li>
@@ -160,11 +158,9 @@
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/11/Screen-Shot-2013-11-06-at-11.14.34-AM.png"><img class="aligncenter size-full wp-image-2546" alt="Screen Shot 2013-11-06 at 11.14.34 AM" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/11/Screen-Shot-2013-11-06-at-11.14.34-AM.png" width="566" height="542" /></a></p>
 <p>The new tabs organize some of the big-picture Populi settings right in one spot. We hope this makes our Account Admins' workdays just a little bit easier!</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -353,8 +349,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

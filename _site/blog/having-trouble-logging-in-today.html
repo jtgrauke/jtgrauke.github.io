@@ -133,26 +133,22 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Trouble Logging In?</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on August 5th, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Some of our customers had trouble logging in yesterday. We fixed the problem, and everyone should have no trouble today. But, in case any Populi users experience any login problems today, we have an article up in our help system that tells you about some settings you can change in your browser. Just log in to support.populiweb.com with your regular Populi login information, and the article will make itself plain to you.</p>
+		<h3 class="displayMedium">Trouble Logging In?</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on August 5th, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Some of our customers had trouble logging in yesterday. We fixed the problem, and everyone should have no trouble today. But, in case any Populi users experience any login problems today, we have an article up in our help system that tells you about some settings you can change in your browser. Just log in to support.populiweb.com with your regular Populi login information, and the article will make itself plain to you.</p>
 <p>We're really sorry for the hassle this has caused, and we thank you for your patience.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -341,8 +337,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Coming soon: new stuff for course instances</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>In just a few weeks, we're planning to release an overhaul of course instances. From a complete navigation overhaul to some brand-new features to a second look at things we've been doing all along, the upcoming release will make courses a lot more intuitive, useful, and flexible. Have a look at some of the things we're doing:</p>
+		<h3 class="displayMedium">Coming soon: new stuff for course instances</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>In just a few weeks, we're planning to release an overhaul of course instances. From a complete navigation overhaul to some brand-new features to a second look at things we've been doing all along, the upcoming release will make courses a lot more intuitive, useful, and flexible. Have a look at some of the things we're doing:</p>
 <h5 style="text-align: left;">Navigation</h5>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/07/New-Course-Navigation.png"><img class="size-full wp-image-2160 aligncenter" style="border-width: 1px; border-color: black; border-style: solid;" title="New Course Navigation" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/07/New-Course-Navigation.png" alt="" width="510" height="52.8" /></a><br />
 Courses are getting our new tab-based navigation, which we're slowly rolling out to all of Populi. As you can see from the screenshot, courses will feature the same basic items—assignments, lessons, gradebook, etc.—and certain actions (finalizing, for instance) will be subsumed under the appropriate tabs. Additionally, who you are will affect where you land when you navigate to a course—registrars and Admins will arrive at the Info tab, and students and faculty will come to the new course Dashboard.</p>
@@ -158,11 +156,9 @@ Courses are getting our new tab-based navigation, which we're slowly rolling out
 <h5>Miscellany</h5>
 <p>The new reporting tab features the Performance Dashboard and the course Change Log. Cloning and syncing are getting a minor retooling. And, we're also scrubbing the iTunes U integration. Few customers used it (it's probably Apple's clumsiest, most aggravating product)... and we have something much better in store.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -351,8 +347,14 @@ Courses are getting our new tab-based navigation, which we're slowly rolling out
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

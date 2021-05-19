@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Coming soon: Communications</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on June 7th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Our upcoming release includes a number of new Communication features—they're even gonna get <a href="http://www.populiweb.com/blog/wp-content/uploads/2010/05/Communications.png"><strong>their own tab</strong></a>. In addition to upgrading existing features like Mailing Lists and Email Templates, we're also adding some new items, like Printed Letters and Custom Page Layouts.</p>
+		<h3 class="displayMedium">Coming soon: Communications</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on June 7th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Our upcoming release includes a number of new Communication features—they're even gonna get <a href="http://www.populiweb.com/blog/wp-content/uploads/2010/05/Communications.png"><strong>their own tab</strong></a>. In addition to upgrading existing features like Mailing Lists and Email Templates, we're also adding some new items, like Printed Letters and Custom Page Layouts.</p>
 <p>And, the centerpiece of Communications: <strong>Communication Plans</strong>. These gather Email, Printed Letter, and To-Do templates into a series of automated events that structure how you correspond with your contacts.</p>
 <p>http://vimeo.com/12374136</p>
 <p>Say you're in touch with a prospective student.  On his <a href="http://www.populiweb.com/blog/2010/05/the-new-profile-a-preview/"><strong>profile's Activity Feed</strong></a> (another new feature), you add a Communication Plan, and a whole series of emails, letters, and tasks are instantly scheduled. On Day 1 of the Plan, it sends an introductory Email. On Day 2, a Printed Letter goes out (via the new Print Queue), accompanying some  additional materials about your college. On Days 7 and 14, follow-up phone calls hit your To-Do list. And so on. Plans help ensure that all the steps get covered, that no student falls through the cracks, and that your communications stay consistent and focused.</p>
@@ -153,11 +151,9 @@
 <p><strong>Two other things </strong>coming up in Communications: <strong>Mailing Lists</strong> will keep a history of what you sent to them (Emails <em>and</em> Printed Letters), including stats on how many people opened a particular Email. And <strong>Page Layouts</strong> will let you upload an Open Office template so you can customize the look and feel of your Printed Letters. You'll be able to upload templates for normal documents, mailing envelopes, and mailing labels.</p>
 <p>These features are just around the corner. We think they'll make Populi even more useful to your college.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -346,8 +342,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

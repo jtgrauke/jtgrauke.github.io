@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New file uploader, digital library resources, enrollment verification letters, and more</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>The developers have been drinking their coffee and eating their energy bars, and as a result, Populi now does dozens of new things it didn't do a few weeks ago. Where to begin? How about with the...</p>
+		<h3 class="displayMedium">New file uploader, digital library resources, enrollment verification letters, and more</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>The developers have been drinking their coffee and eating their energy bars, and as a result, Populi now does dozens of new things it didn't do a few weeks ago. Where to begin? How about with the...</p>
 <h5>New file uploader</h5>
 <p>The new file uploader lets you drag-and-drop files—up to two gigabytes in size—right into your browser window to upload them into Populi. It's available to all users wherever you can upload files: everywhere from ID photos, activity feeds, and course assignments to applications, page layouts, and library resources (among many other places).</p>
 <p>Of course, you can still do the whole search-for-the-file-you-want-to-upload thing, but why do that when you can do this?</p>
@@ -161,11 +159,9 @@ Digital library resources</h5>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2015/01/1-29-15-export-pdf.png"><img class="aligncenter wp-image-2757" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2015/01/1-29-15-export-pdf.png" alt="1-29-15 export pdf" width="445" height="320" /></a></p>
 <p>A zillion other things have gotten out there over the past few weeks. If you care to find out more, have a look at our <a href="https://support.populiweb.com/forums/47537-Release-notes">Release Notes</a>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -354,8 +350,14 @@ Digital library resources</h5>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

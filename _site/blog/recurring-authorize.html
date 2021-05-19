@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Recurring payments now work with Authorize.net</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic brendan"></div>
-					<span>Brendan wrote this on June 27th, 2019</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>You can now use Authorize.net payment gateways to take recurring payments and donations in Populi.</p>
+		<h3 class="displayMedium">Recurring payments now work with Authorize.net</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic brendan"></div>
+				<span>Brendan wrote this on June 27th, 2019</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>You can now use Authorize.net payment gateways to take recurring payments and donations in Populi.</p>
 
 <p>To get started, head to <a href="https://support.populiweb.com/hc/en-us/articles/223796007" target="_blank">Financial &gt; Settings &gt; Payment Gateways</a> in Populi. Point your <em>Tuition &amp; Fees</em> or <em>Donations</em> uses at it. Then make sure recurring payments are enabled in <a href="https://support.populiweb.com/hc/en-us/articles/223796327" target="_blank">Financial &gt; Settings &gt; General</a> or <a href="https://support.populiweb.com/hc/en-us/articles/360024769053" target="_blank">Donations &gt; Settings</a>. And that's it (on the Populi side, anyway; you may also need to jiggle a few settings in your Authorize.net merchant terminal).</p>
 
@@ -163,11 +161,9 @@
 
 
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -356,8 +352,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

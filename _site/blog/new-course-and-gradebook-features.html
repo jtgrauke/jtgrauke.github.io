@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New course and gradebook features</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>The Populi development team released a heap of highly-requested assignment and gradebook features last night, including:</p>
+		<h3 class="displayMedium">New course and gradebook features</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>The Populi development team released a heap of highly-requested assignment and gradebook features last night, including:</p>
 <ul>
 <li>Extra credit assignments</li>
 <li>Attendance assignments</li>
@@ -155,11 +153,9 @@
 <p>We'll be going into greater detail on all of these new features in the coming days, but for now, here's a video covering five of our favorites. Enjoy!</p>
 <p><iframe src="//player.vimeo.com/video/100777615?byline=0&amp;portrait=0" width="615" height="346" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -348,8 +344,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

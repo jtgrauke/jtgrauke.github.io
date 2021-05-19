@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New security features for your Populi account</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We released a number of new security features last night that give your school's Populi users new ways to keep their accounts protected. Here's a look at what's new:</p>
+		<h3 class="displayMedium">New security features for your Populi account</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We released a number of new security features last night that give your school's Populi users new ways to keep their accounts protected. Here's a look at what's new:</p>
 <h5>Login approvals</h5>
 <p>Login approvals send you a text message with a one-time use passcode whenever you log in to Populi on a new browser or device. In addition to your username and password, you enter the passcode to log in. Populi then recognizes your account as approved for use on that browser or device, and there's no further need for the additional passcode for future logins.</p>
 <p>This protects your account by requiring you to have your mobile phone with you when you log in. Typically, the person with your phone is gonna be you—and when you enter the passcode, you're assuring Populi that the person logging in is <em>you</em>, and <em>not</em> someone else. So, even if your login is compromised—someone gets ahold of your password, say—it's useless without the passcode sent to your phone.</p>
@@ -160,11 +158,9 @@
 <h5>Set it up!</h5>
 <p>The new security features will go a long way towards helping secure your school's data. We strongly encourage your school's account administrators to enable login approvals. Account administrators can read more about the <a href="https://support.populiweb.com/hc/en-us/articles/232013528/#2fa">new security features</a> and Populi users can learn about their new <a href="https://support.populiweb.com/hc/en-us/articles/230168828/#security">personal security settings</a> in the Populi Knowledge Base.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -353,8 +349,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

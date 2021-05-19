@@ -133,24 +133,20 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Populi now has emoji support</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>After about twenty minutes of work yesterday, we added emoji support to Populi. Emojis are little inline text characters similar to emoticons. First invented and made popular by Japanese mobile phone operators for use in text messages, they have evolved into a more-or-less standard set of characters.</p>
+		<h3 class="displayMedium">Populi now has emoji support</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>After about twenty minutes of work yesterday, we added emoji support to Populi. Emojis are little inline text characters similar to emoticons. First invented and made popular by Japanese mobile phone operators for use in text messages, they have evolved into a more-or-less standard set of characters.</p>
 <p style="text-align: center;"><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/03/3-28-12-Emoji.png"><img class="aligncenter  wp-image-2296" title="3-28-12 Emoji" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/03/3-28-12-Emoji.png" alt="" width="510" height="279" /></a></p>
 <p>You can use Emojis anywhere "social" in Populi, such as news comments, course discussions, and bulletin boards. They're simple to add—just type colons around an Emoji keyword (i.e. <em>:smiley:</em>) and post your comment. Your emoji will show up right in the text of what you've written. Check out <a href="http://populi.co/emoji/">our Emoji cheat sheet</a> to see what you can do.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -339,8 +335,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

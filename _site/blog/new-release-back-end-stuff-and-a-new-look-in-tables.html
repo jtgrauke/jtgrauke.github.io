@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New release: Back-end stuff and a new look in tables</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>In yet <a href="http://populi.co/blog/2011/11/new-release-improved-academics-navigation-and-more/">another</a> <a href="http://populi.co/blog/2011/10/what-weve-been-working-on-lately/">low-key</a> release, the development crew stayed up late the night of December 6th to push out a few updates.</p>
+		<h3 class="displayMedium">New release: Back-end stuff and a new look in tables</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>In yet <a href="http://populi.co/blog/2011/11/new-release-improved-academics-navigation-and-more/">another</a> <a href="http://populi.co/blog/2011/10/what-weve-been-working-on-lately/">low-key</a> release, the development crew stayed up late the night of December 6th to push out a few updates.</p>
 <p>The centerpiece of the release was a further round of improvements to email. We've been releasing incremental updates to email over the past several months, but we realized there were some fundamentals that we really needed to address. So, the first order of business was to improve our email infrastructure—by outsourcing it. We now have a setup with a terrific cloud-based email delivery platform that unburdens us of all kinds of headaches and allows for much greater scalability in the future (indeed, we really had outgrown our old setup). We now employ <a href="http://en.wikipedia.org/wiki/DomainKeys_Identified_Mail">DKIM email-signing</a>, which–skipping an incredibly-technical explanation—improves the "trustworthiness" of Populi emails to better keep them out of recipients' spam folders. Finally, we did away with the No Mailings system tag, replacing it with a "No Mailings" option in Contact Info. You can mark individual email addresses with "No Mailings"; additionally, when emailing a Mailing List, your recipients will have the option of unsubscribing from all mailings or from mailings to that particular list.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Contact-Info.png"><img class="alignleft size-full wp-image-2228" style="margin-left: 6px; margin-right: 6px; border-width: 1px; border-color: black; border-style: solid;" title="12-7-11 Contact Info" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Contact-Info.png" alt="" width="497" height="117" /></a></p>
 <p>Related to email, we rewrote the Populi job manager (in proper computerese, that would be spelled "jobmanager"). The job manager is a background timing script that periodically checks for tasks that Populi needs to complete at a certain time. For instance, if you email a one-time list in Communications at 10 AM, that creates a task. When job manager strolls by on his usual rounds, he finds your email task and makes sure Populi gets the job done—at 10 AM. Our old job manager was itself dependent on another application that organized the tasks; if that application crashed at 9:59, job manager would stroll by at 10 and think, "Hm, nothing to do," and move on. Consequently, emails were getting lost and were sending without attachments—among some other issues. The new job manager no longer relies on that secondary application. Instead, tasks remain to be found by job manager until they are completed, which better insures that they actually get done.</p>
@@ -150,11 +148,9 @@
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Students-Table.png"><img class="alignleft size-full wp-image-2229" style="border-width: 1px; border-color: black; border-style: solid;" title="12-7-11 Students Table" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Students-Table.png" alt="" width="510" height="107" /></a></p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Recent-Transactions.png"><img class="alignleft size-full wp-image-2230" style="border-width: 1px; border-color: black; border-style: solid;" title="12-7-11 Recent Transactions" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/12/12-7-11-Recent-Transactions.png" alt="" width="510" height="155" /></a></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -343,8 +339,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

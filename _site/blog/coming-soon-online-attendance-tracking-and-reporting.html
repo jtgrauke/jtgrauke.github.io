@@ -133,27 +133,23 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Coming soon: Online attendance tracking and reporting</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Coming soon to online courses: automatic attendance tracking. It'll save your faculty a lot of time and will make for more accurate attendance records for your online courses.</p>
+		<h3 class="displayMedium">Coming soon: Online attendance tracking and reporting</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Coming soon to online courses: automatic attendance tracking. It'll save your faculty a lot of time and will make for more accurate attendance records for your online courses.</p>
 <p><img src="https://s3.amazonaws.com/blog-media.populi.co/blog_active_participation.png" alt="Active participation interface" /></p>
 <p>The current attendance workflow for online courses looks like this: Courses are given a single, weekly attendance meeting time. Then, once a week, the course faculty reviews the previous week's student activity—discussion posts, lesson progress, assignment submissions, and so on—and marks student attendance for the week based on that activity (or lack thereof). The attendance stats are then pushed to the various reports in Populi, including the SAP report in Financial Aid, where that weekly date supplies the all-important date of last attendance.</p>
 <p>With the new features, all you need to do is set a course to use an online delivery method (you can use Populi's built-in <em>Online</em> method or a custom method you designate as such). When you do that, Populi will automatically record certain Federally-approved student activities (submitting assignments, starting or posting in discussions, taking tests) as "participation". In turn, participation stats are included in the new Online Attendance report in Academics, the Data Slicer, <em>and</em> the SAP report in Financial Aid—where participation is used to determine a student's date of last attendance.</p>
 <p>Populi will do all this whenever you use an online delivery method, whether at the beginning of the term or even later on. In the latter case, Populi will backfill participation data based on the records it already keeps of student activity. Of course, faculty will also be able to manually add participation records if need be. Additionally, mixed campus/online courses will include both attendance options—the regular meeting times for classroom events as well as the participation records that comprise online attendance.</p>
 <p>Less work and better record-keeping: we think you'll like it! We hope to have online attendance tracking in your hands in the near future—make sure to <a href="https://support.populiweb.com/hc/en-us/sections/205240647-Release-notes">follow our Release Notes</a> to see when it's live!</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -342,8 +338,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

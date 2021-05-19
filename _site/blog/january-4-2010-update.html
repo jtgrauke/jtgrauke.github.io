@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Happy New Year! New Populi release rewrites Academics, plus a lot more...</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>In the wee hours of January 4th, we released <strong>the first major Populi update since <a href="http://populi.co/blog/2010/06/our-new-release-new-profiles-communications-google-apps-itunes-u-and-lots-more/">June 11, 2010</a></strong>. Featuring an overhaul of Populi Academics, brand-new Account Management features, continued refinement to the navigation and interface, and some new API capabilities, the release encompasses a half a year's worth of development time. We released literally <strong>hundreds of features</strong>, updates, bugfixes, and tweaks which make Populi more flexible and accommodating to the wide variety of schools we count among our customers—including liberal arts colleges, seminaries, nursing schools, and technical colleges.</p>
+		<h3 class="displayMedium">Happy New Year! New Populi release rewrites Academics, plus a lot more...</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>In the wee hours of January 4th, we released <strong>the first major Populi update since <a href="http://populi.co/blog/2010/06/our-new-release-new-profiles-communications-google-apps-itunes-u-and-lots-more/">June 11, 2010</a></strong>. Featuring an overhaul of Populi Academics, brand-new Account Management features, continued refinement to the navigation and interface, and some new API capabilities, the release encompasses a half a year's worth of development time. We released literally <strong>hundreds of features</strong>, updates, bugfixes, and tweaks which make Populi more flexible and accommodating to the wide variety of schools we count among our customers—including liberal arts colleges, seminaries, nursing schools, and technical colleges.</p>
 <h4>Academics</h4>
 <p><strong>We did a near-complete overhaul of Populi Academics</strong>, focusing on a new dimension: <strong>Programs</strong>. Programs enable you to partition your Courses, Degrees, and students into unique courses of study with distinct GPA's. You can have Graduate or Undergraduate-level Programs, and define each using credits or hours. Each Program can have a unique Grade Scale, Pass/Fail Threshold, Full-time Threshold, and Academic Standings (complete with custom system tags); additionally, you can define particular Degrees, Courses, and even Tuition Schedules to apply only to students enrolled in a given Program.</p>
 <p>To accommodate Programs, <strong>we've re-designed</strong> Transcripts, the Degree Audit, Courses, Transfer Credits, and Student Profiles. Populi's built-in reports and reporting tools have been accordingly updated to let you sift through your data in light of the new improvements.</p>
@@ -187,11 +185,9 @@
 <li>Improved access to online tests—students can now review tests they've already taken in the Test "History" view</li>
 </ul>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -380,8 +376,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

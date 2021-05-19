@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Programmatic Partial-Credit Put-In-Order Grading</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic adam"></div>
-					<span>Adam wrote this on September 25th, 2014</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Back in Autumn, 2009 we introduced online tests with several question types. Certain types—multiple choice for example—are simple for a computer program to grade. You just tell it what the correct answer is, and if the student marks that answer, they get the credit. Other question types, however, aren’t so simple: put-in-order, for example. Different instructors have different methods and rationales for how to assign credit for a partially correct put-in-order question, so replicating how a human would grade one is no mean feat. Or so we’ve learned over the last five years.</p>
+		<h3 class="displayMedium">Programmatic Partial-Credit Put-In-Order Grading</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic adam"></div>
+				<span>Adam wrote this on September 25th, 2014</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Back in Autumn, 2009 we introduced online tests with several question types. Certain types—multiple choice for example—are simple for a computer program to grade. You just tell it what the correct answer is, and if the student marks that answer, they get the credit. Other question types, however, aren’t so simple: put-in-order, for example. Different instructors have different methods and rationales for how to assign credit for a partially correct put-in-order question, so replicating how a human would grade one is no mean feat. Or so we’ve learned over the last five years.</p>
 <p>Our first method was simple: we'd evaluate each item in turn, and if it was before or after the item that it was supposed to be before or after then it would be counted as correct.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_11.gif"><img class="aligncenter wp-image-2699" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/order_11.gif" alt="" width="150" height="130" /></a></p>
 <p>This did a pretty good job approximating how an instructor might give partial credit by focusing on the order of items as opposed to their placement. This method stayed in place until we discovered its principal flaw. Though highly unlikely, it was possible for an incorrect response to receive 100% credit provided each item was next to at least one correct neighbor.</p>
@@ -173,11 +171,9 @@
 <p>As a bonus, we now show which items were marked incorrect in the test history view so students and teachers can see how the partial-credit grade was derived.</p>
 <blockquote><p><strong>Editor's Note:</strong> As you suspected, Yes—the title of this article <em>can</em> be sung to the tune of <a href="https://www.youtube.com/watch?v=tRFHXMQP-QU"><em>Supercalifragilisticexpialidocious</em></a> from Mary Poppins.</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -366,8 +362,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

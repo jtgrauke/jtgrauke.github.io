@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Selling</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<blockquote>Selling is what selling sells/The lonely saints of the seven avenues/Could sell the seven hells!<br />
+		<h3 class="displayMedium">Selling</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<blockquote>Selling is what selling sells/The lonely saints of the seven avenues/Could sell the seven hells!<br />
 —The Clash, "Car Jamming"</p></blockquote>
 <p><a href="http://www.youtube.com/watch?v=R2bLNkCqpuY"><img class="alignnone size-full wp-image-2385" style="margin-left: 55px; margin-right: 55px;" title="Click to watch a clip from the Mad Men episode &quot;The Carousel&quot; at http://www.youtube.com/watch?v=R2bLNkCqpuY" alt="" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/11/11-13-12-mad-men-carousel-1.jpg" width="400" height="300" /></a></p>
 <p><em>“The key to economic prosperity is the organized creation of dissatisfaction… If everyone were satisfied no one would want to buy the new thing.”</em></p>
@@ -178,11 +176,9 @@
 <p>Our yardstick for our own writing: if there's anywhere in our copy redolent of Charles Kettering, we want it gone.</p>
 <p>Populi handles critical operations for a school, and our customers depend on us to make sure a lot of essential things happen. In view of that relationship, we simply can't afford to over-promise regarding what we do. Matters of prestige, community, relevance, identity—software can help, but it can't make it happen. If you don't like where your school is at, Populi might help with your change of course. But it isn't that change of course itself.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -371,8 +367,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

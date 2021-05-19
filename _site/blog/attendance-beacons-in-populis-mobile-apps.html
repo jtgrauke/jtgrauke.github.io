@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Attendance beacons in Populi's mobile apps</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Populi's mobile apps for <a href="https://itunes.apple.com/us/app/populi/id307818267?mt=8">iOS</a> and <a href="https://play.google.com/store/apps/details?id=populi.populi.co.populi&amp;hl=en">Android</a> have a really cool feature we want you to know about: attendance beacons! Here's how they work...</p>
+		<h3 class="displayMedium">Attendance beacons in Populi's mobile apps</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Populi's mobile apps for <a href="https://itunes.apple.com/us/app/populi/id307818267?mt=8">iOS</a> and <a href="https://play.google.com/store/apps/details?id=populi.populi.co.populi&amp;hl=en">Android</a> have a really cool feature we want you to know about: attendance beacons! Here's how they work...</p>
 <p>When class starts, the professor launches the app to set an attendance beacon for that particular meeting. The beacon uses the phone's Bluetooth radio to send out a unique code to nearby devices running the app.</p>
 <p><img src="http://s3.amazonaws.com/blog-media.populi.co/blog_app_start_beacon_att.png" width="300px;" />&nbsp;<img src="http://s3.amazonaws.com/blog-media.populi.co/blog_app_stop_beacon_att.png" width="300px;" /></p>
 <p>When students arrive in class and fire up the app within range of the beacon, they'll see a check-in button on their dashboard. When they tap the button, the beacon notes what time the student checked in and sets them to present, tardy, or absent depending on their arrival time.</p>
@@ -152,11 +150,9 @@
 <p>Attendance beacons in Populi's mobile apps free up class time, do away with busywork, and help make for more accurate record-keeping.</p>
 <p>Step-by-step instructions for faculty are <a href="https://support.populiweb.com/hc/en-us/articles/115004153993">here</a>, and the student guide is <a href="https://support.populiweb.com/hc/en-us/articles/115004266454">here</a>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -345,8 +341,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

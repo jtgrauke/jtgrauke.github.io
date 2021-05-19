@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Feature Spotlight: Billing</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Consisting of three components—Billing, Accounting, and Financial Aid—Populi Financial gives you a simple, uncluttered way to manage your school's receivables. In Billing, you set up tuition and fees and use the real-time reporting tools to stay on top of charges and payments; Billing is supplemented by student profiles, where the most of the action happens.</p>
+		<h3 class="displayMedium">Feature Spotlight: Billing</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Consisting of three components—Billing, Accounting, and Financial Aid—Populi Financial gives you a simple, uncluttered way to manage your school's receivables. In Billing, you set up tuition and fees and use the real-time reporting tools to stay on top of charges and payments; Billing is supplemented by student profiles, where the most of the action happens.</p>
 <p>As part of a complete accounts receivable package, Billing ties in with financial aid and accounting, which lets you connect your A/R to your overall accounting package.</p>
 <h5>First you set it up</h5>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-27-12-Add-Fee-Billing-feat-spot.png"><img class="alignnone  wp-image-2314" title="4-27-12 Add Fee Billing feat spot" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-27-12-Add-Fee-Billing-feat-spot.png" alt="" width="510" height="153" /></a></p>
@@ -160,11 +158,9 @@
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-27-12-Reporting.png"><img class="alignnone  wp-image-2316" title="4-27-12 Reporting" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-27-12-Reporting.png" alt="" width="510" height="143" /></a></p>
 <p>Reporting gives you an overall view of things invoiced (charges and credits) and things paid (paid to you or refunded by you) over any date range you need. A few clicks will show you how much you've invoiced and how much you've taken in over any time period.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -353,8 +349,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

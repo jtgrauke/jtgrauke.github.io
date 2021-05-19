@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">The new profile: a preview</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on May 19th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>As we <strong><a href="http://www.populiweb.com/blog/2010/05/another-glimpse-at-a-few-things-were-doing/">mentioned recently</a></strong>, our upcoming release features a pretty substantial re-design of <a href="http://www.populiweb.com/tour/people"><strong>the Profile</strong></a>. The new Profile improves how information is organized and presented; further, it accommodates some new features (and some other things we'd like to do down the road). We think it's pretty magical and revolutionary<a title="wink, wink... nudge, nudge" href="http://www.apple.com/ipad/"><strong>—</strong></a>at an <a href="http://www.populiweb.com/pricing/"><strong>unbelievable price</strong></a>, to boot.</p>
+		<h3 class="displayMedium">The new profile: a preview</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on May 19th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>As we <strong><a href="http://www.populiweb.com/blog/2010/05/another-glimpse-at-a-few-things-were-doing/">mentioned recently</a></strong>, our upcoming release features a pretty substantial re-design of <a href="http://www.populiweb.com/tour/people"><strong>the Profile</strong></a>. The new Profile improves how information is organized and presented; further, it accommodates some new features (and some other things we'd like to do down the road). We think it's pretty magical and revolutionary<a title="wink, wink... nudge, nudge" href="http://www.apple.com/ipad/"><strong>—</strong></a>at an <a href="http://www.populiweb.com/pricing/"><strong>unbelievable price</strong></a>, to boot.</p>
 <p><strong>Many things spurred the re-design. </strong>The original profile was built around the functionality that Populi had at the time (pretty much just Academics and Admissions in the early days). But Populi's subsequent expansion filled the Profile to bursting, and it just wasn't as simple to navigate as we wished. Further, there were new features we wanted to introduce that just wouldn't fit in the old Profile. And, of course, we've had a good look over the past few years at how our users employed certain Profile features as workarounds for what they really wanted to do. For instance, almost everyone used Profile notes to store email correspondence. We really needed to make that easier on our users—and, we hope, <strong>more useful and enjoyable.</strong></p>
 <p>Without further ado, here's a brief video introducing the new Profile.</p>
 <p>http://vimeo.com/11870432</p>
@@ -179,11 +177,9 @@
 <p>The new profile lets you track more information on people than ever before while at the same time making that information even easier to find.</p>
 </div>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -372,8 +368,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

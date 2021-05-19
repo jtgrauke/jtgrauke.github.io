@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Academic Auditor role, plus some other new academic features</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We're pleased to announce the release of the Academic Auditor role. Academic Auditor gives the user read-only access to all academic information in Populi&mdash;everything from student records to reports to <a href="http://populi.co/blog/2015/08/advising/">Advising</a> to the course catalog. An Academic Admin can give the new role to anyone they wish, and you can read about its permissions in the <a href="https://support.populiweb.com/entries/38244#academicroles">Knowledge Base</a>. Our users have been clamoring for a role with these abilities, and we're really happy to get it out to everyone.</p>
+		<h3 class="displayMedium">Academic Auditor role, plus some other new academic features</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We're pleased to announce the release of the Academic Auditor role. Academic Auditor gives the user read-only access to all academic information in Populi&mdash;everything from student records to reports to <a href="http://populi.co/blog/2015/08/advising/">Advising</a> to the course catalog. An Academic Admin can give the new role to anyone they wish, and you can read about its permissions in the <a href="https://support.populiweb.com/entries/38244#academicroles">Knowledge Base</a>. Our users have been clamoring for a role with these abilities, and we're really happy to get it out to everyone.</p>
 <p><img class=" aligncenter" style="width: 780px;" src="https://s3.amazonaws.com/blog-media.populi.co/AcAudit%20blog.png" /><br /></p>
 <p>A couple other notable academic features have made it out into the wild the past few weeks. First, School Closures! You can now add holidays and closures to your Academic Years. When you do so, Populi will automatically block out course meeting times for those dates. Likewise, you can also add Library Closures in Library &gt; Calendar&mdash;these closures postpone resource due dates and other time-sensitive Library features.</p>
 <p><img class=" aligncenter" style="width: 726px;" src="https://s3.amazonaws.com/blog-media.populi.co/AY%20Closures%20blog.png" /><br />
@@ -150,11 +148,9 @@
 The other one: assignments and attendance for auditing students. Some schools let their auditors receive grades and feedback on coursework, and others like to include them when taking attendance. With the new Auditors setting (in Course &gt; Info), you can now set your courses to allow Faculty to give assignment grades and take attendance for Auditors.</p>
 <p><img class=" aligncenter" style="width: 648px;" src="https://s3.amazonaws.com/blog-media.populi.co/Edit%20auditors%20blog.png" /></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -343,8 +339,14 @@ The other one: assignments and attendance for auditing students. Some schools le
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

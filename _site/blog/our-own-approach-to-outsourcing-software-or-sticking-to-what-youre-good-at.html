@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Our own approach to outsourcing software (or, Sticking to what you're good at)</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We <a href="http://populi.co/blog/2011/05/thoughts-on-outsourcing-it-to-us-vs-going-in-house/">recently posited</a> that it makes a lot of sense for small schools to outsource IT-intensive assets like their information systems. We think so not just because our service lets you do that, but because it really does save a small college a lot of time, money, and software migraines. And besides, colleges exist to educate, not build software. Small organizations—colleges and software companies, for instance—should stick to their core competencies. It's a key part of <a href="http://gettingreal.37signals.com/ch03_Embrace_Constraints.php">embracing constraints</a>.</p>
+		<h3 class="displayMedium">Our own approach to outsourcing software (or, Sticking to what you're good at)</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We <a href="http://populi.co/blog/2011/05/thoughts-on-outsourcing-it-to-us-vs-going-in-house/">recently posited</a> that it makes a lot of sense for small schools to outsource IT-intensive assets like their information systems. We think so not just because our service lets you do that, but because it really does save a small college a lot of time, money, and software migraines. And besides, colleges exist to educate, not build software. Small organizations—colleges and software companies, for instance—should stick to their core competencies. It's a key part of <a href="http://gettingreal.37signals.com/ch03_Embrace_Constraints.php">embracing constraints</a>.</p>
 <p>At Populi, our core competency is providing college management software as a service. We do one thing (though, that one thing does a lot of different things), and it would be foolish to spread ourselves thin designing other software or maintaining other services.</p>
 <p>We know this firsthand. Back in <a href="http://populi.co/about/">the emsi days</a>, a programmer built the first version of the Populi help system. It consisted simply of a custom search that scanned a hand-coded, wiki-style knowledge base.</p>
 <p>This  worked <em>okay</em>... for a little while. The search did only one thing—it searched—and it still required our maintenance. And writing in a wiki knowledge base was about as much fun as getting caned with a bamboo rod.</p>
@@ -168,11 +166,9 @@
 <blockquote><p>* Lemme just get this out of the way: when we say "outsourcing", we hope you know that we'll NEVER outsource development or support. Put another way, never outsource your core competencies!</p>
 <p>** Our own <a href="http://populi.co/blog/2011/05/get-to-know-us-heres-mark-ackerman/">Mark Ackerman</a> says that Freshbooks "is nearly flawless."</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -361,8 +357,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

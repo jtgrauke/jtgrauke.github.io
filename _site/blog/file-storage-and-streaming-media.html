@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">File storage and streaming media</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Back when we released our <a href="http://populi.co/blog/2011/06/our-new-financial-aid-features/">update</a> to Populi Financial Aid, we also changed how Populi handles files. It's been a low-key update thus far, but our new files setup opens up a ton of new possibilities for our customers—including hosting and streaming video right from Lessons and Tests in your Populi courses. We're also updating our <a href="http://www.populi.co/pricing">pricing plans</a>: each one will include a generous chunk of free file storage with the option to add more as you need it.</p>
+		<h3 class="displayMedium">File storage and streaming media</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Back when we released our <a href="http://populi.co/blog/2011/06/our-new-financial-aid-features/">update</a> to Populi Financial Aid, we also changed how Populi handles files. It's been a low-key update thus far, but our new files setup opens up a ton of new possibilities for our customers—including hosting and streaming video right from Lessons and Tests in your Populi courses. We're also updating our <a href="http://www.populi.co/pricing">pricing plans</a>: each one will include a generous chunk of free file storage with the option to add more as you need it.</p>
 <h5>The old way and the new way</h5>
 <p>Files include everything from your personal document storage to the syllabi you upload to courses to your profile pictures. Previously, your files lived on our own servers, but this proved too limiting:</p>
 <ul>
@@ -174,11 +172,9 @@
 <blockquote><p>* 1 gigabyte equals 1 billion bytes.</p>
 <p>**We looked, we asked around, we did research... and <a href="http://populi.co/blog/2011/07/nonsense-free-pricing/">just like our SIS competitors</a>, the other companies out there A) won't cough up their pricing and B) require some IT elbow grease to make it work for your school. This assertion is based chiefly on anecdotes from customers who've considered some of these other systems.</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -367,8 +363,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

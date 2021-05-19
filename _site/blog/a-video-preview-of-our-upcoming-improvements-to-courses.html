@@ -133,23 +133,19 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">A video preview of our upcoming improvements to courses</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>In about another week, we'll be releasing our <a href="http://populi.co/blog/2011/07/coming-soon-new-stuff-for-course-instances/">rewrite of Populi's course instances</a>. Check out this video preview of what's coming:<br />
+		<h3 class="displayMedium">A video preview of our upcoming improvements to courses</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>In about another week, we'll be releasing our <a href="http://populi.co/blog/2011/07/coming-soon-new-stuff-for-course-instances/">rewrite of Populi's course instances</a>. Check out this video preview of what's coming:<br />
 <iframe src="http://player.vimeo.com/video/27802758?title=0&amp;byline=0&amp;portrait=0" frameborder="0" width="510" height="319"></iframe></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -338,8 +334,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

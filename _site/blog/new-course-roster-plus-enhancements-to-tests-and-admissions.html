@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New course roster, plus enhancements to tests and Admissions</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>The new roster and finalize-by-student are now live! Take a look at <a href="http://populi.co/blog/2014/03/coming-soon-the-new-course-roster-new-layout-new-features-and-finalize-by-student/">the preview we published a few weeks ago</a>, and get all the details in the <a href="https://support.populiweb.com/categories/search?utf8=✓&amp;query=kwijybo&amp;for_search=1&amp;commit=Search">Knowledge Base</a>.</p>
+		<h3 class="displayMedium">New course roster, plus enhancements to tests and Admissions</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>The new roster and finalize-by-student are now live! Take a look at <a href="http://populi.co/blog/2014/03/coming-soon-the-new-course-roster-new-layout-new-features-and-finalize-by-student/">the preview we published a few weeks ago</a>, and get all the details in the <a href="https://support.populiweb.com/categories/search?utf8=✓&amp;query=kwijybo&amp;for_search=1&amp;commit=Search">Knowledge Base</a>.</p>
 <p>Here are some other noteworthy items <a href="https://support.populiweb.com/forums/47537-Release-notes">we've released over the past couple months</a>...</p>
 <h5>Test availability</h5>
 <p>Tests can now have open-ended test availability dates. Choose from <em>Available from</em> (which gives you the usual date range), <i>Available after</i> or <em>until</em>, and <em>Always available</em>, which keeps the test open for the entire duration of the course. This makes things much simpler for our customers who run open-enrollment courses.</p>
@@ -156,11 +154,9 @@
 <p>When you accept an application, you can now add the Lead as a new user at the same time.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/03/3-24-14-create-user-acct.png"><img class="alignnone  wp-image-2632" style="margin-left: 52px; margin-right: 52px;" alt="3-24-14 create user acct" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/03/3-24-14-create-user-acct.png" width="504" height="225" /></a></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -349,8 +345,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

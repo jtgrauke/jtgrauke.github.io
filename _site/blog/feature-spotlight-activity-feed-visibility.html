@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Feature Spotlight: activity feed visibility</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>The profile's Activity Feed lets you keep a complete and accurate record of your history and correspondence with anyone in the system—and what's more, you always know where to find it.</p>
+		<h3 class="displayMedium">Feature Spotlight: activity feed visibility</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>The profile's Activity Feed lets you keep a complete and accurate record of your history and correspondence with anyone in the system—and what's more, you always know where to find it.</p>
 <p>Everything you post to the Activity Feed has visibility options. Say you upload a note with a file that pertains to a prospect's eligibility for a scholarship—by checking off user roles, you can set that item to be visible to everyone at your school who needs to see it.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/08/81612-pauls-history1.png"><img class="alignnone  wp-image-2344" title="8:16:12 paul's history" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/08/81612-pauls-history1.png" alt="" width="510" height="206" /></a></p>
 <p>Emails have the same visibility settings—when composing an email, you can check the roles to which you wish to make the email visible once it hits the Activity Feed:</p>
@@ -153,11 +151,9 @@
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/08/81612-default-visibility-settings.png"><img class="alignnone  wp-image-2341" title="8:16:12 default visibility settings" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/08/81612-default-visibility-settings.png" alt="" width="510" height="206" /></a></p>
 <p>Once you save, your selections will be your new default, whether you're posting items to an Activity Feed or sending an email (both from Populi and from another client to your <a href="http://populi.co/blog/2012/02/new-release-contact-organizations-and-a-few-other-things/">Email Dropbox</a>)—giving you one less thing to think about in the course of your workday.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -346,8 +342,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

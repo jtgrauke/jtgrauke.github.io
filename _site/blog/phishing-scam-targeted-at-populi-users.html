@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Phishing scam targeted at Populi users</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>A Populi user forwarded an email she received from an "Alice Hobbs" which reads as follows:</p>
+		<h3 class="displayMedium">Phishing scam targeted at Populi users</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>A Populi user forwarded an email she received from an "Alice Hobbs" which reads as follows:</p>
 <blockquote><p>Dear Webmail User,</p>
 <p>This message is from the Webmail Support team to all email users. We are currently carrying out an upgrade on our system, hence it has come to our notice that one of our subscribers Infected our Network with a worm like virus and it is affecting Our database.</p>
 <p>We are also having congestions due to the anonymous registration of email accounts, so we are shutting down email accounts deemed to be inactive. Your email account is listed among those requiring update.</p>
@@ -159,11 +157,9 @@
 <p>Please feel free to post this article to your Populi News Feed, or however you think would be a good way to spread the word.</p>
 <p>Happy Monday everyone!</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -352,8 +348,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

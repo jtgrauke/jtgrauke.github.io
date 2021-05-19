@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Money and priorities</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Ever wonder what we do with those dollars you send us every month? Wonder no more: here's a pie graph of how we divvied up the income we received in the first half of 2013:<br />
+		<h3 class="displayMedium">Money and priorities</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Ever wonder what we do with those dollars you send us every month? Wonder no more: here's a pie graph of how we divvied up the income we received in the first half of 2013:<br />
 <a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/07/Screen-Shot-2013-07-19-at-5.44.26-PM.png"><img class="alignnone size-full wp-image-2480" style="margin-left: 78px; margin-right: 78px;" alt="Graph" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/07/Screen-Shot-2013-07-19-at-5.44.26-PM.png" width="373" height="379" /></a></p>
 <h5>An observation or two</h5>
 <p>1. 56 percent of every dollar we receive goes to Customer Service or Development (which includes any kind of programming meant to improve, maintain, or update Populi). In other words, we're not using that money to go after other opportunities; rather, we're using it to pursue our customers.</p>
@@ -155,11 +153,9 @@
 <p>And that's what we've been hoping to do all along.</p>
 <blockquote><p>* Don't worry, we're not doing that!</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -348,8 +344,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

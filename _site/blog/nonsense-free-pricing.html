@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Nonsense-free pricing</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<h5>...a tale told with bullet lists</h5>
+		<h3 class="displayMedium">Nonsense-free pricing</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<h5>...a tale told with bullet lists</h5>
 <p>Simple as we think our <a href="http://www.populi.co/pricing">pricing</a> is, the college software industry seems to have primed our market to think that we've just <em>gotta</em> be hiding something... or lying. Some typical exchanges:</p>
 <ul>
 <li><em>Us:</em> <strong>Populi has no upfront costs.</strong><br />
@@ -184,11 +182,9 @@ How much for additional licenses?</li>
 <blockquote><p>* So you know, we're considering some "premium" options that'd cost extra. We, of course, promise to be clear and upfront about them, too... but there's nothing concrete to announce at this point.</p></blockquote>
 <p>&nbsp;</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -377,8 +373,14 @@ How much for additional licenses?</li>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

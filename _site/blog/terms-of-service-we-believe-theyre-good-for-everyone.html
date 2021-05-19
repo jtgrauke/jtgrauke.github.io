@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Terms of Service: we believe they're good for everyone</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Prospective customers sometimes ask us to sign papers that would—whether instead of or alongside <a href="http://populi.co/legal/terms/">our own legal documents</a>—govern our business relationship with them. Schools with the cash to have lawyers draft stuff for them are lucrative prospects, and we should be happy sign whatever if it'll bring them aboard.</p>
+		<h3 class="displayMedium">Terms of Service: we believe they're good for everyone</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Prospective customers sometimes ask us to sign papers that would—whether instead of or alongside <a href="http://populi.co/legal/terms/">our own legal documents</a>—govern our business relationship with them. Schools with the cash to have lawyers draft stuff for them are lucrative prospects, and we should be happy sign whatever if it'll bring them aboard.</p>
 <p>But we decline to sign every single time.*</p>
 <p>Why? What could <a href="http://populi.co/blog/2010/10/get-to-know-us-heres-isaac-grauke/">Isaac's</a> signature on another piece of paper do to our business?</p>
 <p>The answer is, <em>We don't know</em>. Some of these documents outsize our own by an order of magnitude. They're written by lawyers working in other states. They contradict or negate our own Terms. They oblige us to requirements totally foreign to college software. For all we know, they could cripple the way we do business, and so make things sticky for all the rest of our customers.</p>
@@ -154,11 +152,9 @@
 <p>And that's why you won't catch Isaac's signature on some other piece of paper. Trust, adaptability, and common sense are just too valuable to this relationship.</p>
 <blockquote><p>* Do pardon the rhyme.</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -347,8 +343,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

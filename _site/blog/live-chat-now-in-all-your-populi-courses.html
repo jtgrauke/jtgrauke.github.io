@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Live chat: now in all your Populi courses</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<h4>Plus, full LTI capability and other improvements</h4>
+		<h3 class="displayMedium">Live chat: now in all your Populi courses</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<h4>Plus, full LTI capability and other improvements</h4>
 <p>New in Populi courses: live chat! Now your instructors and students can converse in real-time right in any Populi course. Chats let you embed images (even from Instagram), videos from YouTube and Vimeo, documents from <a href="http://populi.co/blog/2012/07/embed-documents-in-populi-with-scribd/">Scribd</a>, and even use <a href="http://populi.co/blog/2012/03/populi-now-has-emoji-support/">emoji</a> characters. They're easy to set up: just schedule one and everyone in the class—students, auditors, profs, teaching assistants—can join the conversation.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/05/5-8-13-chatroom.png"><img class="alignnone  wp-image-2452" alt="5-8-13 chatroom" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/05/5-8-13-chatroom.png" width="510" height="500" /></a></p>
 <p>To use chat, the course instructor just needs to click Chat and start a new chat session. There's nothing to set up or figure out—it's live and ready to go in every Populi course.</p>
@@ -165,11 +163,9 @@
 <p>You can now create custom course Delivery Methods in Academic Settings. We also let you use Delivery Method as a fee rule. And, you can now include Delivery Method in the XLS export of the Courses Table.</p>
 <p>Custom transcripts can now include course comments and progam-based honors (contact support if you'd like us to update your transcript template).</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -358,8 +354,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

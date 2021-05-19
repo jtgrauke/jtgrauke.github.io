@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Free education for everyone</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<figure>
+		<h3 class="displayMedium">Free education for everyone</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<figure>
 	<img class=" wp-image-2554" alt="Screen Shot 2013-11-15 at 11.18.40 AM" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/11/Screen-Shot-2013-11-15-at-11.18.40-AM.png" width="610" />
 	<figcaption>
 		Image from <a href="http://www.katyjordan.com/MOOCproject.html">Katy Jordan's MOOC Project</a>
@@ -200,11 +198,9 @@
 <p>What if higher education's problems don't come down to issues of costliness? What if it's not all about professors who want access to ten-thousands of students? What if a university degree isn't simply a token to a higher-paying job?  What if college isn't a basic human right? What if education is more than just putting free content in front of a student?</p>
 <p>What if there are human problems technology can never hope to solve? What if there are human problems education can never hope to solve?</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -393,8 +389,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Official transcript requests and an interface change</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>After announcing transcript requests about a month ago, we quickly realized that we needed the feature to do a better job handling requests from former students and others who don't have a Populi login. So, when the feature is released tonight (October 11), it will include a public-facing form that lets people submit official transcript requests.</p>
+		<h3 class="displayMedium">Official transcript requests and an interface change</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>After announcing transcript requests about a month ago, we quickly realized that we needed the feature to do a better job handling requests from former students and others who don't have a Populi login. So, when the feature is released tonight (October 11), it will include a public-facing form that lets people submit official transcript requests.</p>
 <p><img class="alignnone" src="https://s3.amazonaws.com/kb-media.populi.co/public_request_transcript.png" width="610" /></p>
 <p>Here's how it works:</p>
 <ol>
@@ -165,11 +163,9 @@
 <p>We fully appreciate that everyone clicks the gear a zillion times a day, and us changing a much-used feature will initially be very annoying. We understand! That said, the new design makes the previously-hidden actions easier to find, and the menu icon now consistently shows you the same group of actions wherever you are on the profile. It's more consistent and makes more sense than the old layout, and it clears the way for us to make additional improvements on the Profile.</p>
 <p>A few other behind-the-scenes improvements will go out with this release, which we'll describe in our <a href="https://support.populiweb.com/hc/en-us/sections/205240647-Release-notes">Release Notes</a> this Friday (have you <a href="https://support.populiweb.com/hc/en-us/sections/205240647-Release-notes">subscribed</a> to those yet?). Of course, if you have any comments or questions about the updates, <a href="/contact">we're eager to hear from you</a>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -358,8 +354,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

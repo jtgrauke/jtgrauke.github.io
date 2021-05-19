@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Ben Thompson on Adobe's move to subscription pricing</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Ben Thompson, at his fine blog Stratēchery, goes into the economics behind Adobe's recent (as of last May) <a href="http://stratechery.com/2013/adobes-subscription-model-why-platform-owners-should-care/">move from the "packaged software" business model to subscription pricing</a>.</p>
+		<h3 class="displayMedium">Ben Thompson on Adobe's move to subscription pricing</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Ben Thompson, at his fine blog Stratēchery, goes into the economics behind Adobe's recent (as of last May) <a href="http://stratechery.com/2013/adobes-subscription-model-why-platform-owners-should-care/">move from the "packaged software" business model to subscription pricing</a>.</p>
 <p>The packaged software model:</p>
 <blockquote><p>Consumer A rarely edits photos, which means a photo-editing app is worth maybe $20 to him. Yet, he buys Photoshop anyways for $499. In this case, Adobe is, in effect, charging $479 too much. The consumer is getting a bad deal.</p>
 <p>Consumer B is a graphic designer. She uses Photoshop every day, for hours a day. Without Photoshop,<em>she couldn’t do her job</em>, for which she is paid $60,000 a year. In this case, there is a consumer surplus of $59,501. Adobe is getting a bad deal.</p>
@@ -155,11 +153,9 @@
 <p>The whole article is full of good insights on why subscription pricing is ideal for professional productivity software. Even Microsoft, sitting atop their giant pile of packaged-software-derived cash, is moving that direction with Office365.</p>
 <p>We've always viewed the subscription model as a win-win ourselves.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -348,8 +344,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

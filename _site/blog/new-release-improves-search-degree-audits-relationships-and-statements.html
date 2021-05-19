@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New release improves Search, Degree Audits, Relationships, and Statements</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Last night we pushed out a minor new release that includes improvements to a variety of existing features...</p>
+		<h3 class="displayMedium">New release improves Search, Degree Audits, Relationships, and Statements</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Last night we pushed out a minor new release that includes improvements to a variety of existing features...</p>
 <h4>Degree Audit</h4>
 <p>We put the most work into a refresh of Degree Audits, accompanying some aesthetic updates with a number of improvements that will make them even more useful to advisors, registrars, and students.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/02/Degree-Audit-Feb-11.png"><img class="alignleft size-full wp-image-2125" style="border: 1px solid black;" title="Degree Audit Feb 11" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/02/Degree-Audit-Feb-11.png" alt="" width="510" height="282" /></a></p>
@@ -160,11 +158,9 @@
 <h4>Miscellaneous</h4>
 <p>Facilities got moved up to the Account Bar. We added some user account status tracking, so you can now see the last time a user logged in, or if they never have. We clarified the transfer credits interface to help ensure you pick a Program for each transferred course. Student ID numbers now display right below a student's name on their Profile. Plus the usual round of bugfixes, minor interface tweaks, and other little things that don't merit being mentioned by name in a blog post (those are all covered in the Release Notes in the help desk...).</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -353,8 +349,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

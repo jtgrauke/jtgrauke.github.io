@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Dig in</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><a href="http://populi.co/about/">We originally built Populi</a> to help a local college replace what small schools typically have to settle for: a creaky old system with Word and Excel tacked on to plug the holes. Since then, lots of other schools have signed on, most of which left another system to get going with us. One way to look at us is as a business that replaces other software.</p>
+		<h3 class="displayMedium">Dig in</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><a href="http://populi.co/about/">We originally built Populi</a> to help a local college replace what small schools typically have to settle for: a creaky old system with Word and Excel tacked on to plug the holes. Since then, lots of other schools have signed on, most of which left another system to get going with us. One way to look at us is as a business that replaces other software.</p>
 <p>And if we’ve learned anything from replacing software, it’s that software (like any tool) creates habits in its users—especially software that makes you do too much work. These "habits" aren't limited to individual users, either: sometimes, entire schools shape policies and institutional workflows around the limits of what their old system could do. Policies and workflows that Populi probably transgresses.</p>
 <p>Some of this is because Populi obviates the need for these old policies and workflows. In other cases, it gives you a round hole where your old software made you use square pegs. And other times, Populi introduces the "proper" way to do things where previously you had to just kinda, y'know, wing it.</p>
 <p>Whatever the case, we've found that Populi can disrupt how a college runs itself. Online registration might do away with your enrollment process for incoming freshmen. Your approach to billing could differ from what we intended with tuition schedules. That old "submit grades" spreadsheet just ain’t the same as our gradebook. Bookstore just might be the first real inventory system you've used. And so on...</p>
@@ -156,11 +154,9 @@
 </ul>
 <p>Dig in! Beyond finding out what Populi does (or does better, or does different), you'll get a sense of where your school has been formed by your current software—and where Populi might hit your pressure points. Of course, we trust that Populi will do a better job for your school than whatever you're using now—in everything from the software to the security to the support. But we simply want you to make the best decision you possibly can, and that includes knowing about the potential sticking points.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -349,8 +345,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

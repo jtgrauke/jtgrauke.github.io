@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Donations!</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>New in Populi Financial: Donations.</p>
+		<h3 class="displayMedium">Donations!</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>New in Populi Financial: Donations.</p>
 <p><iframe src="https://player.vimeo.com/video/123909897" width="615" height="346" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <p>Donations lets you keep track of fundraising campaigns, accept online donations, record other contributions (checks received in the mail, etc.), and, of course, generate reports on any of this activity. Paired with Populi's communications and contacts features, Donations helps you manage your school's relationships with its donors—while giving you brand-new ways to help get money in the door. Here's a look at what you can do...</p>
 <h5>Online donations</h5>
@@ -163,11 +161,9 @@
 <p>Read about how to set up and use the new Donations features in the <a href="https://support.populiweb.com/forums/23004527">Populi Knowledge Base</a>.</p>
 <p>Also, a special thank-you to the customers who participated in our limited beta roll-out of Donations. You really put it through its paces and gave us some great feedback, and we truly are grateful for your insight!</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -356,8 +352,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

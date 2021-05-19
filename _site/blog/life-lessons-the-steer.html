@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Life lessons: the steer</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Our company's culture and understanding of itself isn't just determined by what we do within office walls. Sometimes something outside the office proves a perfect metaphor for something within the company or our industry.</p>
+		<h3 class="displayMedium">Life lessons: the steer</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Our company's culture and understanding of itself isn't just determined by what we do within office walls. Sometimes something outside the office proves a perfect metaphor for something within the company or our industry.</p>
 <p>For instance, Toby Robinson just bought a yearling Angus steer to put on his three acres of grass just outside of town. One morning, he dropped a note on our group chat:</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/04/4-12-13-cow-loose.png"><img class="alignnone  wp-image-2430" alt="4-12-13 cow loose" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/04/4-12-13-cow-loose.png" width="510" height="136" /></a></p>
 <p>By 10:10 AM, Isaac, Brendan, and Mark had joined Toby, fanning out into the hayfields and tree farms surrounding Toby's place in search of the steer. A mud swath surrounded the adjoining hayfield, some 80 acres of steep Palouse hillside green with the new growth of Spring. Surely the steer had traversed this swath, leaving hoofprints, and had paused somewhere in the rolling green to snack on the tender young grass. Populi is a company of experienced hunters and animal husbandmen; we'd track down this errant animal in no time.</p>
@@ -167,11 +165,9 @@
 <p>Sometimes we think the bug is off to the south somewhere, when in fact it's due west.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/04/4-12-13-calf.jpg"><img class="alignnone  wp-image-2433" alt="4-12-13 calf" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/04/4-12-13-calf.jpg" width="510" height="510" /></a></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -360,8 +356,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

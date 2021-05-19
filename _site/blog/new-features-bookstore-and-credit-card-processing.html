@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New Features: Bookstore and Credit Card Processing!</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on March 10th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>We're pleased to announce the release of a whole new section of Populi: the <a href="http://bit.ly/9OOvFK"><strong>Bookstore</strong></a>. And hand-in-hand with Bookstore: <strong>Credit Card Processing</strong>!</p>
+		<h3 class="displayMedium">New Features: Bookstore and Credit Card Processing!</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on March 10th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>We're pleased to announce the release of a whole new section of Populi: the <a href="http://bit.ly/9OOvFK"><strong>Bookstore</strong></a>. And hand-in-hand with Bookstore: <strong>Credit Card Processing</strong>!</p>
 <p><strong>Bookstore</strong> gives you all the tools to run your college bookstore, <strong>online and at the counter</strong>. Anyone can shop at your online storefront; <strong><br />
 </strong>students can also link to it from their course reading lists. Promote your <strong>featured items</strong> and generate <strong>Buy Now</strong> links that you can integrate with your other websites. On the back-end side of things, you can customize  your categories, manage inventory, process orders, and check sales reports. The <strong>incredibly simple Point of Sale</strong> interface can run off a USB barcode scanner and credit card reader. All your sales get plugged right in to Populi <a href="http://bit.ly/abnZsF"><strong>Financial</strong></a>, with the ability to split out sales, shipping, and tax among your different accounts. And students can charge their Bookstore purchases to their regular Populi Financial accounts.</p>
 <p><strong>Before you can use your Bookstore,</strong> you'll need to take care of the settings (we walk you through those in the <strong>help desk</strong>). To get started on that, go to <strong>https://<em>yourcollegename</em>.<br />
@@ -155,11 +153,9 @@ populiweb.com/bookstore</strong> and click on <strong>Admin</strong>. Once it's 
 <p><strong>If you already have a merchant account with another provider,</strong> we also integrate with <a href="http://www.authorize.net/"><strong>Authorize.net</strong></a> <strong>payment gateway accounts</strong>. Authorize.net can link up with just about any merchant account out there, and it can bridge between your merchant account and Populi.</p>
 <p><strong>Additionally,</strong> we've released the usual round of minor tweaks, interface polish, security enhancements, bugfixes, and so on. Our users can read all about it in the <strong>Release Notes</strong> in the <strong>help desk</strong>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -348,8 +344,14 @@ populiweb.com/bookstore</strong> and click on <strong>Admin</strong>. Once it's 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

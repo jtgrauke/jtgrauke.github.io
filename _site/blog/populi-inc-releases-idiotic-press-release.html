@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Populi Inc. releases idiotic press release</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>FOR IMMEDIATE RELEASE</p>
+		<h3 class="displayMedium">Populi Inc. releases idiotic press release</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>FOR IMMEDIATE RELEASE</p>
 <p>February 24, 2012</p>
 <p>Populi Inc. of Moscow, Idaho, announced this morning that users have successfully sent over 181 emails to their email dropboxes, a new record for the company. Populi, makers of the industry-leading Populi College Management System©®™, released the award-winning email dropboxing feature on February 20th to wide acclaim in today's competitive environment.</p>
 <p><a href="http://media.tumblr.com/tumblr_l17k26pyzy1qa5i8y.jpg"><img class="alignnone" style="margin-left: 58px; margin-right: 58px;" title="Email dropboxing usage ESPLOSION" src="http://media.tumblr.com/tumblr_l17k26pyzy1qa5i8y.jpg" alt="" width="393" height="311" /></a></p>
@@ -154,11 +152,9 @@
 <p>Press release transmission cannot be guaranteed to be secure or error-free as information could be intercepted, corrupted, lost, destroyed, arrive late or incomplete, or contain viruses. The sender therefore does not accept liability for any errors or omissions in the contents of this press release, which arise as a result of press release transmission. If verification is required please request a hard-copy version from Populi, Inc. 1336 Alturas Drive, Moscow, ID 83843.</p>
 <p>No employee or agent is authorized to conclude any binding agreement on behalf of Populi Inc. with another party by press release without express written confirmation by the Executive Director. Populi Inc. accepts no liability for the content of this press release, or for the consequences of any actions taken on the basis of the information provided, unless that information is subsequently confirmed in writing. It may also be privileged or otherwise protected by work product immunity or other legal rules. Please note that any views or opinions presented in this press release are solely those of the author and do not necessarily represent those of the company.</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -347,8 +343,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Value</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2015/01/1-8-15-Moores_Law_Original_Graph.jpg"><img class="aligncenter wp-image-2746" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2015/01/1-8-15-Moores_Law_Original_Graph.jpg" alt="568174k1" width="350" height="347" /></a></p>
+		<h3 class="displayMedium">Value</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2015/01/1-8-15-Moores_Law_Original_Graph.jpg"><img class="aligncenter wp-image-2746" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2015/01/1-8-15-Moores_Law_Original_Graph.jpg" alt="568174k1" width="350" height="347" /></a></p>
 <p>We announced our current pricing <a href="http://populi.co/blog/2010/02/announcing-new-pricing-plans/">back in February 2010</a>. We've since supplemented that with a few optional items: <a href="http://populi.co/blog/2012/03/sms/">SMS Emergency Notifications</a> and <a href="http://populi.co/blog/2011/08/file-storage-and-streaming-media/">File storage</a> (the price of which <a href="http://populi.co/blog/2014/09/way-more-free-file-storage-for-everyone/">has dropped several times</a> the past couple years). As for Populi itself, well, we've added a thing or two, I guess. And all along we've held fast to the free essentials that make it all go for our customers: implementation, training, support—and, most important, our annual Christmas photos.</p>
 <p>It recently struck us: our <a href="http://populi.co/pricing">Pricing Page</a> has remained all but unchanged for the past five years. Web companies commonly experiment with their pricing—adding new tiers, shuffling features around, annual subscription discounts, and so on. You could attribute this to the flexibility of web-based software; it's simple to justify a change in price for an easily-changed product. But such changes have never even crossed our minds. Populi's price has remained steady for five years. The service itself, on the other hand, offers vastly more than it used to. How'd that happen?</p>
 <p>Concerning the price, we've never had a good reason to raise it. Every year, our infrastructure dollars have gotten us more—in terms of utility, service, and storage. We have <a href="http://en.wikipedia.org/wiki/Moore%27s_law">Moore's Law</a> to thank for that; the popular version purports that, every 18 months or so, computing power doubles in speed and drops in price by half. In turn, that has helped us scale up and take on more schools. That spreads our overall costs over an increasing number of customers. And finally, <a href="http://populi.co/blog/2013/07/where-does-your-dollar-go/">the revenue we take in</a> gets plowed back into our people, our company, and serving our customers. Being privately-owned, there's no obligation to meet the preposterous financial goals of<a href="http://populi.co/blog/2013/06/a-helicopter-carrying-a-dinosaur/"> distant, disinterested investors</a>.</p>
@@ -151,11 +149,9 @@
 <p>We once likened the college software scene to <a href="http://populi.co/blog/2012/02/an-automotive-metaphor/">shopping for a car</a>. In a market cluttered with custom tour buses and shady used cars, Populi was the dependable Toyota minivan—affordable, room for everyone, and a great warranty. Now, imagine that you bought the minivan, and every six months or so, the dealer automatically upgraded it to the next trim level. Or installed a new motor. Or gave you a sunroof. All without you paying more or having to do anything.</p>
 <p>That's pretty much the deal you get with Populi.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -344,8 +340,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

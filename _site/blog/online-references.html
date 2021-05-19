@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Online references</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We just released an improved version of online references. References were introduced with the <a href="http://populi.co/blog/2014/01/new-admissions-new-look-new-reports-weve-been-busy/">new Admissions release</a> from last December, and after receiving feedback from customers, we found lots of ways to improve them.</p>
+		<h3 class="displayMedium">Online references</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We just released an improved version of online references. References were introduced with the <a href="http://populi.co/blog/2014/01/new-admissions-new-look-new-reports-weve-been-busy/">new Admissions release</a> from last December, and after receiving feedback from customers, we found lots of ways to improve them.</p>
 <h5>New Admissions setting</h5>
 <p>You'll notice a new tab in Admissions &gt; Settings for Online Reference Forms. This is where you'll create and edit your reference forms (you can have as many as you need).</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/02/2-13-14-reference-forms-navigation.png"><img class="alignnone  wp-image-2603" alt="2-13-14 reference forms navigation" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/02/2-13-14-reference-forms-navigation.png" width="610" height="68" /></a></p>
@@ -161,11 +159,9 @@
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/02/2-17-14-dashboard.png"><img class="alignnone  wp-image-2608" style="margin-left: 81px; margin-right: 81px;" alt="2-17-14 dashboard" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/02/2-17-14-dashboard.png" width="448" height="289" /></a></p>
 <p>If you have any questions about how to use the new online reference forms, check out the <a href="https://support.populiweb.com/entries/39914033-Online-reference-forms">Populi Knowledge Base</a> or contact <a href="https://support.populiweb.com/home">Populi Support</a>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -354,8 +350,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

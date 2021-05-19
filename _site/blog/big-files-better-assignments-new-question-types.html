@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Big files, better assignments, new question types</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We're in the home stretch preparing and testing our <a href="/blog/2011/07/coming-soon-new-stuff-for-course-instances/">next release</a>. Here are three videos showing some of the improvements we're making to course instances:</p>
+		<h3 class="displayMedium">Big files, better assignments, new question types</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We're in the home stretch preparing and testing our <a href="/blog/2011/07/coming-soon-new-stuff-for-course-instances/">next release</a>. Here are three videos showing some of the improvements we're making to course instances:</p>
 <p>Our <a href="/blog/2011/08/file-storage-and-streaming-media/">improvements to files</a> necessitated a new file uploader:</p>
 <p><iframe src="http://player.vimeo.com/video/27923047?title=0&amp;byline=0&amp;portrait=0" width="510" height="319" frameborder="0"></iframe></p>
 <p>Assignments will let teacher and student have a conversation about the student's work:</p>
@@ -150,11 +148,9 @@
 <p>Online tests will feature True/False and Matching question types:</p>
 <p><iframe src="http://player.vimeo.com/video/28027729?title=0&amp;byline=0&amp;portrait=0" width="510" height="319" frameborder="0"></iframe></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -343,8 +339,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

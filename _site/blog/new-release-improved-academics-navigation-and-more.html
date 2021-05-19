@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New release: Improved Academics navigation and more</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>The Populi development team just released the latest in a series of low-key updates to the system. Like other recent updates, this one improves Populi's back-end performance and gives some spit-and-polish to the appearance and interface. Here are the big things we let out of the gate last night...</p>
+		<h3 class="displayMedium">New release: Improved Academics navigation and more</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>The Populi development team just released the latest in a series of low-key updates to the system. Like other recent updates, this one improves Populi's back-end performance and gives some spit-and-polish to the appearance and interface. Here are the big things we let out of the gate last night...</p>
 <h5>Improved navigation in Academics</h5>
 <p>You've <a href="http://populi.co/blog/2011/11/some-upcoming-changes-to-academics-and-custom-info/">seen the video</a>; now you can log in and dig the new and improved navigation in Academics.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/11/11-9-11-Academics-Nav.png"><img class="alignleft size-full wp-image-2209" title="11-9-11 Academics Nav" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/11/11-9-11-Academics-Nav.png" alt="" width="510" height="101" /></a></p>
@@ -156,11 +154,9 @@
 <p>For our Canadian customers, Financial Aid now features a built-in, automatic T4A report which lets you export a spreadsheet, PDF copies for your students, or an XML file for the Canada Revenue Agency.</p>
 <p>We also included the usual round of bugfixes, server updates, and other little items to help keep Populi running right.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -349,8 +345,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

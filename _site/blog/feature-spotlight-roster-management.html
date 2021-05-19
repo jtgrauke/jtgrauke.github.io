@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Feature Spotlight: Roster management</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Populi's course Roster tool lets you manage every aspect of your course's enrollment. In one place, you can see every student connected with that course instance—including enrolled, auditing, withdrawn, incomplete, and waitlisted students. It also gives you a quick rundown of key stats for your enrolled students, such as credits, attendance figures, and grades.</p>
+		<h3 class="displayMedium">Feature Spotlight: Roster management</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Populi's course Roster tool lets you manage every aspect of your course's enrollment. In one place, you can see every student connected with that course instance—including enrolled, auditing, withdrawn, incomplete, and waitlisted students. It also gives you a quick rundown of key stats for your enrolled students, such as credits, attendance figures, and grades.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/06/5-24-13-Roster1.png"><img class="alignnone  wp-image-2459" style="margin-left: 50px; margin-right: 50px;" alt="5-24-13 Roster" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/06/5-24-13-Roster1.png" width="510" height="246" /></a></p>
 <p>The Roster automatically updates with every registration event tied to that course instance. If your students enroll online, it's instantly reflected here—and you can also use the Roster to register enrolled and auditing students:</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/06/6-12-13-Add-Enrolled.png"><img class="alignnone size-full wp-image-2465" style="margin-left: 50px; margin-right: 50px;" alt="6-12-13 Add Enrolled" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/06/6-12-13-Add-Enrolled.png" width="510" height="251" /></a></p>
@@ -160,11 +158,9 @@
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/06/Screen-Shot-2013-11-08-at-11.56.11-AM.png"><img class="alignnone size-full wp-image-2550" style="margin-left: 85px; margin-right: 85px;" alt="Screen Shot 2013-11-08 at 11.56.11 AM" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/06/Screen-Shot-2013-11-08-at-11.56.11-AM.png" width="432" height="147" /></a></p>
 <p>Populi's course Roster gives you one simple and convenient tool to stay on top of all the registration details that are so important to running your school.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -353,8 +349,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

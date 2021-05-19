@@ -133,26 +133,22 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">A good quote from Phil Wainewright</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on January 13th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p><strong>Phil Wainewright</strong> is a consultant with Procullux Ventures and an advocate of "cloud computing" and the "Software as a Service" (SaaS) model.  We appreciate his (sometimes pugilistic) <a href="http://blogs.zdnet.com/SAAS/?tag=trunk;content"><strong>declamations on cloud computing</strong></a>, but we came across a paragraph of his this morning that we thought was worth quoting (with some emphasis added). You can find the original post (from November 15th, 2009) <a href="http://blogs.zdnet.com/SAAS/?p=932&amp;utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+zdnet%2FSAAS+%28ZDNet+Software+as+services%29"><strong>here</strong></a>.</p>
+		<h3 class="displayMedium">A good quote from Phil Wainewright</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on January 13th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p><strong>Phil Wainewright</strong> is a consultant with Procullux Ventures and an advocate of "cloud computing" and the "Software as a Service" (SaaS) model.  We appreciate his (sometimes pugilistic) <a href="http://blogs.zdnet.com/SAAS/?tag=trunk;content"><strong>declamations on cloud computing</strong></a>, but we came across a paragraph of his this morning that we thought was worth quoting (with some emphasis added). You can find the original post (from November 15th, 2009) <a href="http://blogs.zdnet.com/SAAS/?p=932&amp;utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+zdnet%2FSAAS+%28ZDNet+Software+as+services%29"><strong>here</strong></a>.</p>
 <blockquote><p>Yet despite our understandable caution, <strong>it is far better to trust the cloud,</strong> where security and performance are <strong>continuously open to public scrutiny,</strong> where costs can be predictably mapped to actual value delivered and where <strong>the technology is constantly kept up-to-date for no extra cost</strong> or disruption to the customer. Provided the buyer makes proper due diligence and precautions, there is in my view <strong>no alternative form of computing that is more trustworthy.</strong></p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -341,8 +337,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

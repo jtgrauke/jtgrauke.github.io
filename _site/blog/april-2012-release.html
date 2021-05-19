@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">A grab-bag release</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>The Populi team put in a late night last night pushing out a grab-bag of features that'll smooth out some common workflows and make all kinds of data simpler to get at. This post also includes some features that we trickled out over the past few weeks.</p>
+		<h3 class="displayMedium">A grab-bag release</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>The Populi team put in a late night last night pushing out a grab-bag of features that'll smooth out some common workflows and make all kinds of data simpler to get at. This post also includes some features that we trickled out over the past few weeks.</p>
 <h5>Facilities</h5>
 <p>We moved Facilities from the Account bar to its own tab. Accessible to anyone with the Staff role, Facilities contains Locations and Resources. We also moved the Room Vacancies report from Billing to Locations.<br />
 <a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-22-12-Facilities-Tab.png"><img class="alignnone  wp-image-2309" title="4-22-12 Facilities Tab" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-22-12-Facilities-Tab.png" alt="" width="510" height="96" /></a></p>
@@ -162,11 +160,9 @@
 <p>We exposed more Admissions data via the API.</p>
 <p>As is typical of our releases, we've also been fixing bugs, tweaking the interface, and optimizing scripts and servers on the back-end.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -355,8 +351,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,29 +133,25 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Replacing Bad Info With Good</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on September 8th, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p><strong>When we bring on a new college, we import their databases into Populi. </strong>And during the data import, we get a good look at what the college staff has had to deal with for the last few years. Grade reports and transcripts with different grades for the same course. Incorrectly-calculated GPAs. A student's name misspelled four different ways. And any number of other basic information problems.</p>
+		<h3 class="displayMedium">Replacing Bad Info With Good</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on September 8th, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p><strong>When we bring on a new college, we import their databases into Populi. </strong>And during the data import, we get a good look at what the college staff has had to deal with for the last few years. Grade reports and transcripts with different grades for the same course. Incorrectly-calculated GPAs. A student's name misspelled four different ways. And any number of other basic information problems.</p>
 <p>It reminds us why we got into this business in the first place<!--more-->, because the vast majority of these problems are fundamentally software problems. Colleges, regardless of their size, have to rely on their software—because college information is just intrinsic to how a school moves a student through their education. And some—a lot, really—of the software just isn't reliable. It either wasn't built for the job or is just too complex to do the job simply.</p>
 <p>Judging by our conversations with customers, and our experiences with migrating their data into Populi, homegrown systems and databases pose a particular challenge to college management. Beyond any problems with the data structure itself (there's a reason that there are Master's degrees in database management), there's the usability problem: without a well-designed interface to get the data into the database, data quality inevitably suffers. To give a small example, if a phone number entry field doesn't automatically "scrub" inputs of non-numeric characters, you get phone numbers like 208-+96-&amp;83p0. There are bigger problems: if there's more than one place to enter a GPA, how easy is it to type <strong>3.29</strong> in one place and <strong>2.39</strong> in another? And how easy is it to not notice that when you have thirty more GPAs to enter?</p>
 <p>We built Populi to head off these problems in the first place. From the database structure to the unified interface,<strong> Populi is designed to promote data quality.</strong> But one thing we were (and are) pleasantly surprised by—and our customers, too—was that in importing data from lower-quality programs and databases, we end up "repairing" a college's data. Are certain people duplicated? We'll keep the right one. Are transcripts showing non-catalog courses? We'll correct that. Are GPAs just not adding up? We'll clean up the numbers. Because in fitting data into Populi's database, there's just no room for these sorts of errors.</p>
 <p>So our customers don't just end up with their data in a new program—<strong>their data is now more accurate, accessible, and useful than it was before. </strong>And that simply puts them in a better position to serve their students.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -344,8 +340,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

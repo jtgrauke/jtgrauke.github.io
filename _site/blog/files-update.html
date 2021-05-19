@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Files update</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><a href="https://s3.amazonaws.com/blog-media.populi.co/blog_new_files.png"><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog_new_files.png" width="609" height="190" /></a></p>
+		<h3 class="displayMedium">Files update</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><a href="https://s3.amazonaws.com/blog-media.populi.co/blog_new_files.png"><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog_new_files.png" width="609" height="190" /></a></p>
 <p>We're soon to release a big update to Files. Here's a look at what's coming...</p>
 <h5>Subfolders</h5>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/subfolders_blog.png"><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/subfolders_blog.png" width="440" height="112" /></a></p>
@@ -161,11 +159,9 @@
 <p>In the old Files, you would upload files into the Shared folder and specify which user roles could access that item. To accommodate the update and its expanded pallette of folders and sharing features, we'll transfer your shared files into new shared folders for each user role (or combination) with which you've shared a file. For example, if you've shared some files with <em>faculty</em> and others with <em>faculty and advisors, </em>those files will be transferred to two new folders: one called <em>Shared with faculty</em> and the other called <em>Shared with faculty and advisors</em>.</p>
 <p>If you have any questions, don't hesitate to contact Populi support.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -354,8 +350,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

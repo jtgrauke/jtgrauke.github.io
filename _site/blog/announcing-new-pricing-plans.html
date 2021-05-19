@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Announcing New Pricing Plans</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on February 2nd, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Announcing our <a href="http://www.populiweb.com/pricing">new pricing plans</a>!</p>
+		<h3 class="displayMedium">Announcing New Pricing Plans</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on February 2nd, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Announcing our <a href="http://www.populiweb.com/pricing">new pricing plans</a>!</p>
 <p>We're offering three "sizes": Small, Medium, and Large. Each plan gets you everything we offer: access for unlimited faculty, staff, and students; customer support; training; implementation—the whole works. They elaborate on our core pricing principles: to keep Populi affordable and keep the price transparent. So what's the difference? Just some of the math. We priced the plans so Populi would make even better fiscal sense for colleges in the 400-students-and-above range.</p>
 <p>So, the specifics:</p>
 <ul>
@@ -156,11 +154,9 @@
 <p>We based the plans—and our recommendations—on the annual cost for a college based on a typical school year: 10 months, give or take, of full enrollment, with two summer months of low or no enrollment. If you have 520 students, Medium makes the most sense; if you have 114 students, Small gets you the best deal... and so on. Picking a plan doesn't lock you in to anything long-term, and you're free to change it at any time.</p>
 <p>If you're wondering which plan makes the most sense for your college, we'd be <a href="http://www.populiweb.com/contact">happy to talk</a> about it with you.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -349,8 +345,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

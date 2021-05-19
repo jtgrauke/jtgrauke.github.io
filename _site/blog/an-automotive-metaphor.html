@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">An automotive metaphor</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Say your small college is a family of five, you're shopping for a car, and you're wondering what's out there. Here's are some of your options:</p>
+		<h3 class="displayMedium">An automotive metaphor</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Say your small college is a family of five, you're shopping for a car, and you're wondering what's out there. Here's are some of your options:</p>
 <h5>On the low-cost end you find:</h5>
 <ul>
 <li>The Word and Excel approach. This is like tying two bicycles together and calling it a car. It's cheap, it rolls, and you're gonna lose your groceries if you try pedaling home on that thing.</li>
@@ -162,11 +160,9 @@
 <p>Is that all that's available to a small college? Of course not. This is the Populi blog, and so now we're gonna liken Populi to the perfect family car... ready? Here goes:</p>
 <p>Then there's Populi. This is the Toyota minivan, which seats five to seven, has a <a href="http://populi.co/about/support">lifetime parts-and-labor warranty</a>, and even has a built-in <a href="http://populi.co/blog/2011/08/file-storage-and-streaming-media/">DVD player</a> (if that's your thing) and <a href="http://populi.co/tour/bookstore">magazine</a> <a href="http://populi.co/tour/library">rack</a>. Sure, it's nothing flashy, but it's good, dependable transportation just right for a <a href="http://populi.co/pricing/">wide variety of families</a>.    </p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -355,8 +351,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

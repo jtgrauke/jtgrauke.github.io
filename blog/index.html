@@ -7,34 +7,25 @@ featured_image: /images/social.jpg
 
 <section class="blog">
 
-	<div class="wrap">
+	{% for post in paginator.posts %}
 
-		<div class="sm-span-12">
+	{% assign downauthor = post.author | downcase %}
+	{% assign author = site.data.settings.authors[downauthor] %}
 
-			{% for post in paginator.posts %}
-
-			{% assign downauthor = post.author | downcase %}
-			{% assign author = site.data.settings.authors[downauthor] %}
-
-			<article class="post">
-				<h3 class="displayMedium"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h3>
-				<div class="byline clear">
-					{% if author %}
-						<div class="byline-pic {{ author.profile_image_class }}"></div>
-						<span>{{ author.first_name }} wrote this on {{ post.date | date: "%B %-d" }}{{ post.date | ordinal }}, {{ post.date | date: "%Y" }}</span>
-					{% endif %}
-				</div>
-				<div class="entry clear">
-					{{ post.content }}
-				</div>
-			</article>
-
-			{% endfor %}
-
-
+	<article class="post">
+		<h3 class="displayMedium"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h3>
+		<div class="byline clear">
+			{% if author %}
+				<div class="byline-pic {{ author.profile_image_class }}"></div>
+				<span>{{ author.first_name }} wrote this on {{ post.date | date: "%B %-d" }}{{ post.date | ordinal }}, {{ post.date | date: "%Y" }}</span>
+			{% endif %}
 		</div>
+		<div class="entry clear">
+			{{ post.content }}
+		</div>
+	</article>
 
-	</div>
+	{% endfor %}
 
 </section>
 

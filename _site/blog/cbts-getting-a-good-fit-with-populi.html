@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">CBTS: Getting a good fit with Populi</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on October 30th, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p><a href="http://www.populiweb.com/about/"><strong>We built Populi</strong></a> to give small colleges an information system that fit them properly. <strong>Homegrown</strong> <em>might</em> fit the budget. <strong>Enterprise</strong> <em>might</em> fit some of the functions. <strong>Neither really fits the needs</strong> and proportions of schools that need good information but don't have resources to lavish upon it. Many of our customers have migrated over to Populi from homegrown systems, and have been <strong><a href="http://populi.co/blog/2009/07/the-small-college-the-hosted-sis/">reaping the benefits</a></strong>. <strong><a href="http://www.centralseminary.edu/">Central Baptist Theological Seminary</a></strong>, of Plymouth, Minnesota, came over after using one of the big systems for several years. We spoke with CBTS' Registrar, Eric White, about the experience. The short version:<strong> "It's gone very well,"</strong> said Eric.</p>
+		<h3 class="displayMedium">CBTS: Getting a good fit with Populi</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on October 30th, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p><a href="http://www.populiweb.com/about/"><strong>We built Populi</strong></a> to give small colleges an information system that fit them properly. <strong>Homegrown</strong> <em>might</em> fit the budget. <strong>Enterprise</strong> <em>might</em> fit some of the functions. <strong>Neither really fits the needs</strong> and proportions of schools that need good information but don't have resources to lavish upon it. Many of our customers have migrated over to Populi from homegrown systems, and have been <strong><a href="http://populi.co/blog/2009/07/the-small-college-the-hosted-sis/">reaping the benefits</a></strong>. <strong><a href="http://www.centralseminary.edu/">Central Baptist Theological Seminary</a></strong>, of Plymouth, Minnesota, came over after using one of the big systems for several years. We spoke with CBTS' Registrar, Eric White, about the experience. The short version:<strong> "It's gone very well,"</strong> said Eric.</p>
 <p>Eric took the position with CBTS in 2002. As  Registrar, he had more contact with the Seminary's outdated <strong>enterprise</strong> <strong>information system<!--more--></strong> than anyone else at CBTS. Fortunately, his background in IT and basic programming equipped him to deal with it.  So for several more years, he made the system work for their admissions and registrar offices. But it was challenging. <strong>“Their database was messy</strong>, and the vendor was <strong>very slow with development</strong><strong>...”</strong> Eric told us, “...not to mention, customer support.”</p>
 <p>For instance,<strong> “Online registration</strong> <em>almost</em> worked.” Eric said, “Students could register for courses online, and the system produced an enrollment spreadsheet that could be uploaded to the database itself. But <strong>the file upload never worked</strong> and we had to enter the data by hand. And that effectively <strong>eliminated the benefit</strong> of having students register online.”</p>
 <p>Degree Audits were <strong>as pleasant as unanaesthetized dentistry.</strong> Eric put it simply, “I wonder sometimes if our old system was built for K-12 schools. <strong>Degree audits would have been easier with a pen and paper than to make the system do it.”</strong></p>
@@ -154,11 +152,9 @@
 <p><strong>Eric has been very pleased with Populi.</strong> One reason is that it just works—the online registration and degree audits, for instance,  don't make him do all his work over by hand. <strong>Another is the customer service.</strong> "It's a really easy system to use, so I don't have to request help that often. But when I do, I’ve been impressed with the support and the <strong>quick turnaround on my requests." </strong></p>
 <p>Cleaner data, easier workflows, lower costs: CBTS' experience illustrates how <strong>small colleges can get a better fit with Populi.</strong></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -347,8 +343,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

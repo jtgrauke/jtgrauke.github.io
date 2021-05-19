@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Populi updates for the GDPR</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic brendan"></div>
-					<span>Brendan wrote this on May 25th, 2018</span>
-				
-			</div>
-			<div class="entry clear">
-				<p><a href="https://populi.co/blog/2018/04/preparing-for-the-gdpr/">About a month ago</a> we described how Populi was preparing for the European Union&#8217;s General Data Protection Regulation (GDPR). Today we&#8217;d like to tell you about the updates we&#8217;ve made to accommodate the GDPR and help you comply with the burdens it puts on you.</p>
+		<h3 class="displayMedium">Populi updates for the GDPR</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic brendan"></div>
+				<span>Brendan wrote this on May 25th, 2018</span>
+			
+		</div>
+		<div class="entry clear">
+			<p><a href="https://populi.co/blog/2018/04/preparing-for-the-gdpr/">About a month ago</a> we described how Populi was preparing for the European Union&#8217;s General Data Protection Regulation (GDPR). Today we&#8217;d like to tell you about the updates we&#8217;ve made to accommodate the GDPR and help you comply with the burdens it puts on you.</p>
 
 <h5>New tools</h5>
 
@@ -193,11 +191,9 @@
 <p>The GDPR is a far-reaching bit of regulation. It&#8217;s a dragnet meant to rein in the questionable practices of companies like Google and Facebook (to say nothing of numerous other shady operators) that also snags clean-nosed companies like Populi and organizations like our customers. The reaction to the GDPR in the web services industry has been uneven and confused; as evidence, have a look at your inbox and the torrent of GDPR-related emails you&#8217;ve received in the past two weeks. And if the industry is confused, we&#8217;re not surprised if you are, too.</p>
 
 <p>If you have questions about GDPR and Populi, get in touch. We&#8217;ll be happy to help.</p>
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -386,8 +382,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

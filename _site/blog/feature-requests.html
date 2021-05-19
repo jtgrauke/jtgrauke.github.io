@@ -133,28 +133,24 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Feature Requests</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on July 15th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Feature requests inundate most any software company. Populi is no exception. While we bring a certain expertise and understanding to college management software, there are still needs we don't anticipate. Consequently, we might miss certain features or approach something from the wrong angle—and so one of our users has to tell us that something's off. We love that kind of feedback. <a href="http://bit.ly/dqlxFA"><strong>We're not perfect</strong></a>, and some of our users have really good ideas that we're privileged to hear about.</p>
+		<h3 class="displayMedium">Feature Requests</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on July 15th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Feature requests inundate most any software company. Populi is no exception. While we bring a certain expertise and understanding to college management software, there are still needs we don't anticipate. Consequently, we might miss certain features or approach something from the wrong angle—and so one of our users has to tell us that something's off. We love that kind of feedback. <a href="http://bit.ly/dqlxFA"><strong>We're not perfect</strong></a>, and some of our users have really good ideas that we're privileged to hear about.</p>
 <p>Of course, there are things we don't develop because they just won't solve a problem—or might create a new problem. Some features might complicate the workflows we're actively simplifying and streamlining. Sometimes our customer requests fall into this category—for a variety of reasons. Their old software might have forced a workaround that they "can't live without" now. There could be an administrative procedure that Populi doesn't directly support. They have staff who need particular access to this thing but not that thing. And so on. While we're sympathetic to their needs—and <a href="http://bit.ly/9eYaW0"><strong>we do all we can</strong></a> to figure out how to make it work—oftentimes we reject the request because it would mess with how thirty other colleges do something.</p>
 <p>To cope with the deluge of suggestions—through our support system, over the phone, random emails from customers, other correspondence—we're now steering our customers to the new Feature Requests forum on our help desk. The forum, made possible by some enhancements to <a href="http://www.zendesk.com/"><strong>Zendesk</strong></a>, our web-based help desk software, lets our users submit feature requests, vote for other requests, and weigh in with their own comments. It's a great way for us to not only hear about what our customers need, but also to gauge the demand for a particular request. Further, it's an opportunity to be a bit more transparent about our decision-making process. What we do with Populi affects a lot of people, and this forum, we trust, is another way for us to communicate clearly with the people who have a stake in our development.</p>
 <p>Our users can get to the Feature Requests Forum by clicking the orange <strong>help</strong> icon in Populi and going to the Knowledge Base. Adding new requests, voting for others, and leaving comments is all pretty self-explanatory... and our users who already know about it have dived right in. We look forward to hearing from y'all.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -343,8 +339,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

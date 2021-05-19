@@ -133,26 +133,22 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">The job to be done</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Inside Intercom's <a href="http://insideintercom.io/the-dribbblisation-of-design/">The Dribbblisation of Design</a> lambastes software designers who start with the visual design of their program without first considering the underlying layers of a well-built app.</p>
+		<h3 class="displayMedium">The job to be done</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Inside Intercom's <a href="http://insideintercom.io/the-dribbblisation-of-design/">The Dribbblisation of Design</a> lambastes software designers who start with the visual design of their program without first considering the underlying layers of a well-built app.</p>
 <blockquote><p>Much of the product design work from job applicants I’ve seen recently has been superficial, created with one eye towards <a href="http://dribbble.com">Dribbble</a> [an online design community]. Things that look great but don’t work well. Perfect pixel executions of flat design, but work that doesn’t address real business goals, solve real problems people have every day, or take a full business ecosystem into consideration.</p></blockquote>
 <p>The best software design starts with the unglamorous stuff: what is the user trying to accomplish? How can the software help them do that? How can the software explain how it works to the user?</p>
 <p><img class="alignnone" alt="" src="http://cdn.insideintercom.io/wp-content/uploads/2013/09/DribbblePostImage7.png" width="600" height="520" /></p>
 <p>This way of thinking owes much to <a href="http://www.claytonchristensen.com">Clayton Christensen</a>, a Harvard Business School professor whose ideas on management and business are summarized in his "Job To Be Done" framework.  JTBD leads with this question: what job is the user hiring this product/service to do? It has a surprising range of applications—software, household products... <a href="http://www.youtube.com/watch?v=f84LymEs67Y">and even milkshakes</a>. And there's no doubt that it has plenty of uses in designing college management software.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -341,8 +337,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

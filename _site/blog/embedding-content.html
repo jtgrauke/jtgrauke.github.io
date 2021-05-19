@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Embedding content in lessons and news posts</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>You've long been able to embed content from external sources—YouTube, Vimeo, Scribd—in news posts and course lessons. We recently made this feature even better: you can now embed content from 17 different services. Here's a look...</p>
+		<h3 class="displayMedium">Embedding content in lessons and news posts</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>You've long been able to embed content from external sources—YouTube, Vimeo, Scribd—in news posts and course lessons. We recently made this feature even better: you can now embed content from 17 different services. Here's a look...</p>
 <h5>Auto-embeds</h5>
 <p>Auto-embeds work simply by pasting the content's URL right in the text of the post or lesson. This works with YouTube, Vimeo, Scribd, and now <a href="http://prezi.com">Prezi</a>, a service that lets you create and share presentations.</p>
 <p>First, copy the URL of the media you want to include from one of those services.</p>
@@ -164,11 +162,9 @@
 <p><img class=" aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/Embedded%20Soundcloud%20725%20333.png" alt="" width="615" height="282" /></p>
 <p>The whitelisted services are Google Docs, YouTube, Vimeo, Flickr, Scribd, Prezi, Soundcloud, Rdio, Spotify, Twitch, Vine, TED, Slideshare, Imgur, Box, Crocdoc, and Quickcast. If you have another service you'd like to us to add, send us a support request and we'll take a look at it.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -357,8 +353,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

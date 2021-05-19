@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Upcoming changes to our Terms of Service</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We'll be making some changes to our Terms of Service and Privacy Policy soon, and in the interest of forthrightness and transparency, we wanted to let you know about them ahead of time. You can find them on <a href="http://populi.co/legal">this preview of our new legal page</a>, where we will soon collect all four of our various official documents. Those documents include the Customer Terms of Service, Acceptable Use Policy, Privacy Policy, and Copyright Policy. The new Terms and Policies will go into effect on April 1, 2013 (and, noooo, this isn't a prank...).</p>
+		<h3 class="displayMedium">Upcoming changes to our Terms of Service</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We'll be making some changes to our Terms of Service and Privacy Policy soon, and in the interest of forthrightness and transparency, we wanted to let you know about them ahead of time. You can find them on <a href="http://populi.co/legal">this preview of our new legal page</a>, where we will soon collect all four of our various official documents. Those documents include the Customer Terms of Service, Acceptable Use Policy, Privacy Policy, and Copyright Policy. The new Terms and Policies will go into effect on April 1, 2013 (and, noooo, this isn't a prank...).</p>
 <p>Before we get into the changes, we want to emphasize a couple fundamentals that are <em>not</em> changing—things that are basic to how we do business and serve our customers:</p>
 <h5>1. Your data is yours</h5>
 <p>And it always will be. Our business is simply to provide you with a tool to collect, store, manage, and use your information for the benefit of your school, staff, faculty, and students. And should you choose to move on to a different system, we give you the tools to easily take all your data with you. We won't sell or otherwise traffic your information—our mission is to give you a safe, secure way to take care of it yourselves.</p>
@@ -176,11 +174,9 @@
 <p>Again, the new policies are slated to go in effect as of April 1, 2013. Before that time, we may make minor tweaks to some of the wording, but we don't anticipate anything major.</p>
 <p>And, of course, we welcome your questions and comments.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -369,8 +365,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

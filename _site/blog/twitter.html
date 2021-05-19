@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">What does Twitter do?</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Let's ask a few questions about <a href="http://twitter.com/">Twitter</a> and figure out what this company is up to.</p>
+		<h3 class="displayMedium">What does Twitter do?</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Let's ask a few questions about <a href="http://twitter.com/">Twitter</a> and figure out what this company is up to.</p>
 <h5>What is Twitter?</h5>
 <p><a href="https://twitter.com/about">To hear them tell it</a>, it's "a real-time information network that connects you to the latest stories, ideas, opinions and news <a href="#1">[sic]</a> about what you find interesting." The <em>you</em> in this case is the Twitter user. A user signs up with an email address, figures out a unique username, maybe enters some personal information, and finds other Twitter accounts to follow. Then he starts tweeting and <em>telling</em> the world about what he's into.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-11-12-Twitter.png"><img class="alignnone size-full wp-image-2305" style="margin-left: 140px; margin-right: 140px;" title="4-11-12 Twitter" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/04/4-11-12-Twitter.png" alt="" width="230" height="134" /></a></p>
@@ -208,11 +206,9 @@
 <p>5 Whatever that means anymore.</p>
 <p>6 See the ridiculous <a href="http://youtu.be/9c6W4CCU9M4">Google Glass concept video</a> for this notion taken to an extreme.</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -401,8 +397,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

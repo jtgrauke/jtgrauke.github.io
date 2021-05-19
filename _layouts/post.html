@@ -6,23 +6,19 @@ layout: default
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
+		<h3 class="displayMedium">{{ page.title }}</h3>
+		<div class="byline clear">
+			{% if author %}
+				<div class="byline-pic {{ author.profile_image_class }}"></div>
+				<span>{{ author.first_name }} wrote this on {{ page.date | date: "%B %-d" }}{{ page.date | ordinal }}, {{ page.date | date: "%Y" }}</span>
+			{% endif %}
+		</div>
+		<div class="entry clear">
+			{{ page.content }}
+		</div>
 
-			<h3 class="displayMedium">{{ page.title }}</h3>
-			<div class="byline clear">
-				{% if author %}
-					<div class="byline-pic {{ author.profile_image_class }}"></div>
-					<span>{{ author.first_name }} wrote this on {{ page.date | date: "%B %-d" }}{{ page.date | ordinal }}, {{ page.date | date: "%Y" }}</span>
-				{% endif %}
-			</div>
-			<div class="entry clear">
-				{{ page.content }}
-			</div>
-
-		</article>
-
-	</div>
+	</article>
 
 </section>

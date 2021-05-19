@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Preparing for the GDPR</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic brendan"></div>
-					<span>Brendan wrote this on April 25th, 2018</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>On May 25, 2018 the European Union&#8217;s <a href="https://gdpr-info.eu">General Data Protection Regulation (GDPR)</a> will go into effect. The EU enacted the GDPR to give its citizens more control over their data and require certain security and transparency measures from the businesses and organizations that keep that data. The GDPR regulates any entity that controls or processes the personal data of any EU citizen—which affects not only Populi but also many of our customers. Here is a guide to how we are preparing for GDPR and the tools we&#8217;re building to help our customers who are affected by the new regulations.</p>
+		<h3 class="displayMedium">Preparing for the GDPR</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic brendan"></div>
+				<span>Brendan wrote this on April 25th, 2018</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>On May 25, 2018 the European Union&#8217;s <a href="https://gdpr-info.eu">General Data Protection Regulation (GDPR)</a> will go into effect. The EU enacted the GDPR to give its citizens more control over their data and require certain security and transparency measures from the businesses and organizations that keep that data. The GDPR regulates any entity that controls or processes the personal data of any EU citizen—which affects not only Populi but also many of our customers. Here is a guide to how we are preparing for GDPR and the tools we&#8217;re building to help our customers who are affected by the new regulations.</p>
 <h5>Legal language</h5>
 <p>As contemplated by the GDPR, Populi, as a <em>data processor</em>, provides the tools and services our customers—who are <em>data controllers</em>—may use to collect, store, and maintain personal data about EU citizens (<em>data subjects</em> in GDPR parlance). In light of this, we&#8217;re reviewing our <a href="http://populi.co/legal/terms/">public legal documents</a> and will be updating the appropriate sections of each policy. We&#8217;re also reviewing our internal Security Policy regarding data deletion, customer data backups, and our own security precautions.</p>
 <h5>Software</h5>
@@ -162,11 +160,9 @@
 <h5>Updates are coming</h5>
 <p>As we release updates to our software and legal documents, we&#8217;ll make sure to inform you via Populi&#8217;s system notices, our weekly <a href="https://support.populiweb.com/hc/en-us/sections/205240647-Release-notes">Release Notes</a>, and other appropriate media.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -355,8 +351,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

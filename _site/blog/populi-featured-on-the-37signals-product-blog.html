@@ -133,26 +133,22 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Populi featured on the 37signals product blog</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on March 26th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>We've <strong><a href="http://www.populiweb.com/blog/2009/07/apps-we-use/">mentioned some of the software</a></strong> we use around here. Well, some of the software we use <strong><a href="http://productblog.37signals.com/products/2010/03/populi-campfire-has-all-but-replaced-the-replyall-email-noise-that-used-to-plague-the-office.html?utm_source=twitterfeed&amp;utm_medium=twitter">has now mentioned us</a></strong>. 37signals asked their customers for stories describing how their products have improved the way work gets done. We responded to the call, and they put our story up on their<strong> <a href="http://productblog.37signals.com/"><strong>Product Blog</strong></a></strong> today.</p>
+		<h3 class="displayMedium">Populi featured on the 37signals product blog</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on March 26th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>We've <strong><a href="http://www.populiweb.com/blog/2009/07/apps-we-use/">mentioned some of the software</a></strong> we use around here. Well, some of the software we use <strong><a href="http://productblog.37signals.com/products/2010/03/populi-campfire-has-all-but-replaced-the-replyall-email-noise-that-used-to-plague-the-office.html?utm_source=twitterfeed&amp;utm_medium=twitter">has now mentioned us</a></strong>. 37signals asked their customers for stories describing how their products have improved the way work gets done. We responded to the call, and they put our story up on their<strong> <a href="http://productblog.37signals.com/"><strong>Product Blog</strong></a></strong> today.</p>
 <p>Neato.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -341,8 +337,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

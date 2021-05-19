@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Security: Technology Can Only Go So Far</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on November 12th, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p><strong>When it comes to security,</strong> we would <strong>happily agree</strong> with the 37signals team’s recently-adopted dictum, "<strong><a href="http://37signals.com/security">Perfect security is a moving target.</a></strong>" Any company that thinks and says otherwise has another thing coming—<strong>and so do their customers, unfortunately.</strong></p>
+		<h3 class="displayMedium">Security: Technology Can Only Go So Far</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on November 12th, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p><strong>When it comes to security,</strong> we would <strong>happily agree</strong> with the 37signals team’s recently-adopted dictum, "<strong><a href="http://37signals.com/security">Perfect security is a moving target.</a></strong>" Any company that thinks and says otherwise has another thing coming—<strong>and so do their customers, unfortunately.</strong></p>
 <p>The first page of <strong><a href="http://campustechnology.com/Articles/2009/09/17/U-Nebraska-Turns-to-Data-Loss-Prevention-To-Lock-Down-Sensitive-Communications.aspx?Page=1">this Campus Technology article</a></strong> describes what’s at stake: <strong>colleges collect “more sensitive data</strong> about students than a Fortune 500 company does about customers.” The article goes on to describe why this is such a problem at the University of Nebraska:<!--more--></p>
 <blockquote><p>"Unfortunately, confidential information at many institutions routinely leaves the campus in a steady stream, not because of hackers, but through accidental e-mail exposure by users, most of whom are ignorant of good data security policies. [F]aculty and staff . . . were routinely sending e-mails with confidential data including Social Security numbers, spreadsheets with credit card numbers, and other sensitive items."</p></blockquote>
 <p>Later in the article we learn that even <strong>outside vendors were doing the same thing.</strong></p>
@@ -156,11 +154,9 @@
 <p>The third, and most important—because it can undo all of a developer's work in a matter of seconds—is for <strong>users to develop good habits themselves.</strong> A developer can require a complex password, encrypt the transmission, and run it through a hashing algorithm... but<strong> if a user goes and sticks their password to their monitor, </strong>well, why bother with secure passwords? If someone leaves for a lunch break with <strong>their account open on a public computer,</strong> why restrict access to login info? If someone <strong>sends sensitive spreadsheets</strong> to their personal email to work on them from home, why build <a href="http://www.populiweb.com/tour/webbasedhosted"><strong>a web-based application</strong></a>?</p>
 <p>The University of Nebraska's experience underscores that security technology, while certainly useful and worth the investment, almost pales in importance to h<strong>ow much your people's software habits matter.</strong> That seems to be the one constant in software security, and <strong>there's no sign of that changing.</strong> We like to think that we run a realistic, open-eyed company here. We’reivacy of the sensitive data we help you manage will still rise and fall on the vigilance and habits of our users.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -349,8 +345,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

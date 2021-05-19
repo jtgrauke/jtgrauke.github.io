@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Feature Spotlight: Payment processing</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>One of our favorite value-adds in Populi is online payment processing. Schools can link a merchant account or payment gateway account with Populi and start taking online payments for tuition, fees, and Bookstore purchases. <a href="http://populi.co/blog/2012/07/feature-spotlight-billing/">Populi Billing</a> already eases the processes connected to charging students, recording their payments, and settling their account balances. <a href="http://www.populiweb.com/blog/2010/03/payment-processing-and-bookstore-the-movie/">Credit card processing</a> takes it even further: it lets your school use Populi to collect actual payments, helping your students pay their bills on time and helping you get money in the door.</p>
+		<h3 class="displayMedium">Feature Spotlight: Payment processing</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>One of our favorite value-adds in Populi is online payment processing. Schools can link a merchant account or payment gateway account with Populi and start taking online payments for tuition, fees, and Bookstore purchases. <a href="http://populi.co/blog/2012/07/feature-spotlight-billing/">Populi Billing</a> already eases the processes connected to charging students, recording their payments, and settling their account balances. <a href="http://www.populiweb.com/blog/2010/03/payment-processing-and-bookstore-the-movie/">Credit card processing</a> takes it even further: it lets your school use Populi to collect actual payments, helping your students pay their bills on time and helping you get money in the door.</p>
 <h5>Setup</h5>
 <p>Populi directly integrates with <a href="http://www.chasepaymentech.com">Chase Paymentech</a>* merchant accounts, which include everything you need to process credit card payments and channel the funds to your back account. It also works with <a href="http://www.authorize.net">Authorize.net</a> payment gateway accounts, which serve as a bridge between Populi and your existing merchant account.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/01/1-29-13SETTINGS.png"><img class="alignnone  wp-image-2399" title="1-29-13SETTINGS" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/01/1-29-13SETTINGS.png" alt="" width="510" height="190" /></a></p>
@@ -162,11 +160,9 @@
 <p>As of this writing, Populi has processed over $15 million worth of credit card payments on behalf of our client schools. Reducing the obstacles for students and parents to pay their tuition and fees is a great way to benefit your bottom line, and we're happy to make that easier on our customers.</p>
 <blockquote><p>* Interested in a Chase Paymentech account? Contact Populi Support and we'll get you started.</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -355,8 +351,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

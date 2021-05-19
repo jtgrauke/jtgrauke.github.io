@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Better fee rules and other financial improvements</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><img src="https://s3.amazonaws.com/blog-media.populi.co/Fee%20rules%20blog.png" style="width:950px;" /></p>
+		<h3 class="displayMedium">Better fee rules and other financial improvements</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><img src="https://s3.amazonaws.com/blog-media.populi.co/Fee%20rules%20blog.png" style="width:950px;" /></p>
 <p>Fee rules let you set up conditions that automatically trigger a fee when a student enrolls in a course. You can target them at things like enrollments, audits, campuses, custom info, and so on.</p>
 <p>Handy as they are, fee rules haven't always proved flexible enough to target complex situations. It was pretty difficult, for example, to make a fee trigger when students in the Graduate program enrolled in LIT576 at <em>either</em> the Springfield Campus <em>or</em> the Urbana Campus&mdash;such either/or situations required multiple fees with different rules.</p>
 <p>Our new fee rules (just released last night!) handle these situations with aplomb. Rules now exist within <em>rule groups</em>; you can have multiple rule groups for each fee. Rule groups include an "any/all" selector that lets you specify your conditions with greater clarity. If you use multiple rule groups, you can easily set up conditions that bill students who "all fit this situation <em>and</em> either this or that other situation". That means it's now simple to set up a fee that triggers when an Undergraduate student enrolls in 1 to 18 credits at <em>either</em> the Portland Campus <em>or</em> the Online Campus (like the above image).</p>
@@ -158,11 +156,9 @@
 <p><img src="https://s3.amazonaws.com/blog-media.populi.co/Recurring%20payment%20manage%20blog.png" style="width:720px;" /></p>
 <p><a href="http://populi.co/blog/2015/05/recurring-donations/">Last May</a> we added the ability to set up recurring donations and payments. A recent updated gives you more options for managing those payments. You can now change the amount, schedule, and payment details on both the payer's profile and the Recurring Payments/Donations reports.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -351,8 +347,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

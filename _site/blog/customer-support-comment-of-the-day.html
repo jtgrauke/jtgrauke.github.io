@@ -133,27 +133,23 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Customer Support Comment of the Day</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on July 30th, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>“Even if we got nuked, your data would still be safe.”</p>
+		<h3 class="displayMedium">Customer Support Comment of the Day</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on July 30th, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>“Even if we got nuked, your data would still be safe.”</p>
 <p>Brian Schlect, Implementation Crew, to someone wondering about how <a href="http://www.populiweb.com/about/security/">thoroughly Populi backs up college data</a>.</p>
 <p>That's one way to put it, Brian.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -342,8 +338,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

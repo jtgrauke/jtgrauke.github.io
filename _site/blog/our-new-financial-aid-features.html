@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Our new Financial Aid features</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>In the wee hours of Wednesday, June 8, we released our overhaul of Populi Financial Aid into the wild after months of development, testing, and refinement. The new features (together with the U.S. Department of Ed's proprietary <em>EdExpress</em> software) will let your Financial Aid office handle the entire aid process—everything from importing ISIRs to managing aid applications to batch disbursement of funds. We <a href="http://populi.co/blog/2011/05/financial-aid-the-movie/">previewed</a> the new stuff in some <a href="http://populi.co/blog/2011/05/coming-soon-a-refresh-for-populi-financial-aid/">recent</a> posts; here's a summary of what we just released:<br />
+		<h3 class="displayMedium">Our new Financial Aid features</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>In the wee hours of Wednesday, June 8, we released our overhaul of Populi Financial Aid into the wild after months of development, testing, and refinement. The new features (together with the U.S. Department of Ed's proprietary <em>EdExpress</em> software) will let your Financial Aid office handle the entire aid process—everything from importing ISIRs to managing aid applications to batch disbursement of funds. We <a href="http://populi.co/blog/2011/05/financial-aid-the-movie/">previewed</a> the new stuff in some <a href="http://populi.co/blog/2011/05/coming-soon-a-refresh-for-populi-financial-aid/">recent</a> posts; here's a summary of what we just released:<br />
 <a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/06/Tabs-6-8-11.png"><img class="alignleft size-full wp-image-2121" title="Tabs 6-8-11" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/06/Tabs-6-8-11.png" alt="" width="510" height="39" /></a></p>
 <h5>Navigation overhaul</h5>
 <p>All of Populi Financial has been moved over to the new tab-based layout, which clarifies the navigation (and works better on mobile devices).</p>
@@ -156,11 +154,9 @@
 <p>As usual, we took the opportunity to work in some bugfixes and performance improvements. We've made some architecture changes that will enable us to do a lot of cool things with future development.</p>
 <p>And Financial Aid now has its own forum in the Populi help desk.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -349,8 +345,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

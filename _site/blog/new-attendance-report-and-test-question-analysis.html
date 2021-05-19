@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New attendance report and test question analysis</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We recently released a couple new academic reporting tools.</p>
+		<h3 class="displayMedium">New attendance report and test question analysis</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We recently released a couple new academic reporting tools.</p>
 <h5>Attendance report</h5>
 <p><img src="https://s3.amazonaws.com/blog-media.populi.co/attendance_report_blog.png" alt="" width="600px;" align="center" /></p>
 <p>The new <a href="https://support.populiweb.com/entries/52577-Reporting-analytics-attendance-and-preset">Attendance report</a> in Academics &gt; Reporting lets you look at every detail of every attendance record at your school. You can look at attendance by student, by course, by term, and even get a report of all your attendance data—every term, every course, every meeting, every student. Use the spiffy new reporting filter to narrow down your searches and then export anything you find to XLS or CSV.</p>
@@ -152,11 +150,9 @@
 <p>The new <a href="https://support.populiweb.com/entries/78143226/#analysis">Analysis view</a> in tests shows you the big picture of how your students are faring against your online test questions. The data helps you evaluate whether your test questions are enough of a challenge—or too much of a cakewalk—for your students. It can also help you pinpoint your students' strengths and struggles in a way that overall assignment grades can't.</p>
 <p>For example, your students average 75% on the mid-term exam. Test analysis reveals to you that they bombed the short answers from one particular textbook (but otherwise did just fine), and that's what dragged everyone's grades down. So now you know that you either need to spend more time reviewing that text or ditch those questions when it comes time for the final exam.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -345,8 +341,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

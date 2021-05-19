@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Canadian privacy laws and cloud computing</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<h5>First, the disclaimer</h5>
+		<h3 class="displayMedium">Canadian privacy laws and cloud computing</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<h5>First, the disclaimer</h5>
 <p>What follows is the fruit of our research into Canadian privacy laws as they bear on the use of cloud-based software to store and access personal data as of mid-March, year of our Lord 2012. Of course, we are not lawyers, nor are we Canadian, nor are we from the future. If you have any questions about federal or provincial privacy laws, please seek out legal counsel from north of the 49th.</p>
 <h5>Now, the fun part: the article!</h5>
 <p>While most of our customers are located in the United States, we also have a sizable number of Canadian schools using Populi—and many more who are considering us. One thing our Canadian friends ask us is whether they would run afoul of federal or provincial privacy laws by using our service. The laws to which they refer place restrictions on the storage and access of personal information by public institutions—particularly, they stipulate that such institutions must store such data in Canada.</p>
@@ -189,11 +187,9 @@
 <p>An article on cloud computing from <a href="http://www.itworldcanada.com/news/dont-use-the-patriot-act-as-an-excuse/141033">itWorld Canada</a></p>
 <p>*As a supplement to FIPPA, British Columbia has published <a href="http://www.oipc.bc.ca/pdfs/public/CloudComputingGuidelines(February2012).pdf">a guide to cloud computing</a> (PDF) for public bodies; the long and the short of it is that the cloud is off-limits to public bodies in that province.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -382,8 +378,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

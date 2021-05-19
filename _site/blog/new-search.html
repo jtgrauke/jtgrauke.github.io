@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New Search</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic adam"></div>
-					<span>Adam wrote this on December 13th, 2019</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>
+		<h3 class="displayMedium">New Search</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic adam"></div>
+				<span>Adam wrote this on December 13th, 2019</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>
 	New Search is here! After about a month in public beta, Populi&#8217;s new search engine is now live for everyone. 
 </p>
 
@@ -186,11 +184,9 @@
 
 
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -379,8 +375,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

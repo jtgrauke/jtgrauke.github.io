@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Cross-course cloning</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We're pleased to release cross-course cloning. Academic Admins can now clone items (assignments, tests, files, etc.) from any course to any other course. For the most part, things look much the same... same interface, same red-letter warning message... but now with more cloning power than ever before!</p>
+		<h3 class="displayMedium">Cross-course cloning</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We're pleased to release cross-course cloning. Academic Admins can now clone items (assignments, tests, files, etc.) from any course to any other course. For the most part, things look much the same... same interface, same red-letter warning message... but now with more cloning power than ever before!</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/08/8-27-12-cross-course-cloning.png"><img class="alignnone size-full wp-image-2348" style="margin-left: 47px; margin-right: 47px;" title="8-27-12 cross-course cloning" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/08/8-27-12-cross-course-cloning.png" alt="" width="415" height="479" /></a></p>
 <h5>We've been busy...</h5>
 <p>This is as good a time as any to update you on the other things we've released over the last several months. We have a nimble new development setup that lets us release new features more easily than we used to, so rather than bundling lots of little things into a few big-scale marquee releases throughout the year, we're now able to deploy several new features, one at a time, in a given month.*</p>
@@ -165,11 +163,9 @@
 </ul>
 <blockquote><p>* None of this, of course, is to imply that we only work on small stuff now—we've got some pretty big things under development right now, which will also benefit from our new development/release setup...</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -358,8 +354,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New Features: the Activity Feed and the Bulletin Board</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on June 10th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>We have some brand-new new contact relationship tools and social networking feeds. They're designed to help keep the people at your college connected to what’s going on—at your school and with each other.</p>
+		<h3 class="displayMedium">New Features: the Activity Feed and the Bulletin Board</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on June 10th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>We have some brand-new new contact relationship tools and social networking feeds. They're designed to help keep the people at your college connected to what’s going on—at your school and with each other.</p>
 <p>The features center around <a href="http://www.populiweb.com/blog/2010/05/the-new-profile-a-preview/"><strong>the Profile</strong></a>. <strong>The Activity Feed</strong> shows a stream of Notes, Emails, Printed Letters, Uploaded Files, and Completed To-Dos from Staff and Faculty. As people interact with this person, you’ll see updates in the person’s <strong>History</strong>, as well as upcoming <strong>To-Dos</strong> and <strong>Communications</strong>. The Activity Feed is designed so your staff can see what’s happened with any person in Populi, as well as what’s <em>going </em>to happen.</p>
 <iframe src="https://player.vimeo.com/video/12473318" width="610" height="381" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/12473318">Bulletin Board &amp; News Feed (Student Tutorials)</a> from <a href="https://vimeo.com/populi">Populi</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
@@ -154,11 +152,9 @@
 <p>The social networking features are totally public, so <strong>there’s no need to worry about anonymous users </strong>abusing the system or harassing people or sending out spam. And even if out-of-line comments are deleted, Staff users can still see them in case they need to look into something. The idea is to keep the conversations polite, focused, and relevant to the life of your college.</p>
 <p>These new features just went live, so try them out and see what they can do.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -347,8 +343,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

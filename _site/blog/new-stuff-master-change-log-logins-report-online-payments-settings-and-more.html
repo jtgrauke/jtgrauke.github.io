@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New stuff: master change log, logins report, online payments settings, and more</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We recently released a number of new reporting items users have been asking for.</p>
+		<h3 class="displayMedium">New stuff: master change log, logins report, online payments settings, and more</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We recently released a number of new reporting items users have been asking for.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/06/MCL.png"><img class="alignnone  wp-image-2661" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/06/MCL.png" alt="MCL" width="615" height="174" /></a></p>
 <p>First, a master change log: Account Admins can now go to the new Reporting &gt; Changes tab in Account and create detailed reports of just about any change made to any person—including what kind of action it was, when it was made, and who made it.</p>
 <p>Next, one tab over from Changes, you'll find the new Logins report, which lets you get login details—everything from username to IP address—for any timeframe you need.</p>
@@ -153,11 +151,9 @@
 <p>There are also a couple new custom financial statement page layouts, which works just like our other custom layouts (transcript, award letter, etc.). There's an overall statement that you can export from a student's financial dashboard, and a term statement that's available on the student's financial term view. Contact Populi Support if you'd like to get going with either of the new layouts.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/07/kustom.png"><img class="aligncenter wp-image-2668" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/07/kustom.png" alt="kustom" width="313" height="141" /></a></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -346,8 +342,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

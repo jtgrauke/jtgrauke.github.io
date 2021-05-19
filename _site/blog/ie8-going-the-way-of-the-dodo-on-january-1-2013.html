@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">IE8 going the way of the dodo on January 1, 2013</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/11/12-14-12-IE8error.png"><img class="alignnone size-full wp-image-2381" style="margin-left: 43px; margin-right: 43px;" title="12-14-12 IE8error" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/11/12-14-12-IE8error.png" alt="" width="423" height="147" /></a>We're dropping support for Internet Explorer 8—as of January 1, 2013, Populi will no longer support that very troublesome, outdated browser.</p>
+		<h3 class="displayMedium">IE8 going the way of the dodo on January 1, 2013</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/11/12-14-12-IE8error.png"><img class="alignnone size-full wp-image-2381" style="margin-left: 43px; margin-right: 43px;" title="12-14-12 IE8error" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/11/12-14-12-IE8error.png" alt="" width="423" height="147" /></a>We're dropping support for Internet Explorer 8—as of January 1, 2013, Populi will no longer support that very troublesome, outdated browser.</p>
 <p>We cut IE7 loose a <a href="http://populi.co/blog/2012/02/arrivederci-ie7-march-19-2012/">few months ago</a> (after its share of Populi logins fell below 3%), together with old versions of other browsers like Firefox 3 and Safari 3. IE8's share is currently below 5% and is falling; more people access Populi via Safari on iPad than IE8.</p>
 <p>The takeaway: it's time for IE8 users to update your browser! New browser versions are simple to get, more secure, and incorporate improvements in speed, reliability, and compatibility with web standards. Another benefit: it helps us focus on moving Populi forward. Few things grate on us more than hacking our code to deal with some sociopathic element in IE8—especially when we could spend that time building new features or improving current ones.</p>
 <p>So, hotfoot on over to one of these links and get updated!</p>
@@ -151,11 +149,9 @@
 <h4 style="text-align: center;"><strong><a href="https://www.google.com/chrome">Chrome</a></strong></h4>
 <p>And if you really need to run some version of IE, <a href="http://windows.microsoft.com/en-US/internet-explorer/download-ie">see what version Microsoft will let you download</a> in your version of Windows.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -344,8 +340,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

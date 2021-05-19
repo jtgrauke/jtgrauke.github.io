@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Coming soon: better tuition schedules, refund policies, and more</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on July 25th, 2014</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>The Populi development team is hard at work on improvements to student billing. Here's a quick look at what's coming...</p>
+		<h3 class="displayMedium">Coming soon: better tuition schedules, refund policies, and more</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on July 25th, 2014</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>The Populi development team is hard at work on improvements to student billing. Here's a quick look at what's coming...</p>
 <h5>Tuition Schedules</h5>
 <p>We've re-written tuition schedules from the ground up.</p>
 <ul>
@@ -173,11 +171,9 @@
 <h5>Getting ready for the release</h5>
 <p>We're planning to get this out there to our customers by August 1st. If you have any questions about it, please contact Populi Support.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -366,8 +362,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

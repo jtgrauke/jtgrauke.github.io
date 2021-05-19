@@ -133,28 +133,24 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Videos of some upcoming Financial Aid workflow changes</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on May 18th, 2011</span>
-				
-			</div>
-			<div class="entry clear">
-				<h5>Covering Aid by Year, Batch Disbursement, ISIRs Imports, Aid Classifications, and Aid Year Schedules</h5>
+		<h3 class="displayMedium">Videos of some upcoming Financial Aid workflow changes</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on May 18th, 2011</span>
+			
+		</div>
+		<div class="entry clear">
+			<h5>Covering Aid by Year, Batch Disbursement, ISIRs Imports, Aid Classifications, and Aid Year Schedules</h5>
 <p>We recently posted a <a href="http://populi.co/blog/2011/05/coming-soon-a-refresh-for-populi-financial-aid/">brief rundown</a> of the exciting new financial aid features we will soon release. And now, here's a couple of videos demonstrating how we are improving the process of adding and disbursing aid on student accounts. To summarize, currently we treat Financial Aid as a payment method managed strictly on a by-term basis. But soon Populi will let you handle Aid more accurately: you'll be able to manage awards on the by-year basis and manage disbursements on the by-term level. This will permit all kinds of really handy automations and ought to really speed up your financial workflows.</p>
 <p><iframe src="http://player.vimeo.com/video/23826764?title=0&amp;byline=0&amp;portrait=0" width="510" height="319" frameborder="0"></iframe></p>
 <p><iframe src="http://player.vimeo.com/video/23826954?title=0&amp;byline=0&amp;portrait=0" width="510" height="319" frameborder="0"></iframe></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -343,8 +339,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New accounting features in Billing</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on December 21st, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Our Billing and Financial Aid users have probably noticed by now that <strong>we've re-jiggered Populi Billing a little bit.</strong> Here's a rundown of the new features.</p>
+		<h3 class="displayMedium">New accounting features in Billing</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on December 21st, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Our Billing and Financial Aid users have probably noticed by now that <strong>we've re-jiggered Populi Billing a little bit.</strong> Here's a rundown of the new features.</p>
 <ol>
 <li>The new <strong>Chart of Accounts</strong> lets you define<strong> </strong>and manage all of your accounts directly, improving on our previous use of "external accounts" which reconciled Populi with your main accounting package.</li>
 <li>Piggybacking on that, by entering all your bank accounts as Asset accounts, <strong>you can record exactly where each student payment should be deposited.</strong></li>
@@ -154,11 +152,9 @@
 </ol>
 <p><strong>Other, numerous improvements to Billing</strong> mean that Populi, used in concert with a good fund-based accounting package, will more fully manage your General Fund—in particular, your Accounts Receivable. And with the automation between Academics and Billing going even further, hopefully <strong>your day will be that much easier.</strong></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -347,8 +343,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

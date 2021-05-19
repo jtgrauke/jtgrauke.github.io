@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">The Harvard Business Review on building a startup outside of Silicon Valley</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We've made no secret of <a href="http://populi.co/blog/2013/06/a-helicopter-carrying-a-dinosaur/">our dislike</a> for the typical startup-takes-venture-capital storyline and culture. <a href="http://blogs.hbr.org/2013/10/dont-build-your-startup-outside-of-silicon-valley/">Maxwell Wessel at The Harvard Business Review</a> just about codifies what repels us about it:</p>
+		<h3 class="displayMedium">The Harvard Business Review on building a startup outside of Silicon Valley</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We've made no secret of <a href="http://populi.co/blog/2013/06/a-helicopter-carrying-a-dinosaur/">our dislike</a> for the typical startup-takes-venture-capital storyline and culture. <a href="http://blogs.hbr.org/2013/10/dont-build-your-startup-outside-of-silicon-valley/">Maxwell Wessel at The Harvard Business Review</a> just about codifies what repels us about it:</p>
 <blockquote><p>Raising venture capital isn’t the be all and end all of entrepreneurial success. But it is an important metric... for an important subset of the business world — firms in pursuit of explosive growth — raising capital from angel investors or venture capitalists is an early step on a long and uncertain road to success.</p></blockquote>
 <p>So, firms in pursuit of explosive growth that raise capital to fund a long and uncertain roadtrip to success are an important subset of the business world.</p>
 <blockquote><p>If you judge entrepreneurial success as surviving or selling (including raising follow-on funding, being bought, or successfully IPO’ing) as no doubt your investors do, then your odds of success are lower outside of the superhubs.</p></blockquote>
@@ -151,11 +149,9 @@
 <p>The heavy toll we pay here: we're home for supper every night; our wives, children, and friends know and love us; every customer is important to us; no one's forcing us into ill-advised moonshots; we spend a good 25% of any given workday laughing together; we don't spend our days making money for someone else.</p>
 <p>Ah, the high cost of not moving to Silicon Valley to change Populi into something that won't be here in five years.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -344,8 +340,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

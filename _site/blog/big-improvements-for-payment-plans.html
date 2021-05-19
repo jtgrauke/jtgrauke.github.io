@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Big improvements for Payment Plans</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic brendan"></div>
-					<span>Brendan wrote this on December 5th, 2018</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>We&#8217;re soon to release a big update to payment plans. The improvements include new types of payment schedules, editable deadlines, a more flexible and reliable structure, new reporting tools, and a lot more. Here&#8217;s a look at what&#8217;s just &#8217;round the bend.</p>
+		<h3 class="displayMedium">Big improvements for Payment Plans</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic brendan"></div>
+				<span>Brendan wrote this on December 5th, 2018</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>We&#8217;re soon to release a big update to payment plans. The improvements include new types of payment schedules, editable deadlines, a more flexible and reliable structure, new reporting tools, and a lot more. Here&#8217;s a look at what&#8217;s just &#8217;round the bend.</p>
 
 
 <h5>The big picture</h5>
@@ -279,11 +277,9 @@
 		<li><a href="https://support.populiweb.com/hc/en-us/articles/360011398693">Using payment plans</a></li>
 
 	</ul>
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -472,8 +468,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Cute animals sell software</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><a href="http://www.webpop.com">Webpop</a>, a cloud-based content management system and code editor that lets you build websites, <a href="http://www.webpop.com/blog/2013/04/16/can-a-puppy-sell-a-cms">recently ran an experiment</a> on the signup link for their 30-day free trial:</p>
+		<h3 class="displayMedium">Cute animals sell software</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><a href="http://www.webpop.com">Webpop</a>, a cloud-based content management system and code editor that lets you build websites, <a href="http://www.webpop.com/blog/2013/04/16/can-a-puppy-sell-a-cms">recently ran an experiment</a> on the signup link for their 30-day free trial:</p>
 <blockquote><p>A while ago we launched an interesting little test to dig into the effect of emotional engagement. In this case we decided to test the click through rate on our call to action at the bottom of most of our pages where we urge people to give our 30 day free trial a shot.</p></blockquote>
 <p>They put up a picture of a black lab puppy gazing at the signup button; next, they compared the click-rate between the puppy-version and the text-only version. The results were startling:</p>
 <blockquote><p>It turns out, the puppy version had more than <strong>double </strong>the number of clicks on the signup button than the text only version, with a statistical certainty of more than 99.9% of this being more than just random coincidence.</p></blockquote>
@@ -153,11 +151,9 @@
 <p><a href="http://populi.co/signup"><img class="alignnone  wp-image-2437" alt="signup piglet" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/04/signup-piglet.jpg" width="510" height="510" /></a></p>
 <p>&nbsp;</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -346,8 +342,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

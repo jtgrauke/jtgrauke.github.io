@@ -133,30 +133,26 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Hey, Customers: Use Populi for IPEDS Fall 2009 Collection</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on September 30th, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>The <strong><a href="https://surveys.nces.ed.gov/ipeds/">IPEDS Fall Collection for 2009</a></strong>, which started on <strong>September 2</strong>, will close <strong>October 14th</strong>. We wanted to remind our customers that they can use Populi to finish the <strong>Completions</strong> and <strong>12-Month Enrollment</strong> reports. You'll find it in <strong>Preset Reports in Academics</strong>, and after a few clicks, <strong>the hard part will be over.</strong></p>
+		<h3 class="displayMedium">Hey, Customers: Use Populi for IPEDS Fall 2009 Collection</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on September 30th, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>The <strong><a href="https://surveys.nces.ed.gov/ipeds/">IPEDS Fall Collection for 2009</a></strong>, which started on <strong>September 2</strong>, will close <strong>October 14th</strong>. We wanted to remind our customers that they can use Populi to finish the <strong>Completions</strong> and <strong>12-Month Enrollment</strong> reports. You'll find it in <strong>Preset Reports in Academics</strong>, and after a few clicks, <strong>the hard part will be over.</strong></p>
 <p>Next,  you'll need to log in to IPEDS and copy-and-paste the data into the appropriate<!--more--> fields—this owes to some antiquated IPEDS software that, reportedly, will be upgraded to XML in another year or two. Once (and if) that upgrade happens, this data transfer will become unbelievably simple and fast. But, until that day, <strong>we hope that we've taken the most burdensome part of this job off your shoulders.</strong></p>
 <p><strong>A quick note:</strong> if you're wondering how your degrees fit in with the IPEDS CIP codes, have a look at the <a href="http://nces.ed.gov/ipeds/cipcode/Default.aspx?y=55"><strong>CIP User Site</strong></a>, which has descriptions of the various CIP codes. Populi lets you associate courses, degrees, and specializations with CIP codes—you'll find it all in <strong><a href="http://www.populiweb.com/tour/academics">Academics</a></strong>.</p>
 <p>Mary Ann Gardner, the Registrar at Visible School, took care of IPEDS 12-Month Enrollment a few weeks ago. <strong>We're pretty pleased with how it worked out for her</strong>, and she had this to say:</p>
 <p><em><span style="color: #808080;">"I just did IPEDS the <strong>fastest I have ever been able</strong>—in one day... well, make that <strong>half a day</strong>. I was working on  the </span></em><span style="color: #808080;">12-month Unduplicated Count by Race/Ethnicity and Gender</span><em><span style="color: #808080;"> report. <strong>Without a program like Populi, it just took a lot of work to compile this information. </strong>Previously, I had gotten to the point of putting forms in their mailboxes—blue for boys and pink for girls—and then sorting and sorting and sorting, depending on what needed to be counted. And it all varied from report to report. <strong>Well, thanks so much. </strong> Everybody thinks I am just a wiz now.  Just wanted you  to know that you all are the wizards."</span></em></p>
 <p>And that, dear readers, is why we do what we do.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -345,8 +341,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

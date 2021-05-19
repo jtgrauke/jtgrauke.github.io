@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">An update to Library and some other things</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We loosed our latest release the evening of July 5th. It's a minor update with a number of tweaks and improvements to Library, ISIRs, and the Populi API.</p>
+		<h3 class="displayMedium">An update to Library and some other things</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We loosed our latest release the evening of July 5th. It's a minor update with a number of tweaks and improvements to Library, ISIRs, and the Populi API.</p>
 <h5>Library</h5>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/07/Logsdon.png"><img class="size-full wp-image-2145 alignright" style="border: 1px solid black;" title="Logsdon" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/07/Logsdon.png" alt="" width="145" height="160" /></a><br />
 Now you can add images to resources as well as delete resources or individual copies. Also included: automatic barcode generation for resource copies. This feature finds the next available barcode number and adds it to the copy—so it works around your existing resource copies without you needing to double-check (you can also disable the barcode generator).</p>
@@ -162,11 +160,9 @@ Now you can add images to resources as well as delete resources or individual co
 <p>We added CPS transaction numbers to ISIRs. This information lets the Populi ISIRs importer keep your data in better order. For instance, they prevent you from importing older data. We also organized the display of ISIRs data in various places by the CPS transaction number. This accompanies a number of other, more behind-the-scenes ISIRs improvements.</p>
 <p>Additionally, this update is accompanied by some interface niggles and a number of bug fixes, tweaks, arcane performance changes, and so on.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -355,8 +351,14 @@ Now you can add images to resources as well as delete resources or individual co
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

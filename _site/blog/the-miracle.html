@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">The miracle</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>You're reading this because it is possible to transmit information around the world by making electricity move through melted sand in a particular way.<br />
+		<h3 class="displayMedium">The miracle</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>You're reading this because it is possible to transmit information around the world by making electricity move through melted sand in a particular way.<br />
 ---<br />
 <a href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">Paul Ford</a>:</p>
 <blockquote><p>A computer is a clock with benefits. They all work the same, doing second-grade math, one step at a time: Tick, take a number and put it in box one. Tick, take another number, put it in box two. Tick, <em>operate</em> (an operation might be addition or subtraction) on those two numbers and put the resulting number in box one. Tick, check if the result is zero, and if it is, go to some other box and follow a new set of instructions.</p></blockquote>
@@ -167,11 +165,9 @@ We write code and fix bugs in Populi using software that itself has bugs and pro
 It's frankly a miracle that anything works at all.</p>
 <p><img class="aligncenter" width="620px;" src="https://s3.amazonaws.com/blog-media.populi.co/miracle.jpg" /></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -360,8 +356,14 @@ It's frankly a miracle that anything works at all.</p>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

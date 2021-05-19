@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Financial aid improvements</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><a href="https://s3.amazonaws.com/blog-media.populi.co/blog_aid_app_accept_partial.png"><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog_aid_app_accept_partial.png" width="610" height="285" /></a></p>
+		<h3 class="displayMedium">Financial aid improvements</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><a href="https://s3.amazonaws.com/blog-media.populi.co/blog_aid_app_accept_partial.png"><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog_aid_app_accept_partial.png" width="610" height="285" /></a></p>
 <p>We're shortly to release some improvements to Financial Aid that we thought merited a heads-up:</p>
 <ul>
 <li>The aid application student view gives students a couple new tools. In the section where students can accept and reject aid award offers, they can now <em>decrease</em> the loan amount they wish to accept. Additionally, each award includes estimated disbursement dates.</li>
@@ -152,11 +150,9 @@
 </ul>
 <p>These improvements, plus some behind-the-scenes upgrades, should be going live in the wee hours of March 9, 2017.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -345,8 +341,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

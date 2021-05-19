@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Arrivederci IE7: March 19, 2012</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>On March 19th, <a href="http://en.wikipedia.org/wiki/Internet_explorer_8">Microsoft's Internet Explorer 8 turns three</a>. On that same day, Populi will <strong>drop support for Internet Explorer 7</strong>, which will be 5½ years old at that time.</p>
+		<h3 class="displayMedium">Arrivederci IE7: March 19, 2012</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>On March 19th, <a href="http://en.wikipedia.org/wiki/Internet_explorer_8">Microsoft's Internet Explorer 8 turns three</a>. On that same day, Populi will <strong>drop support for Internet Explorer 7</strong>, which will be 5½ years old at that time.</p>
 <h5>Why are we dropping IE7?</h5>
 <p><img class="aligncenter" title="The decline in use of IE7" src="http://f.cl.ly/items/2r2r0c2i2Y1g1G0e2x2a/Screen%20Shot%202012-02-02%20at%201.05.47%20PM.png" alt="" width="521" height="304" /></p>
 <p>A number of tightly-intertwined reasons:</p>
@@ -161,11 +159,9 @@
 <p>And if you're running Windows Vista or 7, you can also try <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home">IE9</a>...</p>
 <blockquote><p>*In this article, Microsoft itself says that it is "pleased IE6 and IE7 usage share continues to drop (by 0.85% in October); it’s an indication that customers recognize the benefits they can realize when using a modern browser."</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -354,8 +350,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

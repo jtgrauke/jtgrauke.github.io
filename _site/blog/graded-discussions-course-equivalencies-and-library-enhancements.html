@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Graded discussions, course equivalencies, and Library enhancements</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/11/11-17-14-Graded-disc.png"><img class="alignnone wp-image-2724" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/11/11-17-14-Graded-disc.png" alt="11-17-14 Graded disc" width="609" height="332" /></a></p>
+		<h3 class="displayMedium">Graded discussions, course equivalencies, and Library enhancements</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/11/11-17-14-Graded-disc.png"><img class="alignnone wp-image-2724" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/11/11-17-14-Graded-disc.png" alt="11-17-14 Graded disc" width="609" height="332" /></a></p>
 <p>Concerning software releases, we've been busy the past few weeks...</p>
 <h4>Graded discussions</h4>
 <p>Graded discussions let you grade your students for their participation in a discussion. Here's how it works:</p>
@@ -200,11 +198,9 @@
 </ul>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/11/11-18-14-Library-search.png"><img class="alignnone wp-image-2733" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/11/11-18-14-Library-search.png" alt="11-18-14 Library search" width="609" height="109" /></a></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -393,8 +389,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

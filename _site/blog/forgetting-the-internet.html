@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Forgetting the Internet</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Listening in on a sales demo the other day, it struck me: we no longer need to explain web-based software the way we used to. Back in 2008, a good chunk of Nick and Joseph's time was spent telling schools about the ABC's of web-based software: browser-based, hosted on our hardware, available anywhere, maintenance and updates on us. The Internet was not new, nor was Populi on the cutting edge of cloud-based software. But the notion of a small school getting real work done using the web was novel enough that we gave it a <a href="http://populi.co/about/webbasedhosted">whole page on our website</a>.</p>
+		<h3 class="displayMedium">Forgetting the Internet</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Listening in on a sales demo the other day, it struck me: we no longer need to explain web-based software the way we used to. Back in 2008, a good chunk of Nick and Joseph's time was spent telling schools about the ABC's of web-based software: browser-based, hosted on our hardware, available anywhere, maintenance and updates on us. The Internet was not new, nor was Populi on the cutting edge of cloud-based software. But the notion of a small school getting real work done using the web was novel enough that we gave it a <a href="http://populi.co/about/webbasedhosted">whole page on our website</a>.</p>
 <p>In 2016, the web is part of everything. It's not just that we're used to web-based productivity software—it's that the Internet is applied, seemingly, to all problems. Think of it: in 2008, the web was largely accessed via the desktop browser. In 2016, we use it just as often on our phones. And we use those devices not just to check email and look at websites, but to control network-connected things like <a href="http://www2.meethue.com/en-us/what-hue-does/notified-by-light/">light bulbs</a>, <a href="http://www.samsung.com/us/explore/family-hub-refrigerator/">refrigerators</a>, and, wonderfully, <a href="http://www.engadget.com/2015/06/02/acer-diaperpie-intel-edison">diapers</a>.</p>
 
 <figure>
@@ -174,11 +172,9 @@
 <p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/dash.png" alt="Children playing in the ocean" width="600" /></p>
 <p>Nothing is better for a man than that he should eat and drink and his soul should enjoy good in his labor.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -367,8 +363,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

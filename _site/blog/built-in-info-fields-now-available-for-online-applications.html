@@ -133,24 +133,20 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Built-in info fields now available for online applications</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Among the twenty-dozen new and upgraded features we put out with <a href="http://populi.co/blog/2011/01/january-4-2010-update/">our last release</a>, we added the ability for you to include some built-in information fields (like SSN, website, and so on) with your custom application components. Previously, we made you create custom info fields for this purpose—but what a terrible solution! That forced you to create custom fields for information Populi already tracked (something we even warn you not to do in the documentation!), and potentially led to all the bad-information problems double-entered data can cause. That's no longer the case! Check out the video below to see what we've done.<br />
+		<h3 class="displayMedium">Built-in info fields now available for online applications</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Among the twenty-dozen new and upgraded features we put out with <a href="http://populi.co/blog/2011/01/january-4-2010-update/">our last release</a>, we added the ability for you to include some built-in information fields (like SSN, website, and so on) with your custom application components. Previously, we made you create custom info fields for this purpose—but what a terrible solution! That forced you to create custom fields for information Populi already tracked (something we even warn you not to do in the documentation!), and potentially led to all the bad-information problems double-entered data can cause. That's no longer the case! Check out the video below to see what we've done.<br />
 <iframe src="http://player.vimeo.com/video/19838819" width="510" height="319" frameborder="0"></iframe>
 <p><a href="http://vimeo.com/19838819">Built In Fields On the Application</a> from <a href="http://vimeo.com/populi">Populi</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -339,8 +335,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Release notes: sequential payment numbers, aging report, and more</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic james"></div>
-					<span>James wrote this on September 23rd, 2013</span>
-				
-			</div>
-			<div class="entry clear">
-				<h5>Sequential payment numbers</h5>
+		<h3 class="displayMedium">Release notes: sequential payment numbers, aging report, and more</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic james"></div>
+				<span>James wrote this on September 23rd, 2013</span>
+			
+		</div>
+		<div class="entry clear">
+			<h5>Sequential payment numbers</h5>
 <p>Transactions have them. Invoices have them. And now payments have them: sequential payment numbers. Every payment in your system now has a sequential number based on the order in which it was entered.</p>
 <p>In the past we referred to payments solely by their receipt number—random alphanumerical strings like #4d5c6ce05a71a, #8b8x2nn092l3, or our personal favorite, #56oc092ma27z. But keeping track of payments like that is something better suited to computers than people. Thus, the change.</p>
 <p>We ran a script to give every payment in your records a sequential number, starting from #1. And from here on out every new payment gets the next number in line. You can still find receipt numbers on the end of the online receipt URL shown on a given payment:</p>
@@ -162,11 +160,9 @@
 <h5>Release notes</h5>
 <p>These are some of the highlights from the past few months of releases, which has seen a steady trickle of incremental improvements to Populi. Complete release notes are compiled on a weekly basis in our <a href="https://support.populiweb.com/forums/47537-Release-notes">Release Notes</a> forum, so make sure to keep an eye on that to see what we put out there.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -355,8 +351,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Can software help you get accredited?</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on February 24th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Download a <strong><a href="http://www.populiweb.com/blog/wp-content/uploads/2010/02/Populi-Accreditation.pdf">PDF</a></strong> of this article.</p>
+		<h3 class="displayMedium">Can software help you get accredited?</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on February 24th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Download a <strong><a href="http://www.populiweb.com/blog/wp-content/uploads/2010/02/Populi-Accreditation.pdf">PDF</a></strong> of this article.</p>
 <p><strong>In the most important senses, No. </strong>No software package can stand in for the substantial stuff—a faithful vision and mission, sound educational method, faculty and staff who care for your students and love the material, dedicated governance, institutional and financial stability.</p>
 <p><strong>Then again, in many important senses, Yes.</strong> The initial <!--more-->accreditation process, while rightly focused on the matters of substance, also looks at how your college uses technology to help you accomplish the important things. And even afterwards, the process is, as the <strong><a href="http://www.abhe.org/accreditation">Philosophy of ABHE Accreditation</a></strong> says, “designed to foster ongoing systematic self-study with the goal of continuous institutional improvement.” Software can’t stand in for the substance, but it can facilitate it; accreditation focuses on the substance, but requires accurate collection, presentation, and analysis of information to do so.</p>
 <p><strong>Where will good software benefit you?</strong></p>
@@ -159,11 +157,9 @@
 <p><strong>Not all software is created equal. </strong>Information problems often plague small colleges, and these problems, more often than not, stem from inadequate software. Transcripts stored in word documents. Grades stored on spreadsheets. Student information in homemade databases. Historical data in dozens of formats. If this is what you have to work with when you’re working through accreditation—well, suffice it to say, it’s a lot of work with a lot of chances to make substantial errors.</p>
 <p><strong>If you’re pursuing accreditation, <a href="http://www.populiweb.com/tour/">consider how Populi can help</a>. </strong>Populi is a web-based college management system that handles academics, admissions, billing, and a lot more. It combines SIS and LMS in one package. It’s secure, useable, affordable—with free implementation and support. So, while we can’t handle the truly important stuff, we do a great job with the “merely-very-important” stuff—your information, how it’s handled, and how it helps your college do the things that matter.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -352,8 +348,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

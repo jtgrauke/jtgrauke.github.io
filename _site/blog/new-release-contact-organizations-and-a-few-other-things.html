@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New release: Contact organizations and a few other things</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>The Populi crew took the evening of President's Day to release a bunch of new features. Here's a look at what we did...</p>
+		<h3 class="displayMedium">New release: Contact organizations and a few other things</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>The Populi crew took the evening of President's Day to release a bunch of new features. Here's a look at what we did...</p>
 <h5><strong>New stuff in organizations</strong></h5>
 <p style="text-align: center;"><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/02/2-20-12-Org-Profile.png"><img class="aligncenter  wp-image-2272" title="2-20-12 Org Profile" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2012/02/2-20-12-Org-Profile.png" alt="" width="510" height="244" /></a></p>
 <p>Organizations now have an Activity Feed; a Members tab to track members, employees, and students with that contact Org; custom info fields, and images.</p>
@@ -173,11 +171,9 @@
 <p><strong><br />
 </strong></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -366,8 +362,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

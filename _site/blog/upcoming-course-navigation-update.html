@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Coming soon: An update to course navigation</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic brendan"></div>
-					<span>Brendan wrote this on July 27th, 2018</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>
+		<h3 class="displayMedium">Coming soon: An update to course navigation</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic brendan"></div>
+				<span>Brendan wrote this on July 27th, 2018</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>
 <img src="https://s3.amazonaws.com/blog-media.populi.co/new_course_navigation_blog.png" width="600px;">
 </p>
 <p>We&#8217;re soon to release an update to the navigation in Populi courses. The long and the short of it is that the navigation views are moving from the top to the left side of the screen. We&#8217;re not changing where you&#8217;ll find anything&mdash;assignments will still be found in <em>Assignments</em>, discussions will still dwell in <em>Discussions</em>, and so on. But if your muscle memory sends you to the top of the screen, you&#8217;ll need to retrain your wrists and index fingers to swing leftward.</p>
@@ -177,11 +175,9 @@
 
 
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -370,8 +366,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

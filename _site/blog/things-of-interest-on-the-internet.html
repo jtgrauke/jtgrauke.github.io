@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Things of interest on the internet</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Every so often, we find something of interest on the internet. This week, three things caught our attention...</p>
+		<h3 class="displayMedium">Things of interest on the internet</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Every so often, we find something of interest on the internet. This week, three things caught our attention...</p>
 <h5>Money, Feedback, and Pressure</h5>
 <p>Jason Fried of 37signals wrote a column in Inc. Magazine pitching advice to small businesses about, well, <a href="http://www.inc.com/magazine/20110301/making-money-small-business-advice-from-jason-fried.html">how to make money</a>. We find his advice worthwhile—he built a great company that sells really useful products and eschews conventional business advice. Much of what he says is relevant to any organization that faces constraints and limits... like a lot of our customers—smaller schools with limited resources.</p>
 <p>Here's what caught our eye:</p>
@@ -159,11 +157,9 @@
 <p>As a tech company (one way humbler, we think and hope, than Apple!) staffed in part by Liberal Arts graduates, we hope we're able to strike a similar balance. Technology can do a lot, but without keeping human needs in mind—the needs for elegance, simplicity, to understand, to be understood—it's just another burden.</p>
 <p>Which brings us back to the first point: that need to improve Populi that presses on us almost always comes back to tempering the demands of technology with the harder-to-gauge needs of the people who use it.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -352,8 +348,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

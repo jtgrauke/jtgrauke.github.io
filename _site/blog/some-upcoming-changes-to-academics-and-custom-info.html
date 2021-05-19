@@ -133,26 +133,22 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Some upcoming changes to Academics and Custom Info</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Our next release will update Academics to our new tabbed navigation layout:</p>
+		<h3 class="displayMedium">Some upcoming changes to Academics and Custom Info</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Our next release will update Academics to our new tabbed navigation layout:</p>
 <p><iframe src="http://player.vimeo.com/video/31496580?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="510" height="319" frameborder="0" webkitallowfullscreen allowfullscreen></iframe></p>
 <p>We're also changing a few things with Custom Info fields. You'll soon find Custom Fields divided among the appropriate sections of Populi. Student Fields will be found in Academics, Prospect and Application Fields will soon dwell in Admissions, and Person Fields will remain in Admin:</p>
 <p><iframe src="http://player.vimeo.com/video/31519199?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="510" height="319" frameborder="0" webkitallowfullscreen allowfullscreen></iframe></p>
 <p>We have a few other low-key items we're working on, but we've found that even the small stuff can make a big difference in our customers' days. We're looking forward to making Populi even better.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -341,8 +337,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

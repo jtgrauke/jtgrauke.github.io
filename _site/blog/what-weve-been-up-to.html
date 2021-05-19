@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">What we've been up to</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on August 25th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Wow, it's been busy here lately. So busy, in fact, that we've barely had time for this poor ol' blog. So here's some news about what we've been up to...</p>
+		<h3 class="displayMedium">What we've been up to</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on August 25th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Wow, it's been busy here lately. So busy, in fact, that we've barely had time for this poor ol' blog. So here's some news about what we've been up to...</p>
 <p>Since May, we've brought on some <strong>25 new colleges, seminaries, and other institutions</strong>. We have another 5 ready to launch in the next few weeks. As I write this, almost all of our current customers are in the midst of course registration for the Fall 2010 Academic Term. At any given moment during the day, Populi is handling hundreds of users and thousands of students, <strong>much more than ever before.</strong></p>
 <p>This is a thick time of year for our customers—<a href="http://bit.ly/9VfK8k"><strong>and so it is for us, too</strong></a>! We spent the summer training registrars, bursars, other staff, and faculty. Thanks to Adam Sentz's constant scrutiny and improvement of the interface, many of our new users have just logged in and figured it out themselves. Meanwhile, further improvements are in store for the look and feel of Populi, making it easier to use (and easier on the eyes).</p>
 <p>Aaaand... we've been very busy designing, testing, and releasing new features. The past two weeks we've trickled out several items of note and numerous back-end improvements, constituting almost a mini-release. The new stuff includes:</p>
@@ -155,11 +153,9 @@
 <p>Our work hasn't been the only thing keeping <a href="http://www.populiweb.com/contact">us</a> occupied. Isaac recently ran a triathlon (and check out <a href="http://bit.ly/aPY6JK">these wild pics</a> from his trailcam!), Mark's two bands have been gigging around town, and Toby recently welcomed a son into the world. Some of us have gardens, others are finishing their degrees, and one has a motorcycle.</p>
 <p>We've been busy, we're busy now, and there's no sign of the busy-ness letting up anytime soon. Thanks to all our customers for keeping our days interesting and full of stuff to do.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -348,8 +344,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

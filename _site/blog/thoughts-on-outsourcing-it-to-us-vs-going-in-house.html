@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Thoughts on outsourcing IT to us vs. going in-house</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>As we're wont to say here, <a href="http://populiweb.com/about/">we built Populi</a> to put good software within reach of small colleges. We do that, in part, by giving them access to high-octane technology, otherwise out of reach to most schools, but made affordable by the wonders of economies of scale. This lets our customers offload much of their IT burden—infrastructure, processes, and maintenance—to us. Of course, there's more. Gliding atop those servers and databases and terabytes of storage is some elegant, easy-to-use, ever-improving software that helps a small school do more with its data. And, there's yet another layer: the people who use Populi have access to the people who run Populi. Need help with something? Wanna know how something works? Did something break? Support is always near at hand.</p>
+		<h3 class="displayMedium">Thoughts on outsourcing IT to us vs. going in-house</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>As we're wont to say here, <a href="http://populiweb.com/about/">we built Populi</a> to put good software within reach of small colleges. We do that, in part, by giving them access to high-octane technology, otherwise out of reach to most schools, but made affordable by the wonders of economies of scale. This lets our customers offload much of their IT burden—infrastructure, processes, and maintenance—to us. Of course, there's more. Gliding atop those servers and databases and terabytes of storage is some elegant, easy-to-use, ever-improving software that helps a small school do more with its data. And, there's yet another layer: the people who use Populi have access to the people who run Populi. Need help with something? Wanna know how something works? Did something break? Support is always near at hand.</p>
 <p>That, in a paragraph, is what's for sale here: high-end <a href="http://populi.co/about/webbasedhosted">technology</a>, excellent <a href="http://populi.co/tour/">software</a>, and <a href="http://populi.co/about/support">people</a> to back you up. And if it doesn't work for you, <a href="http://populi.co/legal/terms/">there's no</a> long-term contract forcing you to continue.</p>
 <p>Every now and then, we lose a sale not to an established competitor, but to a school's in-house IT staff. Now, don't get us wrong—if Populi doesn't fit, don't try to wear it (to abuse the old proverb). If a school needs something different than Populi, we're the last ones who'll try to talk you into signing up. But the decision, from what we've heard, usually has little to do with service or functionality. A lot of times when a school says, "We're gonna build it ourselves..." the next line is usually something like, "...because we wanna keep expenses down."<strong>*</strong></p>
 <p>Now, on the surface, this might make some sense. Your 400-student college didn't get that way without some sort of IT staff and technology investment. And if IT is already baked-in to your institution, then you already have a lot of what you need covered. A little extra development time, judicious use of free open-source technology, a stopgap Access database in the meantime...</p>
@@ -176,11 +174,9 @@
 <blockquote><p>*The decision to build in-house sometimes comes down to finances, but often also hinges on a perceived need for a different kind of feature or a different way of handling a certain workflow. We'll look at that in another blog post.</p>
 <p>**Isaac and Toby like to get their hair cut <em>every three days!</em> It's a good thing that expense is spread out over 90-something customers.</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -369,8 +365,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

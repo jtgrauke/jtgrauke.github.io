@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New course features: reply to replies, better incomplete grading, and a few other things</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We've added a few new features to courses over the past few weeks that we thought we'd highlight for you...</p>
+		<h3 class="displayMedium">New course features: reply to replies, better incomplete grading, and a few other things</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We've added a few new features to courses over the past few weeks that we thought we'd highlight for you...</p>
 <h5>Replies to replies</h5>
 <p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/reply_replies_blog.png" width="611" height="468" /></p>
 <p>You can now reply to replies in discussions. So, a student comments, another replies to her, and yet another student replies to that reply. In graded discussions, the next level of replies is included in any reply-based grading criteria.</p>
@@ -155,11 +153,9 @@
 <p>You can now include Tin Can elements in lessons. Tin Can is a software specification that lets learning content and systems speak to each other. If your school is using e-learning content creators like Articulate and Adobe Captivate to generate online learning content, you can export that content as a Tin Can package and incorporate it into a Populi lesson. If you require students to complete the Tin Can, Populi will wait to hear from the element as to whether the student finished before letting him proceed to the next lesson.</p>
 <p>Finally, we upgraded the audio player so every user gets the same playback experience regardless of browser.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -348,8 +344,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

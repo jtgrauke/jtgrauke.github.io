@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Friendlier names in Populi</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic adam"></div>
-					<span>Adam wrote this on April 26th, 2017</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>The<em> Preferred</em> name field lets you enter a nickname or a common name for a person and have that appear in place of their first name in many places throughout Populi. If Eleanor Rigby goes by "Ellie", or Aloysius James Quincy wants to go by his middle name, you got them covered—Ellie Rigby and James Quincy. But what if everybody at your school calls you Pastor Ken, or Sister Ramirez, or Dr. Stein? The <em>Preferred</em> name doesn't quite work—you could enter bad data into Populi's name fields... or you might just be out of luck. We've always given you all the fields you need for good record keeping, but not what you needed for an online community.</p>
+		<h3 class="displayMedium">Friendlier names in Populi</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic adam"></div>
+				<span>Adam wrote this on April 26th, 2017</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>The<em> Preferred</em> name field lets you enter a nickname or a common name for a person and have that appear in place of their first name in many places throughout Populi. If Eleanor Rigby goes by "Ellie", or Aloysius James Quincy wants to go by his middle name, you got them covered—Ellie Rigby and James Quincy. But what if everybody at your school calls you Pastor Ken, or Sister Ramirez, or Dr. Stein? The <em>Preferred</em> name doesn't quite work—you could enter bad data into Populi's name fields... or you might just be out of luck. We've always given you all the fields you need for good record keeping, but not what you needed for an online community.</p>
 <p>Enter <em>Populi Name</em>.</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/populi_name_dialog.png"><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/populi_name_dialog.png" width="309" height="394" /></a></p>
 <p>The <em>Populi Name</em> is what everyone will see if they look at your profile or a class roster or see your name on the Students Table... or anywhere else your name displays. By default, it automatically fills in with your First or Preferred name followed by your Last name. This is what already displayed most of the time. But with the new, separate <em>Populi Name</em> field, school staff can enter whatever you wish to be known as in Populi. Dr. Alice Charlotte Smith can now be Dr. Smith. Sister Lena Ramirez can now be Sr. Ramirez. And that art student who is known around campus as the Fire emoji? No problem.</p>
@@ -154,11 +152,9 @@
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/populi_name_toggle.gif"><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/populi_name_toggle.gif" width="449" height="52" /></a></p>
 <p>We're always trying to make Populi friendlier and more familiar for all our users, and to that end we're willing to look at anything—even something as basic as how a name displays.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -347,8 +343,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

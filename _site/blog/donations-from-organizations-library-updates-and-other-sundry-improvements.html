@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Donations from organizations, library updates, and other sundry improvements</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2015/01/Screen-Shot-2015-01-19-at-1.18.44-PM.png"><img class="aligncenter wp-image-2751" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2015/01/Screen-Shot-2015-01-19-at-1.18.44-PM.png" alt="Screen Shot 2015-01-19 at 1.18.44 PM" width="615" height="229" /></a></p>
+		<h3 class="displayMedium">Donations from organizations, library updates, and other sundry improvements</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2015/01/Screen-Shot-2015-01-19-at-1.18.44-PM.png"><img class="aligncenter wp-image-2751" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2015/01/Screen-Shot-2015-01-19-at-1.18.44-PM.png" alt="Screen Shot 2015-01-19 at 1.18.44 PM" width="615" height="229" /></a></p>
 <p>Some recent improvements...</p>
 <h5>Organizations can make donations</h5>
 <p>Yup, you can now record donations made by organizations. Just go to the org's profile, click the Donations tab, and then Record a Donation. The screen includes records of all previous donations, a breakdown by fund, and the ability to print a tax receipt.</p>
@@ -180,11 +178,9 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -373,8 +369,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,27 +133,23 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Recurring donations and payments</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>New in Populi: recurring donations and payments!</p>
+		<h3 class="displayMedium">Recurring donations and payments</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>New in Populi: recurring donations and payments!</p>
 <p><img class=" aligncenter" style="width: 505px;" src="https://s3.amazonaws.com/blog-media.populi.co/Recurring%20donation.png" alt="" /></p>
 <p>It works with both credit cards and echecks processed through <a href="http://populi.co/blog/2015/04/stripe-integration-convenience-fees-and-more-in-our-online-payments-release/">Stripe</a>. To get started, just set up a Stripe payment gateway in Financial &gt; Settings and check off the steps listed in <a href="https://support.populiweb.com/entries/93948288">this article</a>.</p>
 <p>After enabling recurring donations and payments, donors and payers will be able to select whether to make a <em>one-time</em> or <em>recurring monthly</em> payment. To help you keep track of recurring payments, the new <em>Recurring</em> reports in Billing and Donations show you all the details, including amounts, timeframes, and payment methods. You can also manage a person's recurring payments on their Profile &gt; Financial page.</p>
 <h5>Stripe makes it possible</h5>
 <p>We're really excited about what Stripe integration lets us offer our customers: easy signup, recurring payments, and <a href="https://stripe.com/us/pricing">better, more straightforward pricing</a> than the other processors—2.9% + 30 cents for credit cards, 0.5% + 25 cents for eChecks. To get the most out of online payments in Populi, go to Financial &gt; Settings &gt; Payment Gateways and set up a Stripe account. It's easy to sign up and easy to try it out!</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -342,8 +338,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

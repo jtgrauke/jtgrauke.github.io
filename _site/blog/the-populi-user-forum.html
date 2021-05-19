@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">The Populi user forum</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Ever since we launched Populi, we've included <a href="http://populi.co/about/support">customer support</a> free with every <a href="http://populi.co/pricing">pricing plan</a>. Our schools get help via email, phone, and the Knowledge Base starting the day they sign up and every day following. We've always wanted to make it easy to get answers about Populi.</p>
+		<h3 class="displayMedium">The Populi user forum</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Ever since we launched Populi, we've included <a href="http://populi.co/about/support">customer support</a> free with every <a href="http://populi.co/pricing">pricing plan</a>. Our schools get help via email, phone, and the Knowledge Base starting the day they sign up and every day following. We've always wanted to make it easy to get answers about Populi.</p>
 <p>But some questions come our way that are a bit beyond what we're fit to answer. What's the best way to use Quickbooks for a non-profit? How do you handle access for accreditation staff? What's your policy for online course attendance? And so on. These are questions not so much about Populi as they are about the best way to run your school (and how Populi fits into that). On those matters, we like to defer to the experts: other users. Among our hundreds of customers, we have schools with a wide variety of shapes, sizes, and missions&mdash;and, we're sure, someone who has puzzled through your very problem and now has wisdom to share.</p>
 <p>You can seek out that wisdom&mdash;and share your own&mdash;on the <a href="https://support.populiweb.com/forums/71392">Populi User Forum</a>. The Forum lets our users pose questions about best practices, school policies, workflow ideas, and so on&mdash;basically, anything having to do with running your school (including how to use Populi to make that happen). We encourage you to get on the Forum; a simple way to keep an eye on it is to subscribe to email updates. These will alert you to new topics, comments, and replies. Here's how to subscribe:</p>
 <h5>1. Go to the Knowledge Base</h5>
@@ -158,11 +156,9 @@
 <p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/subscribe%20to%20forum.png" style="width:420px;" height="135px;" /></p>
 <p>Of course, everyone here is keeping an eye on the User Forum, too. We think it's a great opportunity for our users to help each other out and learn more about making Populi do the most for your school.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -351,8 +347,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

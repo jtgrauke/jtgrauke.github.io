@@ -133,27 +133,23 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Payment Processing and Bookstore: the movie</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic mark"></div>
-					<span>Mark wrote this on March 16th, 2010</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Here's a video that gives you a quick overview of our new <a href="http://www.populiweb.com/tour/financial"><strong>Payment Processing</strong></a> and <a href="http://www.populiweb.com/tour/bookstore"><strong>Bookstore</strong></a> features.</p>
+		<h3 class="displayMedium">Payment Processing and Bookstore: the movie</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic mark"></div>
+				<span>Mark wrote this on March 16th, 2010</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Here's a video that gives you a quick overview of our new <a href="http://www.populiweb.com/tour/financial"><strong>Payment Processing</strong></a> and <a href="http://www.populiweb.com/tour/bookstore"><strong>Bookstore</strong></a> features.</p>
 <iframe src="https://player.vimeo.com/video/10215673" width="610" height="382" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/10215673">Online Payment Processing and Bookstore (New Releases)</a> from <a href="https://vimeo.com/populi">Populi</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -342,8 +338,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

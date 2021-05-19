@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Populi Library</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We're pleased to announce that we just released Populi Library to all our customers.<br />
+		<h3 class="displayMedium">Populi Library</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We're pleased to announce that we just released Populi Library to all our customers.<br />
 <a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/03/App-Bar.png"><img class="alignnone size-full wp-image-2049" style="margin-left: 21px; margin-right: 21px;" title="App Bar" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/03/App-Bar.png" alt="" width="468" height="19" /></a></p>
 <p>Populi Library is simple, lightweight library software designed with small colleges in mind. It lets you manage resources for multiple libraries and lets your patrons—students, faculty, staff, and others—find those resources, place holds, make recommendations, and leave reviews.<br />
 <iframe src="http://player.vimeo.com/video/22139285" width="510" height="319" frameborder="0"></iframe></p>
@@ -166,11 +164,9 @@
 <h4>Getting Started with Populi Library</h4>
 <p>To get started with Populi Library, submit a help request to let us know you're interested. We'll get to work on importing your MARC records, setting up your loan policies, and training your Library staff.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -359,8 +355,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

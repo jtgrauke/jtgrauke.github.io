@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Populi Turns 5</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic adam"></div>
-					<span>Adam wrote this on May 20th, 2013</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Five years ago today the first user logged in to Populi. Here are some "since-then" stats to mark the occasion.</p>
+		<h3 class="displayMedium">Populi Turns 5</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic adam"></div>
+				<span>Adam wrote this on May 20th, 2013</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Five years ago today the first user logged in to Populi. Here are some "since-then" stats to mark the occasion.</p>
 <ul>
 <li>52,000 users have logged in over 7.5 million times</li>
 <li>2.8 million student enrollments in over 500,000 courses</li>
@@ -160,11 +158,9 @@
 </ul>
 <p>Thanks to all of you for an awesome first five years. Let's see what we can accomplish in the next five!</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -353,8 +349,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

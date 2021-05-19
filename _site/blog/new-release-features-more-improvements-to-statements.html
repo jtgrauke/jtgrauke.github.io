@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">New release features more improvements to student financial info</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Our <strong><a href="http://populi.co/blog/2011/02/new-release-improves-search-degree-audits-relationships-and-statements/">last release</a></strong> (about a week ago) included a number of improvements to student financials that we incorporated after taking in some good feedback from our customers. True to form, our customers had a lot to say about the new statements, and we're releasing some improvements to our improvements tonight. It's all in an effort to make a tricky lump of information easier to understand—for your staff and your students.</p>
+		<h3 class="displayMedium">New release features more improvements to student financial info</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Our <strong><a href="http://populi.co/blog/2011/02/new-release-improves-search-degree-audits-relationships-and-statements/">last release</a></strong> (about a week ago) included a number of improvements to student financials that we incorporated after taking in some good feedback from our customers. True to form, our customers had a lot to say about the new statements, and we're releasing some improvements to our improvements tonight. It's all in an effort to make a tricky lump of information easier to understand—for your staff and your students.</p>
 <h4>Here are the improvements we have slated for tonight's release:</h4>
 <p>We collapsed Pending Charges and Invoiced Charges into one concise panel on Student &gt; Financial &gt; By Term:</p>
 <p style="text-align: center;"><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/03/Charges.png"><img class="aligncenter size-full wp-image-2045" style="border: 1px solid black; margin-left: 26px; margin-right: 26px;" title="Charges" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2011/03/Charges.png" alt="" width="458" height="138" /></a></p>
@@ -166,11 +164,9 @@ The Unpaid Invoices export now includes a column with Pending Aid for each invoi
 <li>When he clicks to pay with his dad's credit card, his <strong>Pay Now</strong> says $1750 and he also sees he'll need to pay another $250 later</li>
 </ul>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -359,8 +355,14 @@ The Unpaid Invoices export now includes a column with Pending Aid for each invoi
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

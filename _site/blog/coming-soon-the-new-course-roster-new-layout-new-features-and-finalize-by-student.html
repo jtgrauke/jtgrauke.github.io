@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Coming soon: the new course roster—new layout, new features, and finalize-by-student</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Now simmering in the Populi kitchen: a new, updated course roster.</p>
+		<h3 class="displayMedium">Coming soon: the new course roster—new layout, new features, and finalize-by-student</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Now simmering in the Populi kitchen: a new, updated course roster.</p>
 <p><iframe src="//player.vimeo.com/video/88405399?byline=0&amp;portrait=0" height="346" width="615" allowfullscreen="" frameborder="0"></iframe></p>
 <p>The current roster is a good, workaday tool that does the job for a lot of our users. It lets you manage course enrollment information—everything from student status to attendance hours—and gives you some simple group contact/export options. At the same time, it has a lot of room for improvement. The layout has gotten cramped over the years. Enrolling more than a few students at a time is a chore. And you can't really work with a specific subset of students—for example, there's no way to quickly contact, say, the course auditors (without also contacting everyone else, too).</p>
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/03/3-6-14-ROSTER-POWER.png"><img class="alignnone  wp-image-2621" alt="3-6-14 ROSTER POWER" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/03/3-6-14-ROSTER-POWER.png" width="615" height="345" /></a></p>
@@ -169,11 +167,9 @@
 <p>To prepare, Faculty and Teaching Assistant users should check out <a href="https://support.populiweb.com/forums/22988883-Coming-soon-">these videos and articles</a>; Academic Admins and Registrars should head over to <a href="https://support.populiweb.com/forums/23010178-Coming-Soon-">this Knowledge Base forum</a> to learn how it will work for them.</p>
 <blockquote><p>* See what we did there? Huh? Huh? Didja?</p></blockquote>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -362,8 +358,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

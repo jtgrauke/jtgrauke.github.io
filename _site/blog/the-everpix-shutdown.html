@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">The Everpix shutdown</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Everpix, a <a href="http://daringfireball.net/linked/2013/02/22/everpix">well-loved</a> photo storage service, <a href="http://blog.everpix.com/post/66102960115/we-gave-it-our-all">recently announced</a> its imminent shutdown:</p>
+		<h3 class="displayMedium">The Everpix shutdown</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Everpix, a <a href="http://daringfireball.net/linked/2013/02/22/everpix">well-loved</a> photo storage service, <a href="http://blog.everpix.com/post/66102960115/we-gave-it-our-all">recently announced</a> its imminent shutdown:</p>
 <blockquote><p>We were unable to secure sufficient funding in order to properly scale the business, and our endeavors to find a new home for Everpix did not come to pass. At this point, we have no other options but to discontinue the service.</p></blockquote>
 <p><a href="http://www.theverge.com/2013/8/29/4560364/best-cloud-storage-photo-apps">By all accounts</a>, the site and service provided an elegant solution to a common problem: how to store, organize, and access years' worth of digital photos from myriad sources. Everpix stored them all on the cloud and gave users a simple interface to manage them. But as good a product as it was, it simply failed to gain traction. <a href="http://www.theverge.com/2013/11/5/5039216/everpix-life-and-death-inside-the-worlds-best-photo-startup">Casey Newton's post-morten at The Verge</a> reports that "the company had attracted fewer than 19,000 signups". Some 6,800 of those were paying customers, plunking down $4.99 a month or $49 a year for the paid version.</p>
 <p>In the company's final months, company founder Pierre-Oliver Latour made the rounds among the venture capitalists. He sought another $5 million to follow up on the initial $2.3 million he'd raised during Everpix' nonage—which sum the company had burned right through. In a telling paragraph, Newton reports:</p>
@@ -168,11 +166,9 @@ Total Personnel Costs: $1,411,513.53</p>
 <p>To be clear, we're sympathetic to the Everpix guys. <a href="https://twitter.com/everpix/status/397801448626343936">No one wants to see their work up and vanish like that</a>. What we're looking askance at is the culture that killed it. The company raced through its cash with such abandon that it must've been planning on either more funding or an acquisition. And when it came to that time, turns out the VC's wouldn't lift a finger for anything less than a nine-digit payday. Not a thought given to long-term sustainability or the preservation and improvement of what they had built.</p>
 <p>The ones who put up the money are the ones who own your work. If you want it to last past tomorrow, make sure they're as invested in it as you are.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -361,8 +357,14 @@ Total Personnel Costs: $1,411,513.53</p>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

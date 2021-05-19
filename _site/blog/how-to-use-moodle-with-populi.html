@@ -133,23 +133,19 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Moodle and Populi</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Lots of our schools use Moodle alongside Populi. Moodle is a free, open-source LMS that schools can use (together with some investments in IT personnel and equipment) to run online courses, and it has some purchase among the kind of smaller schools Populi is built to serve. Even though Moodle competes with Populi, we also know that it's not necessarily a simple matter for a school to drop its investment (especially that of faculty hours) in Moodle.</p>
+		<h3 class="displayMedium">Moodle and Populi</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Lots of our schools use Moodle alongside Populi. Moodle is a free, open-source LMS that schools can use (together with some investments in IT personnel and equipment) to run online courses, and it has some purchase among the kind of smaller schools Populi is built to serve. Even though Moodle competes with Populi, we also know that it's not necessarily a simple matter for a school to drop its investment (especially that of faculty hours) in Moodle.</p>
 <p>So, with our <a href="http://populi.co/blog/2012/10/course-evaluations-are-here/">latest release</a>, we added a couple new things to courses that will let your faculty use Moodle alongside Populi with greater ease: a Common Cartridge importer and LTI links. We've posted a brief tutorial that walks you through how to use both on the <a href="https://support.populiweb.com/entries/22145137-can-i-use-moodle-with-populi">Populi Knowledge Base</a>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -338,8 +334,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

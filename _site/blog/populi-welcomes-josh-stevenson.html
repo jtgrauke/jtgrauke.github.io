@@ -133,28 +133,24 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Populi welcomes Josh Stevenson</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic adam"></div>
-					<span>Adam wrote this on February 4th, 2014</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Populi is pleased to welcome Josh Stevenson. Josh will be joining our customer support team, taking calls, answering tickets, writing documentation, and making training videos. A writer and self-described <a href="https://twitter.com/stervenson">competitive poet</a>, he'll also contribute to the blog and other writerly tasks. You know, once he's up to speed. It's his first week. Take it easy on him.</p>
+		<h3 class="displayMedium">Populi welcomes Josh Stevenson</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic adam"></div>
+				<span>Adam wrote this on February 4th, 2014</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Populi is pleased to welcome Josh Stevenson. Josh will be joining our customer support team, taking calls, answering tickets, writing documentation, and making training videos. A writer and self-described <a href="https://twitter.com/stervenson">competitive poet</a>, he'll also contribute to the blog and other writerly tasks. You know, once he's up to speed. It's his first week. Take it easy on him.</p>
 <p><img class="alignnone size-full wp-image-2593" style="line-height: 1.5em;" alt="2-3-14 josh intro" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2013/11/2-3-14-josh-intro.jpg" width="640" height="360" /></p>
 <p>Judging by the feedback we receive, our customers really dig our support. It's something we work hard at—at last count <a href="http://populi.co/blog/2013/07/where-does-your-dollar-go/">we spend 56 cents of every dollar we take in</a> on supporting and improving Populi. So it would be easy to think, "Well, we've got <i>that part</i> wired." Instead, those compliments tell us just how important good support is to our customers.</p>
 <p>To that end, we've been thinking about hiring a new CS person for some time. As it happens, our top choice for the role <span style="line-height: 1.5em;">became available right when we started looking in earnest. Josh previously worked for EMSI customer support, most recently developing training and user certification programs for their web-based economics software. We've known him for years as a man who appreciates and shares our company values, and we're really happy to have him join the team. </span></p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -343,8 +339,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

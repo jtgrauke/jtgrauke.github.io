@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Populi Turns 10</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic adam"></div>
-					<span>Adam wrote this on May 20th, 2018</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Ten years ago today the first user logged in to Populi. Here are some &#8220;since-then&#8221; stats to mark the occasion.</p>
+		<h3 class="displayMedium">Populi Turns 10</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic adam"></div>
+				<span>Adam wrote this on May 20th, 2018</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Ten years ago today the first user logged in to Populi. Here are some &#8220;since-then&#8221; stats to mark the occasion.</p>
 <ul>
 <li>200,000 users have logged in over 45 million times</li>
 <li>9 million student enrollments in over 1.4 million courses</li>
@@ -161,11 +159,9 @@
 </ul>
 <p>Thanks to all of you for an awesome first Ten years!</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -354,8 +350,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

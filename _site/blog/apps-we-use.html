@@ -133,29 +133,25 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Apps We Use</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on July 29th, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p><strong><a href="http://www.37signals.com">37 Signals</a></strong> produces great web apps with simple, elegant designs. We use their <a href="http://www.highrisehq.com/">Highrise</a> contact manager, and their  <a href="http://tadalist.com/">Ta-Da Lists</a> are as good as free, online to-do lists get (Populi's already great at <a href="http://www.populiweb.com/tour/people">contacts</a>, and <strong>we’re incorporating To-Do’s in our next major release</strong>).</p>
+		<h3 class="displayMedium">Apps We Use</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on July 29th, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p><strong><a href="http://www.37signals.com">37 Signals</a></strong> produces great web apps with simple, elegant designs. We use their <a href="http://www.highrisehq.com/">Highrise</a> contact manager, and their  <a href="http://tadalist.com/">Ta-Da Lists</a> are as good as free, online to-do lists get (Populi's already great at <a href="http://www.populiweb.com/tour/people">contacts</a>, and <strong>we’re incorporating To-Do’s in our next major release</strong>).</p>
 <p><strong><a href="http://www.freshbooks.com/">Freshbooks</a></strong> is an online invoicing application that promises “painless billing.” Our billing man, Mark Ackerman, testifies that Freshbooks <!--more-->makes his job easier and Populi more efficient as a company. (<a href="http://www.populiweb.com/tour/billing">Populi Billing</a>, of course, also features <strong>invoicing that's integrated with the rest of your college's information</strong>).</p>
 <p><strong><a href="http://www.mailchimp.com/index.php/home/2">Mailchimp</a></strong> helps us manage our various mailing lists. It has good analytic tools and a really user-friendly interface. On your end, it makes subscribing and unsubscribing very simple. It's a <strong>mass-mailing tool that hates spam</strong> as much as the rest of us do, and we use it because we believe it will make your experience with our occasional mailings much more pleasant and useful (<a href="http://www.populiweb.com/tour/productivity/">Populi Email's</a> seamless integration with college contacts can certainly help you with <strong>your own mass-email campaigns</strong>).</p>
 <p><strong><a href="http://www.zendesk.com/">Zendesk</a></strong> forms the basis of <strong>our online Customer Support system.</strong> Like Mailchimp, its user interface is simple and pleasant both on your end and our end. With its ticket system, help forums (<em>fora</em> for those Latin speakers out there), search, and other features,<strong> it gets you help with your issues with a pretty fast turnaround time. </strong>On our end, it helps our Customer Support guys be alert and responsive to your needs--and its reporting tools help us make <strong>our help content more useful to you.</strong></p>
 <p>We don't just like the software; we also appreciate the <strong>thought behind them</strong>--their whole approach to software design,  customer support, transparency, accessibility, simplicity... and <strong>honesty</strong> in how they market themselves. You can read more about the approach in 37 Signals' <a href="http://gettingreal.37signals.com/toc.php">Getting Real</a>, which, though aimed at software companies, nevertheless contains principles readily applicable to other spheres (like higher education). When Populi got started, we had a lot of these things in mind already, if only because they are not in evidence in today's college software market. It's somewhat encouraging and exonerating to find that there are already successful companies out there who adhere to what we consider some of our core tenets. Not only does this approach produce <strong>better software,</strong> it also lets us, as a company, get to be more human and approachable in how we present ourselves.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -344,8 +340,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

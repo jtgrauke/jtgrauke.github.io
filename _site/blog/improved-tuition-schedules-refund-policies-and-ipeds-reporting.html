@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Improved tuition schedules, refund policies, and IPEDS reporting</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Early in the morning of Friday, August 1, we released a number of upgrades to student billing together with a smattering of  improvements to other areas of Populi. Here's the low-down:</p>
+		<h3 class="displayMedium">Improved tuition schedules, refund policies, and IPEDS reporting</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Early in the morning of Friday, August 1, we released a number of upgrades to student billing together with a smattering of  improvements to other areas of Populi. Here's the low-down:</p>
 <h5>Tuition schedules</h5>
 <p>We gave tuition schedules some new features and changed how they relate to courses and programs.</p>
 <ul>
@@ -171,11 +169,9 @@
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/IPEDS.png"><img class="aligncenter wp-image-2685" src="https://s3.amazonaws.com/blog-media.populi.co/wp_archive/2014/08/IPEDS.png" alt="IPEDS" width="610" height="239" /></a></p>
 <p>Read about all of the week's updates (including bugfixes) in the <a href="https://support.populiweb.com/entries/93990306-July-28-to-August-1-2014">Release Notes</a>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -364,8 +360,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

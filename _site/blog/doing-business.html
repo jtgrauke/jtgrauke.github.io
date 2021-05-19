@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Doing Business</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on November 12th, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>If you're in the habit of scrolling all the way to the bottom of the website, you probably noticed three new pages: our <strong><a href="http://www.populiweb.com/legal/privacy">Privacy Notice</a></strong>, <a href="http://www.populiweb.com/legal/copyright"><strong>Copyright Policy</strong></a>, and <a href="http://www.populiweb.com/legal/terms"><strong>Terms of Service</strong></a>.<!--more--></p>
+		<h3 class="displayMedium">Doing Business</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on November 12th, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>If you're in the habit of scrolling all the way to the bottom of the website, you probably noticed three new pages: our <strong><a href="http://www.populiweb.com/legal/privacy">Privacy Notice</a></strong>, <a href="http://www.populiweb.com/legal/copyright"><strong>Copyright Policy</strong></a>, and <a href="http://www.populiweb.com/legal/terms"><strong>Terms of Service</strong></a>.<!--more--></p>
 <p><strong>The Privacy Notice</strong> covers this website and Populi itself. It elaborates on <strong>this basic idea:</strong> "You have a right to keep Your personal information private and                     You may reasonably expect us to respect that right and use Your information responsibly." In other words, <strong>we're not gonna sell your email address</strong> or turn it over to spammers for any other reason, and the only information we gather from you (that you don't actively volunteer) is anonymous stuff like what pages you looked at.</p>
 <p><strong>The Copyright Policy</strong> is in place in the event that a copyright owner discovers that a Populi user has infringed upon the copyright inside the program somewhere and wants to complain to us about it. It describes the process such a one must go through, who to contact, and what information is required of the complainant. <strong>To sum it up, </strong>send us an email with the details, and we'll see what we can do.</p>
 <p><strong>The Terms of Service</strong> are probably the most important of the three new pages. If you're a college wondering what signing up with Populi gets you into, just read them. If you're a Populi user curious about our relationship, have a look—the Terms define it pretty clearly. Some of the language is stentorian and scary-looking (some parts, apparently,  are legally required to be in ALL CAPS), but <strong>all it does is codify the arrangement between us and the people we serve.</strong> We were not frowning at any point during the writing of the Terms.</p>
@@ -153,11 +151,9 @@
 <p>And again, it bears repeating that <strong>the Terms don't introduce anything substantively new to our existing customers</strong> and users (to whom these apply). They just put into words things that are, by and large, understood and accepted already.</p>
 <p>If you have any comments or questions about any of these pages, feel free to <a href="http://www.populiweb.com/contact"><strong>get a hold of us</strong></a>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -346,8 +342,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

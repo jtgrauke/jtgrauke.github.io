@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Special offer from Unicheck for Populi customers</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic brendan"></div>
-					<span>Brendan wrote this on January 29th, 2019</span>
-				
-			</div>
-			<div class="entry clear">
-				<p><a href="https://populi.co/blog/2018/03/plagiarism-checking-with-unicheck/">Last March</a> we released our integration with <a href="https://unicheck.com">Unicheck</a>, a web-based plagiarism-checking service. Since then Populi users have checked tens of thousands of student assignments for plagiarism against Unicheck's index of Internet-based sources, open access libraries and journals, and documents already uploaded to their school's accounts.</p>
+		<h3 class="displayMedium">Special offer from Unicheck for Populi customers</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic brendan"></div>
+				<span>Brendan wrote this on January 29th, 2019</span>
+			
+		</div>
+		<div class="entry clear">
+			<p><a href="https://populi.co/blog/2018/03/plagiarism-checking-with-unicheck/">Last March</a> we released our integration with <a href="https://unicheck.com">Unicheck</a>, a web-based plagiarism-checking service. Since then Populi users have checked tens of thousands of student assignments for plagiarism against Unicheck's index of Internet-based sources, open access libraries and journals, and documents already uploaded to their school's accounts.</p>
 
 <img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog_unicheck_logo_vertical_dark.png" width="250" /><br /><br />
 
@@ -191,11 +189,9 @@
 
 
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -384,8 +380,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Campus Life</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><img class="aligncenter" style="width:620px;" src="https://s3.amazonaws.com/blog-media.populi.co/profile%20campus%20life%20blog.png" /></p>
+		<h3 class="displayMedium">Campus Life</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><img class="aligncenter" style="width:620px;" src="https://s3.amazonaws.com/blog-media.populi.co/profile%20campus%20life%20blog.png" /></p>
 <p><!--
 <p>Coming soon: Campus Life!</p>
 <p> --></p>
@@ -161,11 +159,9 @@
 <p>Check out the Campus Life documentation in the <a href="https://support.populiweb.com/forums/23094438">Populi Knowledge Base</a> to get a fuller sense of what it does and how it works.</p>
 <p>We're always pleased when we can give our customers something new, and we hope Campus Life helps your school get even more out of Populi!</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -354,8 +350,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

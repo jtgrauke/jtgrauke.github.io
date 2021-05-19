@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Privacy Policy updated</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We just updated our <a href="http://populi.co/legal/privacy/">Privacy Policy</a>.</p>
+		<h3 class="displayMedium">Privacy Policy updated</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We just updated our <a href="http://populi.co/legal/privacy/">Privacy Policy</a>.</p>
 <p>Previously, Section 8 (our policy towards children) included a blanket statement indicating that we do not collect information about children under 13—and that if we inadvertently did, we would delete it. However, we realized that this statement went a little too far for our customers. Many of you actually do keep records of children under 13—whether as relatives of faculty or staff, as prospects, and sometimes even as students. Not wanting to commit ourselves to deleting customer data that you're allowed to collect, we wanted to clarify the policy regarding information about children under 13.</p>
 <p>So, the long and the short of it is that...</p>
 <ul>
@@ -151,11 +149,9 @@
 </ul>
 <p>If you have any questions about any of this, <a href="http://populi.co/contact/">please don't hesitate to contact us</a>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -344,8 +340,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Course Conferences with BigBlueButton</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog_course_conferences.png" alt="course conferences" width="600" height="271" /></p>
+		<h3 class="displayMedium">Course Conferences with BigBlueButton</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/blog_course_conferences.png" alt="course conferences" width="600" height="271" /></p>
 <p>New in Populi courses: Conferences! We've added an integration with <a href="https://bigbluebutton.org">BigBlueButton</a>, a web conferencing service designed for online learning. With Conferences, your faculty can offer live video streaming, presentations, a virtual whiteboard, chat, and live discussions right inside Populi courses. Here's how you can get your school started:</p>
 <ol>
 <li>Your school gets a hosted version of BigBlueButton through <a href="https://blindsidenetworks.com">Blindside Networks</a>. Blindside provides BBB hosting and support services to schools around the world. (You can also set up your own hosting environment for BigBlueButton.)</li>
@@ -151,11 +149,9 @@
 </ol>
 <p>Conferences will let you do even more with online courses in Populi. For more details, have a look at the <a href="https://support.populiweb.com/hc/en-us/articles/360002285254">Populi Knowledge Base</a>.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -344,8 +340,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

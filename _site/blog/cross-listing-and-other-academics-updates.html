@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Cross listing and other academics updates</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>The Populi developers have been cranking out new academics features at a steady clip. Here's a look at some of what's new:</p>
+		<h3 class="displayMedium">Cross listing and other academics updates</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>The Populi developers have been cranking out new academics features at a steady clip. Here's a look at some of what's new:</p>
 <h5>Cross Listing</h5>
 <p><a href="https://s3.amazonaws.com/kb-media.populi.co/manage_cross_list_course.png"><img class="aligncenter " src="https://s3.amazonaws.com/kb-media.populi.co/manage_cross_list_course.png" width="608" height="216" /></a></p>
 <p>You can now cross-list courses at the course instance level. After adding a course to an academic term, you can then cross-list it with other courses right on the Info view. Cross-listed courses let you set up assignments for students in one course or the other; otherwise, they share all course content, meeting times, faculty, and so on.</p>
@@ -156,11 +154,9 @@
 <p><a href="https://s3.amazonaws.com/blog-media.populi.co/blog_rel_notes_subscribe.png"><img class="aligncenter " src="https://s3.amazonaws.com/blog-media.populi.co/blog_rel_notes_subscribe.png" width="610" height="218" /></a></p>
 <p>This is as good a time as any to remind you to check out our weekly Release Notes, published every Friday in the <a href="https://support.populiweb.com/hc/en-us/sections/205240647">Knowledge Base</a>. If you like, you can also subscribe to them—just click the <em>Follow</em> button and choose whether you'd like to receive email about New Articles or New Articles <em>and</em> Comments.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -349,8 +345,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

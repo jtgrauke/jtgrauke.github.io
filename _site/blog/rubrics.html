@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Rubrics</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic brendan"></div>
-					<span>Brendan wrote this on August 3rd, 2018</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>There&#8217;s a big new feature in your Populi courses today: Rubrics!</p>
+		<h3 class="displayMedium">Rubrics</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic brendan"></div>
+				<span>Brendan wrote this on August 3rd, 2018</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>There&#8217;s a big new feature in your Populi courses today: Rubrics!</p>
 
 <p>
 <img src="https://s3.amazonaws.com/blog-media.populi.co/blog_course_add_rubric.png" width="600px;">
@@ -192,11 +190,9 @@
 <p>We&#8217;re excited to get rubrics out to our users (just in time for the new school year for many of you!). Together with the new <a href="https://populi.co/blog/2018/07/upcoming-course-navigation-update/">course navigation layout</a>, they&#8217;re helping set the stage for even more improvements to Populi courses.</p>
 
 <p>Read more about rubrics in the <a href="https://support.populiweb.com/hc/en-us/articles/360007294174">Populi Knowledge Base</a>.</p>
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -385,8 +381,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

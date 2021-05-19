@@ -133,28 +133,24 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Merry Christmas and a Happy New Year from the Populi Team</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic adam"></div>
-					<span>Adam wrote this on December 20th, 2013</span>
-				
-			</div>
-			<div class="entry clear">
-				<p style="text-align: center;">
+		<h3 class="displayMedium">Merry Christmas and a Happy New Year from the Populi Team</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic adam"></div>
+				<span>Adam wrote this on December 20th, 2013</span>
+			
+		</div>
+		<div class="entry clear">
+			<p style="text-align: center;">
 <img src="https://s3.amazonaws.com/blog-media.populi.co/apple-touch-icon_santa.png" alt="Merry Christmas From Populi" style="width:300px; border-radius:10%;"  />	
 </p>
 <p>Many thanks to all of our customers, new and old, for making 2013 a great year to work at Populi. Here's to an even better 2014!</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -343,8 +339,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

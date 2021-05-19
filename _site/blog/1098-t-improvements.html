@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">1098-T improvements</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>We updated the 1098-T report with a bunch of new features last week. Here's what you need to know...</p>
+		<h3 class="displayMedium">1098-T improvements</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>We updated the 1098-T report with a bunch of new features last week. Here's what you need to know...</p>
 <h5>First things first</h5>
 <p>On January 1 of every year, Populi takes all the billing and financial aid information you've entered for your students and automatically generates a 1098-T form. The 1098-T report lets you review, release, and export these forms with tools that, conservatively, save you <em>days</em> of work. We keep an eye on the IRS regulations and make sure that the forms Populi generates comply with whatever new rules and minutiae those industrious pencil-pushers have scribbled into existence. And with the new features, you now have more tools at your disposal to get these forms off your to-do list.</p>
 <p>Simply put, Populi does all the rote stuff so you don't have to.</p>
@@ -159,11 +157,9 @@
 <p>After releasing a form, sometimes you wish you could just... <em>un</em>release a form—perhaps you catch an error, or you realize the student doesn't merit a 1098-T this year. Whatever the case, in former times you'd have to get Populi Support on the horn to do such a thing. Now there's a new <em>Hide/Unrelease</em> function in the Actions menu that puts the task on your own timetable.</p>
 <p>Thus, the new features (we also put out a bunch of under-the-hood improvements, too). For all the details and how-to's, head over to the <a href="https://support.populiweb.com/hc/en-us/articles/223792907/#1098t">Populi Knowledge Base</a>, or fire off a question to the support crew.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -352,8 +348,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

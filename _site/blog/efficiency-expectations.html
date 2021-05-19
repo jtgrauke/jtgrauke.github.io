@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Efficiency and expectations</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<blockquote>
+		<h3 class="displayMedium">Efficiency and expectations</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<blockquote>
 <p style="text-align: left;"><em>As far as I can make out, "efficiency" means that we ought to discover everything about a machine except what it is for. - G.K. Chesterton</em></p>
 </blockquote>
 <hr />
@@ -173,11 +171,9 @@
 <p>Good software is built on a basic empathy for the user. Usually that means that we reduce complexity and pare things down to their simplest, most efficient expression. But people are complex, and we can't just mechanically assume that software simplicity begets efficiency. Hopefully, we'll always keep learning this lesson.</p>
 <p>After all, software is for humans, and humans are not for software.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -366,8 +362,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

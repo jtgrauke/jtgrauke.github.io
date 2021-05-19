@@ -133,27 +133,23 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Nielsen-Norman Group: Show your pricing!</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Website usability researchers The Nielsen-Norman Group have something to say to business-to-business websites: <a href="http://www.nngroup.com/articles/show-price/">publish your pricing</a>.</p>
+		<h3 class="displayMedium">Nielsen-Norman Group: Show your pricing!</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Website usability researchers The Nielsen-Norman Group have something to say to business-to-business websites: <a href="http://www.nngroup.com/articles/show-price/">publish your pricing</a>.</p>
 <blockquote><p>Business customers report pricing as the top most needed piece of information online, yet many business-to-business (B2B) sites don’t show it… In our studies, we watch participants go to competitors’ sites when websites do not show prices. If pricing information can be found elsewhere, that’s where users will be.</p></blockquote>
 <p>We're aware of one other company in the higher-ed software industry that has up-front pricing information—<a href="http://www.pathwright.com/index.html">Pathwright</a>—and they're after a different slice of pie than we are. Otherwise, we're not aware of any services comparable to Populi that publish what they cost.</p>
 <blockquote><p>Companies rationalize reasons for not revealing prices online: we don’t want our competitors to know, price varies for different customers, price constantly fluctuates, customized services have unique prices, and so on. These excuses are legitimate reasons in almost all cases, but they’re still excuses. Not showing pricing works against customer needs and thus creates a hostile shopping experience. Remember the <a href="http://www.nngroup.com/articles/halo-effect/">Halo Effect</a>: people’s impression of one aspect of your brand (“they’re hiding the information I want”) transfers to their feelings about everything else (“they’re difficult to deal with; I don’t like them.”)</p></blockquote>
 <p>We don't call it the "Halo Effect", but the description of it resonates with us. We want you to know everything you deserve to know about us: <a href="http://populi.co/tour">What do we provide you</a>? <a href="http://populi.co/legal/terms/">How will we do business with you</a>? <a href="http://populi.co/about">What are our priorities as a company</a>? <a href="http://populi.co/pricing">What does it cost</a>?</p>
 <p>This may be a murky, obscurantist industry, but hiding basic stuff like that never made any sense to us.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -342,8 +338,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

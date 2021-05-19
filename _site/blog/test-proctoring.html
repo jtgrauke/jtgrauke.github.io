@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Test proctoring</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Just in time for Christmas, something new for you: test proctoring!</p>
+		<h3 class="displayMedium">Test proctoring</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Just in time for Christmas, something new for you: test proctoring!</p>
 <div class="blog-screenshot">
 <div class="blog-screenshot"><img class="aligncenter" style="width: 330px;" src="http://kb-media.populi.co.s3.amazonaws.com/proctor%20info%20blog.png" alt="" /></div>
 <p>Test proctoring lets you require that a third party keep an eye on your online students when taking a test. It uses <a href="http://populi.co/blog/2012/03/sms/">SMS messaging</a> to give the proctor codes to "check in" and "check out" to verify that he was there the entire time the student was taking the test. Here's how it works:</p>
@@ -165,11 +163,9 @@
 </div>
 </div>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -358,8 +354,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">A helicopter carrying a dinosaur</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>Maybe you've heard the basic "Startup-Takes-Venture-Capital" story. A new software company <a href="http://techcrunch.com/2011/09/15/sources-pinterest-has-already-pinned-down-10m-at-a-40m-valuation/">attracts VC funding</a>, uses it to <a href="http://thenextweb.com/socialmedia/2013/04/29/path-the-private-social-network-passes-10-million-registered-users/">fuel meteoric user growth</a>, uses that growth <a href="http://techcrunch.com/2013/02/20/pinterest-confirms-massive-new-200-million-series-d-funding-round-and-2-5-billion-valuation/">to attract more VC</a>, and finally ends up cashing out—<a href="http://techcrunch.com/2012/04/09/facebook-to-acquire-instagram-for-1-billion/">usually by selling</a>—and <a href="http://techcrunch.com/2013/05/09/clipboard-acquired-by-salesforce-will-be-shuttered-on-june-30th/">leaving its users</a> in the lurch. There's a lot that's worthy of commentary that often accompanies this storyline—<a href=" http://www.theverge.com/2013/4/30/4286090/path-is-spamming-address-books-with-unwanted-texts-and-robocalls">slimy business decisions</a>, <a href="http://www.eastbayexpress.com/oakland/the-bacon-wrapped-economy/Content?gpt=1&amp;oid=3494301&amp;showFullText=true">a surreal easy-money culture</a>, and a <a href="http://bits.blogs.nytimes.com/2012/04/29/disruptions-with-no-revenue-an-illusion-of-value/">bewildering lack of profits</a>—but the thing on our minds right now is stability.</p>
+		<h3 class="displayMedium">A helicopter carrying a dinosaur</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>Maybe you've heard the basic "Startup-Takes-Venture-Capital" story. A new software company <a href="http://techcrunch.com/2011/09/15/sources-pinterest-has-already-pinned-down-10m-at-a-40m-valuation/">attracts VC funding</a>, uses it to <a href="http://thenextweb.com/socialmedia/2013/04/29/path-the-private-social-network-passes-10-million-registered-users/">fuel meteoric user growth</a>, uses that growth <a href="http://techcrunch.com/2013/02/20/pinterest-confirms-massive-new-200-million-series-d-funding-round-and-2-5-billion-valuation/">to attract more VC</a>, and finally ends up cashing out—<a href="http://techcrunch.com/2012/04/09/facebook-to-acquire-instagram-for-1-billion/">usually by selling</a>—and <a href="http://techcrunch.com/2013/05/09/clipboard-acquired-by-salesforce-will-be-shuttered-on-june-30th/">leaving its users</a> in the lurch. There's a lot that's worthy of commentary that often accompanies this storyline—<a href=" http://www.theverge.com/2013/4/30/4286090/path-is-spamming-address-books-with-unwanted-texts-and-robocalls">slimy business decisions</a>, <a href="http://www.eastbayexpress.com/oakland/the-bacon-wrapped-economy/Content?gpt=1&amp;oid=3494301&amp;showFullText=true">a surreal easy-money culture</a>, and a <a href="http://bits.blogs.nytimes.com/2012/04/29/disruptions-with-no-revenue-an-illusion-of-value/">bewildering lack of profits</a>—but the thing on our minds right now is stability.</p>
 <p>Basically, this storyline rarely results in long-term, stable businesses. That's only one of several dozen reasons we never want to touch the stuff.</p>
 <p>See, most of us are family men. Those of us who aren't yet are planning to be. When we say that we work here so we can support our families, part of that means getting home for supper every night. Our industry looks at that and sees a candle we oughtta burn at both ends. We'd rather have our kids look back on these years and remember how much time we spent with them.</p>
 <p>Thus, our employees own a majority share in Populi (the rest is held by employees of the company that spun us off). Our business plan is designed to maintain or increase that stake. We're averse to outside investment of <em>any</em> flavor. We have no desire to sell the company. We seek steady, manageable growth over wild, stratospheric moonshots. That means we pursue certain customers and tell others that we're not right for them. Our workplace is intentionally designed without shackles on our desks.</p>
@@ -165,11 +163,9 @@
 
 <p>Who's invested in your company? That's who your company has to serve. That's why the only investment we're after is from ourselves and from our customers.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -358,8 +354,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

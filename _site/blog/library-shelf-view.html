@@ -133,23 +133,19 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Library shelf view</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/library_shelf_view_blog.png" alt="" width="600" height="186" /></p>
+		<h3 class="displayMedium">Library shelf view</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/library_shelf_view_blog.png" alt="" width="600" height="186" /></p>
 <p>Also new in Populi: Library Shelf View. Shelf view shows you what's in the physical vicinity of the resource you're currently looking at. Just scroll to the bottom of any resource page and there you'll see it; click the left/right arrows to wander your way through the library shelves. The view is ordered by call number and makes it easy to discover resources you might not have thought to search for.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -338,8 +334,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

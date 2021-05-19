@@ -133,16 +133,14 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Coming soon: official transcript requests</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/transcript_requests_blog.png" width="615" height="304" /></p>
+		<h3 class="displayMedium">Coming soon: official transcript requests</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p><img class="aligncenter" src="https://s3.amazonaws.com/blog-media.populi.co/transcript_requests_blog.png" width="615" height="304" /></p>
 <p>Coming soon: official transcript requests! While our crack coders apply the finishing graces to them, we thought we'd give you a preview of the upcoming features.</p>
 <p>Your students will soon be able to request an official transcript right from their Profiles. Their requests will be queued up in the new Transcript Requests view in Academics; from there you can review and fulfill them with a few quick steps. Here's the whole story:</p>
 <h5>1. Setup</h5>
@@ -166,11 +164,9 @@
 <p>We've also placed the utilities gear onto the funeral pyre. We'll replace it with action links and the new <em>Transcript Actions</em> button; the gear on the Profile &gt; Info view shall meet a similar fate.</p>
 <p>We're pretty excited to get Transcript Requests out to all our customers. They'll replace some pricey standalone transcript request services some schools are using. And as with all new Populi features, they won't require any software integrations or other wiring-together. Just set 'em up and let 'em rip.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -359,8 +355,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

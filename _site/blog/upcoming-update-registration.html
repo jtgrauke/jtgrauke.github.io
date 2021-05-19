@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Coming soon: improvements to course registration</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic brendan"></div>
-					<span>Brendan wrote this on October 12th, 2018</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Course registration is about to get a big upgrade. Here's a look at what's coming...</p>
+		<h3 class="displayMedium">Coming soon: improvements to course registration</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic brendan"></div>
+				<span>Brendan wrote this on October 12th, 2018</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Course registration is about to get a big upgrade. Here's a look at what's coming...</p>
 
 <p>But first, let&#8217;s have a quick look at the current registration screen and some of the problems we wanted to solve.</p>
 
@@ -188,11 +186,9 @@
 <p>Finally, the new &#8220;Waitlist Over-enrollment&#8221; feature will take a huge load off your waitlist workload. Once enabled in Academics &gt; Settings, students can click the clock to request the next spot on that course&#8217;s waiting list. When she saves, Populi will check to see whether the waitlisted course conflicts with a term enrollment limit or the student&#8217;s schedule. If that&#8217;s the case, she&#8217;ll be able to choose which courses she&#8217;s willing to drop if a spot opens up. Should that happen, Populi will automatically drop as many of the chosen courses as necessary to move her off the waitlist and onto the rolls.</p>
 
 <p>Lord willing and the creeks don&#8217;t rise, we&#8217;re planning to have the new registration features out to all our customers the third week of October.</p>
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -381,8 +377,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

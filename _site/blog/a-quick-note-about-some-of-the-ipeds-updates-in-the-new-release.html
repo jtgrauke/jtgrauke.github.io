@@ -133,22 +133,18 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
+		<h3 class="displayMedium">A quick note about some of the IPEDS updates in the new release</h3>
+		<div class="byline clear">
+			
+		</div>
+		<div class="entry clear">
+			<p>In our January 4 release (more details forthcoming!), we updated several aspects of the IPEDS reports to make sure what Populi produces adheres to the new reporting guidelines. In particular, many of our customers have been asking about the changes they've observed in the Race/Ethnicity categories. For your convenience, here's a <a href="https://surveys.nces.ed.gov/ipeds/visFaq_re.aspx">link to a FAQ</a> on the new guidelines; the first question addresses the Race/Ethnicity issue.</p>
 
-			<h3 class="displayMedium">A quick note about some of the IPEDS updates in the new release</h3>
-			<div class="byline clear">
-				
-			</div>
-			<div class="entry clear">
-				<p>In our January 4 release (more details forthcoming!), we updated several aspects of the IPEDS reports to make sure what Populi produces adheres to the new reporting guidelines. In particular, many of our customers have been asking about the changes they've observed in the Race/Ethnicity categories. For your convenience, here's a <a href="https://surveys.nces.ed.gov/ipeds/visFaq_re.aspx">link to a FAQ</a> on the new guidelines; the first question addresses the Race/Ethnicity issue.</p>
+		</div>
 
-			</div>
-
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -337,8 +333,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

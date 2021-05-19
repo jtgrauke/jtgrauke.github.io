@@ -133,28 +133,24 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Simplicity</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic isaac"></div>
-					<span>Isaac wrote this on August 17th, 2009</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>Our tagline reads, "College Management Made Simple"... because we believe <strong>simplicity in software is a virtue.</strong> Simplicity doesn't necessarily mean that things are just left out; it has more to do with <strong>what we include and why.</strong> If we're considering a feature that everyone will use all the time <em>contra</em> some feature that a few users might use some of the time, our development decision is pretty simple to make. "Feature bloat" has bogged down many an otherwise fine program that, <!--more-->for some reason, sought to be all things to all people. We aim to build and deliver useful, usable software&mdash;<strong>because we want to do one thing, and do it really well.</strong></p>
+		<h3 class="displayMedium">Simplicity</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic isaac"></div>
+				<span>Isaac wrote this on August 17th, 2009</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>Our tagline reads, "College Management Made Simple"... because we believe <strong>simplicity in software is a virtue.</strong> Simplicity doesn't necessarily mean that things are just left out; it has more to do with <strong>what we include and why.</strong> If we're considering a feature that everyone will use all the time <em>contra</em> some feature that a few users might use some of the time, our development decision is pretty simple to make. "Feature bloat" has bogged down many an otherwise fine program that, <!--more-->for some reason, sought to be all things to all people. We aim to build and deliver useful, usable software&mdash;<strong>because we want to do one thing, and do it really well.</strong></p>
 <p>That <strong>one thing</strong> happens to be a <strong>fairly complex, tightly interwoven</strong> bundle of tasks: <strong>college management.</strong> We're in this business because most software just adds to the complexity&mdash;not just in its feature bloat, but also in its approach to the "interwoven" part. But as our client colleges have found, and are still finding out, <strong>college management can be done with one program,</strong> and it can be done better for a much lower cost.</p>
 <p>We have some features coming that <strong>we're pretty excited about,</strong> and that you'll be pretty excited about, too. We're going to be quiet about specifics for the moment, but suffice it to say that they'll expand Populi's ability to manage all of your college's information with <strong>less software and greater ease and simplicity.</strong></p>
 <p>In the meantime, <strong>two menus</strong> from some eateries in New York City with <strong>simple philosophies.</strong> <a href="http://www.johnsbrickovenpizza.com/menu.html">John's Pizzeria</a> on Bleecker makes what is simply the finest pizza anywhere; <a href="http://www.ninthstreetespresso.com/">Ninth Street Espresso</a> upends what people think of coffee on a regular basis. Both eschew the proliferation of options and sauces and extras that typically clutter the competition's menus and kitchens. Both do it like no one else can do it. And both do gangbusters business.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -343,8 +339,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 

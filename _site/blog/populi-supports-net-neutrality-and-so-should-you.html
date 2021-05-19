@@ -133,19 +133,17 @@
 
 <section class="blog single">
 
-	<div class="wrap">
+	<article>
 
-		<article class="sm-span-12">
-
-			<h3 class="displayMedium">Populi supports net neutrality and so should you</h3>
-			<div class="byline clear">
-				
-					<div class="byline-pic adam"></div>
-					<span>Adam wrote this on May 6th, 2014</span>
-				
-			</div>
-			<div class="entry clear">
-				<p>From Free Press' <a href="http://www.savetheinternet.com/net-neutrality">Save The Internet</a> site:</p>
+		<h3 class="displayMedium">Populi supports net neutrality and so should you</h3>
+		<div class="byline clear">
+			
+				<div class="byline-pic adam"></div>
+				<span>Adam wrote this on May 6th, 2014</span>
+			
+		</div>
+		<div class="entry clear">
+			<p>From Free Press' <a href="http://www.savetheinternet.com/net-neutrality">Save The Internet</a> site:</p>
 <blockquote><p>On Jan. 14, 2014, the U.S. Court of Appeals in Washington, D.C., struck down the Federal Communications Commission’s Open Internet Order.</p>
 <p>And now, the FCC is proposing rules that would kill — rather than protect — Net Neutrality and allow rampant discrimination online.</p></blockquote>
 <p>What is net neutrality anyway? And why should you care? One of my favorite YouTubers, <a href="http://www.youtube.com/user/CGPGrey">CGP Grey</a>, does a great job explaining not just what net neutrality is, but why we must defend it.</p>
@@ -153,11 +151,9 @@
 <p>So what difference can we make? The White House has already responded to <a href="https://petitions.whitehouse.gov/petition/restore-net-neutrality-directing-fcc-classify-internet-providers-common-carriers/5CWS1M4P">this petition</a> asking for a restoration of net neutrality, and while this is a good start it doesn't actually get us any closer to the goal of preserving a free and open internet.</p>
 <p>Save The Internet has a <a href="http://www.savetheinternet.com/what-can-i-do">number of ideas</a> about how <em>we the people</em> can keep the pressure on the FCC to do the right thing. On behalf of Populi, I encourage you to check out the list and take action to defend net neutrality.</p>
 
-			</div>
+		</div>
 
-		</article>
-
-	</div>
+	</article>
 
 </section>
 
@@ -346,8 +342,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<script src="/js/fitvids.js"></script>
 
 	<script>
+
+		$(document).ready(function(){
+			
+			$(".blog article").fitVids();
+		});
 
 		$(document).ready(function () {
 
