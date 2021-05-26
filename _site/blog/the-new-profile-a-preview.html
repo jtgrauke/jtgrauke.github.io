@@ -138,8 +138,8 @@
 		<h3 class="displayMedium">The new profile: a preview</h3>
 		<div class="byline clear">
 			
-				<div class="byline-pic isaac"></div>
-				<span>Isaac wrote this on May 19th, 2010</span>
+				<div class="byline-pic isaac"></div>			
+				<span>Isaac wrote this on 19 May 2010</span>
 			
 		</div>
 		<div class="entry clear">
@@ -368,14 +368,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
-	<script src="/js/fitvids.js"></script>
 
 	<script>
-
-		// $(document).ready(function(){
-			
-		// 	$(".blog article").fitVids();
-		// });
 
 		$(document).ready(function () {
 
@@ -393,10 +387,10 @@
 			
 				var target = this.hash,
 					menu = target;
-				$target = $(target);
-				$('html, body').stop().animate({
-					'scrollTop': $target.offset().top+2
-				}, 500, 'swing', function () {
+					$target = $(target);
+					$('html, body').stop().animate({
+						'scrollTop': $target.offset().top+2
+					}, 500, 'swing', function () {
 					window.location.hash = target;
 					$(document).on("scroll", onScroll);
 				});

@@ -138,8 +138,8 @@
 		<h3 class="displayMedium">Our New Logo</h3>
 		<div class="byline clear">
 			
-				<div class="byline-pic adam"></div>
-				<span>Adam wrote this on July 7th, 2020</span>
+				<div class="byline-pic adam"></div>			
+				<span>Adam wrote this on 07 July 2020</span>
 			
 		</div>
 		<div class="entry clear">
@@ -380,14 +380,8 @@ P.P.S. Want a new Populi &#8220;pop&#8221; sticker or two? As a reward for makin
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/plugins-min.js"></script>
 	<script src="/js/duet-min.js"></script>
-	<script src="/js/fitvids.js"></script>
 
 	<script>
-
-		// $(document).ready(function(){
-			
-		// 	$(".blog article").fitVids();
-		// });
 
 		$(document).ready(function () {
 
@@ -405,10 +399,10 @@ P.P.S. Want a new Populi &#8220;pop&#8221; sticker or two? As a reward for makin
 			
 				var target = this.hash,
 					menu = target;
-				$target = $(target);
-				$('html, body').stop().animate({
-					'scrollTop': $target.offset().top+2
-				}, 500, 'swing', function () {
+					$target = $(target);
+					$('html, body').stop().animate({
+						'scrollTop': $target.offset().top+2
+					}, 500, 'swing', function () {
 					window.location.hash = target;
 					$(document).on("scroll", onScroll);
 				});
