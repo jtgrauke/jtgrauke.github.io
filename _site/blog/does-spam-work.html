@@ -352,10 +352,10 @@ Greetings!</p></blockquote>
 
 	<script>
 
-		$(document).ready(function(){
+		// $(document).ready(function(){
 			
-			$(".blog article").fitVids();
-		});
+		// 	$(".blog article").fitVids();
+		// });
 
 		$(document).ready(function () {
 
@@ -387,14 +387,14 @@ Greetings!</p></blockquote>
 
 			var scrollPos = $(document).scrollTop();
 
-			$('.sticky-menu ul li a').each(function () {
+			$('.on-page-navigation ul li a').each(function () {
 
 				var currLink = $(this);
 
 				var refElement = $(currLink.attr("href"));
 
 				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-					$('.sticky-menu ul li a').removeClass("active");
+					$('.on-page-navigation ul li a').removeClass("active");
 					currLink.addClass("active");
 				}
 			});

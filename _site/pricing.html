@@ -207,43 +207,43 @@
             <p class="paragraphLarge">Access for all your staff, faculty, and students. Implementation, data migration, and training. Terrific customer support and every software update. File storage, text messaging, video streaming. All in one, unified system that works for your school.</p>
         </div>
 
-		<a href="/features#recruit" class="features-card sm-span-12 md-span-3">
+		<a href="/features#recruit" class="features-card sm-span-12 md-span-6 lg-span-3">
 			<img src="/images/icons/recruit.svg" alt="Recruit" />
 			<h6 class="subHeading">Recruit</h6>
 			<p>Engage with prospects. Everything is stored in a timeline, including calls, emails, and notes.</p>
 		</a>
-		<a href="/features#admit" class="features-card sm-span-12 md-span-3 md-start-4">
+		<a href="/features#admit" class="features-card sm-span-12 md-span-6 md-start-7 lg-span-3 lg-start-4">
 			<img src="/images/icons/admit.svg" alt="Admit" />
 			<h6 class="subHeading">Admit</h6>
 			<p>Keep online applications personal. Answer applicant questions, get references, and guide new students.</p>
 		</a>
-		<a href="/features#teach" class="features-card sm-span-12 md-span-3 md-start-7">
+		<a href="/features#teach" class="features-card sm-span-12 md-span-6 lg-span-3 lg-start-7">
 			<img src="/images/icons/teach.svg" alt="Teach" />
 			<h6 class="subHeading">Teach</h6>
 			<p>Conduct your courses with a full-featured LMS that’s easy to use and incredibly flexible. </p>
 		</a>
-		<a href="/features#administer" class="features-card sm-span-12 md-span-3 md-start-10">
+		<a href="/features#administer" class="features-card sm-span-12 md-span-6 md-start-7 lg-span-3 lg-start-10">
 			<img src="/images/icons/administer.svg" alt="Administer" />
 			<h6 class="subHeading">Administer</h6>
 			<p>Our Student Information System keeps everything you know about each person in a single profile.</p>
 		</a>
 
-		<a href="/features#aid" class="features-card sm-span-12 md-span-3">
+		<a href="/features#aid" class="features-card sm-span-12 md-span-6 lg-span-3">
 			<img src="/images/icons/aid.svg" alt="Aid" />
 			<h6 class="subHeading">Aid</h6>
 			<p>Process financial aid. Connect directly to DoED web tools to pull down and upload information.</p>
 		</a>
-		<a href="/features#account" class="features-card sm-span-12 md-span-3 md-start-4">
+		<a href="/features#account" class="features-card sm-span-12 md-span-6 md-start-7 lg-span-3 lg-start-4">
 			<img src="/images/icons/account.svg" alt="Account" />
 			<h6 class="subHeading">Account</h6>
 			<p>One student financial account for everything. Know what's owed and take payments from any device.</p>
 		</a>
-		<a href="/features#advance" class="features-card sm-span-12 md-span-3 md-start-7">
+		<a href="/features#advance" class="features-card sm-span-12 md-span-6 lg-span-3 lg-start-7">
 			<img src="/images/icons/advance.svg" alt="Advance" />
 			<h6 class="subHeading">Advance</h6>
 			<p>Reach your fundraising goals. Make giving easy with online and recurring donations. </p>
 		</a>
-		<a href="/features#connect" class="features-card sm-span-12 md-span-3 md-start-10">
+		<a href="/features#connect" class="features-card sm-span-12 md-span-6 md-start-7 lg-span-3 lg-start-10">
 			<img src="/images/icons/connect.svg" alt="Connect" />
 			<h6 class="subHeading">Connect</h6>
 			<p>Integrate with your school’s systems with a powerful API, webhooks, SSO, and numerous integrations.</p>
@@ -532,10 +532,10 @@
 
 	<script>
 
-		$(document).ready(function(){
+		// $(document).ready(function(){
 			
-			$(".blog article").fitVids();
-		});
+		// 	$(".blog article").fitVids();
+		// });
 
 		$(document).ready(function () {
 
@@ -567,14 +567,14 @@
 
 			var scrollPos = $(document).scrollTop();
 
-			$('.sticky-menu ul li a').each(function () {
+			$('.on-page-navigation ul li a').each(function () {
 
 				var currLink = $(this);
 
 				var refElement = $(currLink.attr("href"));
 
 				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-					$('.sticky-menu ul li a').removeClass("active");
+					$('.on-page-navigation ul li a').removeClass("active");
 					currLink.addClass("active");
 				}
 			});

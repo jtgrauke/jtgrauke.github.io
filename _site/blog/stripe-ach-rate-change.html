@@ -350,10 +350,10 @@ $5,000 * 0.8%, with a 25¢ minimum and $5 maximum = <strong>$5</strong></p>
 
 	<script>
 
-		$(document).ready(function(){
+		// $(document).ready(function(){
 			
-			$(".blog article").fitVids();
-		});
+		// 	$(".blog article").fitVids();
+		// });
 
 		$(document).ready(function () {
 
@@ -385,14 +385,14 @@ $5,000 * 0.8%, with a 25¢ minimum and $5 maximum = <strong>$5</strong></p>
 
 			var scrollPos = $(document).scrollTop();
 
-			$('.sticky-menu ul li a').each(function () {
+			$('.on-page-navigation ul li a').each(function () {
 
 				var currLink = $(this);
 
 				var refElement = $(currLink.attr("href"));
 
 				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-					$('.sticky-menu ul li a').removeClass("active");
+					$('.on-page-navigation ul li a').removeClass("active");
 					currLink.addClass("active");
 				}
 			});

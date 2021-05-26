@@ -535,10 +535,10 @@ It's frankly a miracle that anything works at all.</p>
 
 	<script>
 
-		$(document).ready(function(){
+		// $(document).ready(function(){
 			
-			$(".blog article").fitVids();
-		});
+		// 	$(".blog article").fitVids();
+		// });
 
 		$(document).ready(function () {
 
@@ -570,14 +570,14 @@ It's frankly a miracle that anything works at all.</p>
 
 			var scrollPos = $(document).scrollTop();
 
-			$('.sticky-menu ul li a').each(function () {
+			$('.on-page-navigation ul li a').each(function () {
 
 				var currLink = $(this);
 
 				var refElement = $(currLink.attr("href"));
 
 				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-					$('.sticky-menu ul li a').removeClass("active");
+					$('.on-page-navigation ul li a').removeClass("active");
 					currLink.addClass("active");
 				}
 			});

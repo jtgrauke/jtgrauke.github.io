@@ -363,10 +363,10 @@ If a course appears in more than one course group, it's automatically applied wh
 
 	<script>
 
-		$(document).ready(function(){
+		// $(document).ready(function(){
 			
-			$(".blog article").fitVids();
-		});
+		// 	$(".blog article").fitVids();
+		// });
 
 		$(document).ready(function () {
 
@@ -398,14 +398,14 @@ If a course appears in more than one course group, it's automatically applied wh
 
 			var scrollPos = $(document).scrollTop();
 
-			$('.sticky-menu ul li a').each(function () {
+			$('.on-page-navigation ul li a').each(function () {
 
 				var currLink = $(this);
 
 				var refElement = $(currLink.attr("href"));
 
 				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-					$('.sticky-menu ul li a').removeClass("active");
+					$('.on-page-navigation ul li a').removeClass("active");
 					currLink.addClass("active");
 				}
 			});
