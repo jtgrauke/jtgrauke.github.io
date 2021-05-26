@@ -1010,6 +1010,8 @@ section {
 
 a.features-card {
 
+	border-color: transparent;
+
 	&:hover {
 		color: $text-dark-color;
 		border-color: $accent-color;
@@ -1089,6 +1091,8 @@ a.features-card {
 			}
 
 			a {
+				border-color: transparent;
+				
 				&:hover {
 					color: $text-dark-color;
 				}
