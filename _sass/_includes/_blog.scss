@@ -29,6 +29,12 @@ figure {
     margin-bottom: 1.5em;
 }
 
+figcaption {
+	text-align: center;
+	font-style: italic;
+	padding: 12px;
+}
+
 .byline {
 	display: flex;
     align-items: center;
@@ -61,11 +67,17 @@ figure {
 .jordan     { background-image:url(/images/authors/jordan.jpg); }
 .caleb      { background-image:url(/images/authors/caleb.jpg); }
 
+
+.pagination .wrap {
+	max-width: 640px;
+	margin: 0 auto;
+}
+
 .pagination__prev {
-	float: left;
+	float: right;
 	margin-right: 10px;
 }
 
 .pagination__next {
-	float: right;
+	text-align: left;
 }

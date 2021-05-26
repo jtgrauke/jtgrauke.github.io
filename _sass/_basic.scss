@@ -294,6 +294,15 @@ blockquote {
 	border-bottom: 2px solid $accent-color;
 }
 
+.page__content h1 a,
+.page__content h2 a,
+.page__content h3 a,
+.page__content h4 a,
+.page__content h5 a,
+.page__content h6 a {
+	border-color: transparent;
+}
+
 a {
 	text-decoration: none;
 	color: $text-dark-color;
