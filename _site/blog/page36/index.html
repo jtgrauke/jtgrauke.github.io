@@ -506,7 +506,7 @@ populiweb.com/bookstore</strong> and click on <strong>Admin</strong>. Once it's 
 
 				var refElement = $(currLink.attr("href"));
 
-				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height()) {
 					$('.on-page-navigation ul li a').removeClass("active");
 					currLink.addClass("active");
 				}

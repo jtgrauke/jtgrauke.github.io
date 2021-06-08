@@ -606,7 +606,7 @@ $5,000 * 0.8%, with a 25¢ minimum and $5 maximum = <strong>$5</strong></p>
 
 				var refElement = $(currLink.attr("href"));
 
-				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height()) {
 					$('.on-page-navigation ul li a').removeClass("active");
 					currLink.addClass("active");
 				}

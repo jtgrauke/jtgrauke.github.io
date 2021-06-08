@@ -565,7 +565,7 @@ Digital library resources</h5>
 
 				var refElement = $(currLink.attr("href"));
 
-				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height()) {
 					$('.on-page-navigation ul li a').removeClass("active");
 					currLink.addClass("active");
 				}

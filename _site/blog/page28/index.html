@@ -558,7 +558,7 @@ Courses are getting our new tab-based navigation, which we're slowly rolling out
 
 				var refElement = $(currLink.attr("href"));
 
-				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height()) {
 					$('.on-page-navigation ul li a').removeClass("active");
 					currLink.addClass("active");
 				}
