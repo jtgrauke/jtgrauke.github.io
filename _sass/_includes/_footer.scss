@@ -111,7 +111,7 @@
 
 		.button { 
 			background: transparent;
-			border-color: transparent;
+			border: 0;
 			color: $background-color;
 
 			&:hover {
