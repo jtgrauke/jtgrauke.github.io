@@ -165,11 +165,10 @@
 }
 
 .menu-list-item {
-	font-family: $title-font;
+	font-family: $body-font;
 	transition: none;
 
 	@include mq(tabletl) {
-		font-family: $body-font;
 		display: inline-block;
 		margin-left: 20px;
 

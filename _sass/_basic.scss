@@ -508,7 +508,6 @@ section {
 	padding-top: 0 !important;
 
 	.wrap {
-		border-top: 1px solid $text-light-color;
 		padding-top: 6em;
 
 		p {
@@ -954,6 +953,7 @@ section {
 		padding: 24px 0 24px 72px !important;
 		position: relative;
 		margin-bottom: 40px;
+		width: 100%;
 
 		.quote_pic {
 			position: absolute;
